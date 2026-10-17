@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#396a49"/>
+  <!-- El camí del sol per sobre d'un turó: el vessant assolellat (clar) i l'obac (fosc) -->
+  <clipPath id="full"><rect x="96" y="96" width="320" height="320" rx="28"/></clipPath>
+  <rect x="96" y="96" width="320" height="320" rx="28" fill="#f3f1ea"/>
+  <g clip-path="url(#full)">
+    <path d="M118 338 Q256 70 394 338" fill="none" stroke="#d9a63a" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 22"/>
+    <path d="M80 430 L80 322 C150 262 196 244 236 286 C276 328 340 336 432 300 L432 430 Z" fill="#5c9a68"/>
+    <path d="M80 430 L80 322 C150 262 196 244 236 286 C226 330 214 380 210 430 Z" fill="#2f5a3d"/>
+  </g>
+  <circle cx="306" cy="190" r="44" fill="#f2c14e" stroke="#ffffff" stroke-width="10"/>
+</svg>

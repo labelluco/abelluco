@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#396a49"/>
+  <!-- Un camí que puja i baixa per dos turons, amb l'inici (verd) i el final (vermell) -->
+  <clipPath id="full"><rect x="96" y="96" width="320" height="320" rx="28"/></clipPath>
+  <rect x="96" y="96" width="320" height="320" rx="28" fill="#f3f1ea"/>
+  <g clip-path="url(#full)">
+    <path d="M80 430 L80 300 C130 240 170 200 212 236 C246 266 262 300 300 262 C336 226 372 210 432 250 L432 430 Z" fill="#5c9a68"/>
+    <path d="M80 430 L80 350 C150 320 220 330 280 352 C340 374 390 360 432 344 L432 430 Z" fill="#2f5a3d"/>
+  </g>
+  <path d="M146 360 C168 320 176 292 204 270 C232 248 248 300 278 286 C306 272 300 232 338 206 C352 196 364 190 372 168"
+    fill="none" stroke="#ffffff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M146 360 C168 320 176 292 204 270 C232 248 248 300 278 286 C306 272 300 232 338 206 C352 196 364 190 372 168"
+    fill="none" stroke="#e8452c" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="146" cy="360" r="20" fill="#2e9e4f" stroke="#ffffff" stroke-width="8"/>
+  <circle cx="372" cy="168" r="20" fill="#c62f2f" stroke="#ffffff" stroke-width="8"/>
+</svg>

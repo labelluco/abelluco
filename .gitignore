@@ -1,0 +1,13 @@
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Sistema operatiu
+.DS_Store
+Thumbs.db
+
+# Fitxers locals
+.env
+node_modules/
+.claude/

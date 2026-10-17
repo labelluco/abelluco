@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#396a49"/>
+  <!-- Bloc de terreny en perspectiva: cara superior amb relleu, dues parets laterals -->
+  <path d="M96 300 L256 380 L256 420 L96 340 Z" fill="#d9cfba"/>
+  <path d="M256 380 L416 300 L416 340 L256 420 Z" fill="#b8ad95"/>
+  <path d="M96 300 L160 228 L200 262 L268 150 L330 236 L360 214 L416 300 L256 380 Z" fill="#f3f1ea"/>
+  <path d="M268 150 L330 236 L300 262 L256 226 L236 258 L200 262 Z" fill="#e8b54a"/>
+  <path d="M160 228 L200 262 L170 280 L140 270 Z" fill="#e8b54a" opacity="0.75"/>
+</svg>

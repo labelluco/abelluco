@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#396a49"/>
+  <!-- Un punt d'observació dalt d'un turó: el ventall del que es veu (verd clar) i la vessant amagada (fosca) -->
+  <clipPath id="full"><rect x="96" y="96" width="320" height="320" rx="28"/></clipPath>
+  <rect x="96" y="96" width="320" height="320" rx="28" fill="#f3f1ea"/>
+  <g clip-path="url(#full)">
+    <path d="M176 210 L430 120 L430 330 Z" fill="#4cd660" opacity="0.55"/>
+    <path d="M80 420 L80 300 C130 260 160 220 176 214 C200 230 240 290 290 300 C330 310 370 270 430 250 L430 420 Z" fill="#2f5a3d"/>
+    <path d="M290 300 C330 310 370 270 430 250 L430 300 C380 320 330 330 290 300 Z" fill="#4cd660"/>
+    <path d="M176 214 C200 230 240 290 290 300 C250 320 210 300 176 214 Z" fill="#1d1b2e" opacity="0.5"/>
+  </g>
+  <rect x="170" y="150" width="12" height="66" rx="4" fill="#24402f"/>
+  <circle cx="176" cy="146" r="22" fill="#f2c14e" stroke="#ffffff" stroke-width="8"/>
+</svg>

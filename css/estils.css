@@ -1,0 +1,406 @@
+/* =====================================================================
+   Web de L'Abelluco: disposició de la pàgina. Els colors, els botons i el
+   selector d'idioma vénen del nucli (nucli/css/nucli.css).
+   ===================================================================== */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+body {
+  line-height: 1.55;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.15;
+  color: var(--color-primari-fosc);
+  text-wrap: balance;
+}
+
+h1 {
+  margin: 0 0 var(--espai-s);
+  font-size: clamp(2.2rem, 5.5vw, 3.6rem);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  margin: 0 0 var(--espai-s);
+  font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  margin: 0 0 var(--espai-xs);
+  font-size: 1.15rem;
+}
+
+p {
+  margin: 0 0 var(--espai-s);
+}
+
+.contingut {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media (min-width: 720px) {
+  .contingut {
+    padding: 0 var(--espai-l);
+  }
+}
+
+.avantitol {
+  margin: 0 0 var(--espai-xs);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.avantitol--clar {
+  color: #e8b54a;
+}
+
+.boto--gran {
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.boto--clar {
+  background-color: var(--color-fons);
+  color: var(--color-primari-fosc);
+}
+
+.boto--clar:hover {
+  background-color: #ffffff;
+}
+
+/* --- Capçalera --- */
+.capcalera {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(243, 241, 234, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-vora);
+}
+
+.capcalera__fila {
+  display: flex;
+  align-items: center;
+  gap: var(--espai-s);
+  min-height: 60px;
+}
+
+.marca {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--espai-xs);
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: var(--color-primari-fosc);
+  text-decoration: none;
+}
+
+.marca--petita {
+  font-size: 0.95rem;
+}
+
+.navegacio {
+  display: none;
+  gap: var(--espai-m);
+  margin-left: auto;
+}
+
+.navegacio a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.navegacio a:hover {
+  color: var(--color-primari);
+}
+
+.capcalera .selector-idioma {
+  margin-left: auto;
+}
+
+@media (min-width: 720px) {
+  .navegacio {
+    display: flex;
+  }
+
+  .capcalera .selector-idioma {
+    margin-left: var(--espai-s);
+  }
+}
+
+/* --- Portada --- */
+.portada {
+  padding: var(--espai-l) 0;
+}
+
+.portada__fila {
+  display: grid;
+  gap: var(--espai-l);
+  align-items: center;
+}
+
+.portada__entrada {
+  font-size: 1.1rem;
+  color: var(--color-text-mut);
+  max-width: 34em;
+}
+
+.portada__accions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espai-xs);
+  margin-top: var(--espai-m);
+}
+
+.portada__imatge {
+  margin: 0;
+}
+
+.bloc-terreny {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.bloc-terreny__nivells {
+  stroke: var(--color-primari);
+  opacity: 0.18;
+}
+
+@media (min-width: 900px) {
+  .portada {
+    padding: 5rem 0 4rem;
+  }
+
+  .portada__fila {
+    grid-template-columns: 1.1fr 1fr;
+  }
+}
+
+/* --- App destacada --- */
+.destacada {
+  padding: 3.5rem 0;
+  background-color: var(--color-primari-fosc);
+  color: #e9efe9;
+}
+
+.destacada h2 {
+  color: #ffffff;
+}
+
+.destacada__fila {
+  display: grid;
+  gap: var(--espai-l);
+  align-items: center;
+}
+
+.destacada__icona img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 28px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.llista-punts {
+  margin: 0 0 var(--espai-m);
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--espai-xs);
+}
+
+.llista-punts li {
+  position: relative;
+  padding-left: 1.6rem;
+}
+
+.llista-punts li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 3px;
+  background-color: #e8b54a;
+}
+
+@media (min-width: 900px) {
+  .destacada {
+    padding: 5rem 0;
+  }
+
+  .destacada__fila {
+    grid-template-columns: auto 1fr;
+    gap: 4rem;
+  }
+
+  .destacada__icona img {
+    width: 200px;
+    height: 200px;
+    border-radius: 44px;
+  }
+
+  .destacada__text {
+    max-width: 40em;
+  }
+}
+
+/* --- Seccions --- */
+.seccio {
+  padding: 3.5rem 0;
+}
+
+.seccio--suau {
+  background-color: var(--color-primari-suau);
+}
+
+.seccio__entrada {
+  max-width: 40em;
+  color: var(--color-text-mut);
+  font-size: 1.05rem;
+  margin-bottom: var(--espai-l);
+}
+
+@media (min-width: 900px) {
+  .seccio {
+    padding: 5rem 0;
+  }
+}
+
+/* --- Targetes de les apps --- */
+.graella-apps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--espai-s);
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.targeta-app {
+  display: flex;
+  flex-direction: column;
+  padding: var(--espai-m);
+  border: 1px solid var(--color-vora);
+  border-radius: var(--radi-gran);
+  background-color: var(--color-superficie);
+  box-shadow: var(--ombra);
+  transition: transform var(--transicio), box-shadow var(--transicio);
+}
+
+.targeta-app:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--ombra-flotant);
+}
+
+.targeta-app img {
+  border-radius: 14px;
+  margin-bottom: var(--espai-s);
+}
+
+.targeta-app__pregunta {
+  margin-bottom: var(--espai-xs);
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.targeta-app__per-a {
+  margin-top: auto;
+  padding-top: var(--espai-xs);
+  font-size: 0.85rem;
+  color: var(--color-text-mut);
+}
+
+.targeta-app__enllac {
+  align-self: flex-start;
+  font-weight: 700;
+  color: var(--color-primari);
+  text-decoration: none;
+}
+
+.targeta-app__enllac::after {
+  content: " →";
+}
+
+.targeta-app__enllac:hover {
+  text-decoration: underline;
+}
+
+/* --- Com funcionen --- */
+.graella-principis {
+  margin: var(--espai-m) 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--espai-l) var(--espai-m);
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.graella-principis li {
+  padding-top: var(--espai-s);
+  border-top: 3px solid var(--color-primari);
+}
+
+.graella-principis p {
+  margin: 0;
+  color: var(--color-text-mut);
+}
+
+/* --- Codi lliure --- */
+.codi-lliure {
+  display: grid;
+  gap: var(--espai-m);
+  align-items: center;
+}
+
+.codi-lliure p {
+  max-width: 40em;
+  color: var(--color-text-mut);
+  font-size: 1.05rem;
+}
+
+.codi-lliure .boto {
+  justify-self: start;
+}
+
+@media (min-width: 720px) {
+  .codi-lliure {
+    grid-template-columns: 1fr auto;
+  }
+}
+
+/* --- Peu --- */
+.peu {
+  padding: var(--espai-l) 0;
+  border-top: 1px solid var(--color-vora);
+  font-size: 0.9rem;
+  color: var(--color-text-mut);
+}
+
+.peu__fila {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espai-xs) var(--espai-m);
+  align-items: center;
+  justify-content: space-between;
+}

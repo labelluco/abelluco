@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>L'Abelluco · Apps lliures per conèixer el terreny</title>
+  <meta name="description" content="Apps lliures per veure, mesurar i entendre el relleu de qualsevol lloc del món: models 3D per imprimir, pendents, visibilitat, hores de sol i rutes.">
+  <meta name="theme-color" content="#396a49">
+  <link rel="icon" href="img/marca.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="nucli/css/nucli.css">
+  <link rel="stylesheet" href="css/estils.css">
+</head>
+<body>
+  <header class="capcalera">
+    <div class="contingut capcalera__fila">
+      <a class="marca" href="#inici">
+        <img src="img/marca.svg" alt="" width="36" height="36">
+        <span>L'Abelluco</span>
+      </a>
+      <nav class="navegacio" aria-label="Seccions" data-i18n-aria-label="Seccions">
+        <a href="#apps" data-i18n="Apps">Apps</a>
+        <a href="#com-funcionen" data-i18n="Com funcionen">Com funcionen</a>
+        <a href="#codi-lliure" data-i18n="Codi lliure">Codi lliure</a>
+      </nav>
+      <div id="selector-idioma" class="selector-idioma" aria-label="Idioma" data-i18n-aria-label="Idioma"></div>
+    </div>
+  </header>
+
+  <main id="inici">
+    <!-- Portada -->
+    <section class="portada">
+      <div class="contingut portada__fila">
+        <div class="portada__text">
+          <p class="avantitol" data-i18n="Apps lliures per al territori">Apps lliures per al territori</p>
+          <h1 data-i18n="Coneix el terreny que trepitges.">Coneix el terreny que trepitges.</h1>
+          <p class="portada__entrada" data-i18n="Veure, mesurar i entendre el relleu de qualsevol lloc del món: models 3D per imprimir, pendents, què es veu des d'un punt, hores de sol i rutes. Al navegador o al mòbil, sense comptes ni servidors.">Veure, mesurar i entendre el relleu de qualsevol lloc del món: models 3D per imprimir, pendents, què es veu des d'un punt, hores de sol i rutes. Al navegador o al mòbil, sense comptes ni servidors.</p>
+          <div class="portada__accions">
+            <a class="boto boto--primari boto--gran" href="#terra-bloc" data-i18n="Descobreix Terra Bloc">Descobreix Terra Bloc</a>
+            <a class="boto boto--secundari boto--gran" href="#apps" data-i18n="Totes les apps">Totes les apps</a>
+          </div>
+        </div>
+        <figure class="portada__imatge" aria-hidden="true">
+          <svg viewBox="0 0 520 440" class="bloc-terreny">
+            <g class="bloc-terreny__nivells" fill="none" stroke-width="2">
+              <path d="M20 120 C120 60 260 90 360 50 C430 22 480 30 510 40"/>
+              <path d="M10 170 C120 110 260 140 360 100 C430 72 480 80 515 90"/>
+              <path d="M0 220 C120 160 260 190 360 150 C430 122 480 130 520 140"/>
+            </g>
+            <!-- Parets del bloc, amb estrats -->
+            <path d="M60 270 L260 370 L260 420 L60 320 Z" fill="#d9cfba"/>
+            <path d="M260 370 L460 270 L460 320 L260 420 Z" fill="#b8ad95"/>
+            <path d="M60 296 L260 396" stroke="#c8bca3" stroke-width="3"/>
+            <path d="M260 396 L460 296" stroke="#a49a83" stroke-width="3"/>
+            <!-- Cara superior: relleu -->
+            <path d="M60 270 L140 180 L190 222 L275 82 L352 190 L390 162 L460 270 L260 370 Z" fill="#ffffff" stroke="#d9cfba" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M275 82 L352 190 L315 222 L260 177 L235 217 L190 222 Z" fill="#e8b54a"/>
+            <path d="M140 180 L190 222 L152 245 L115 232 Z" fill="#e8b54a" opacity="0.75"/>
+            <path d="M390 162 L460 270 L420 250 L380 205 Z" fill="#e8b54a" opacity="0.5"/>
+            <!-- Una ruta que puja al cim -->
+            <path d="M120 290 C170 300 200 260 230 250 C262 240 250 190 275 150" fill="none" stroke="#a1552e" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 12"/>
+            <circle cx="275" cy="92" r="7" fill="#396a49"/>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <!-- App destacada -->
+    <section id="terra-bloc" class="destacada">
+      <div class="contingut destacada__fila">
+        <div class="destacada__icona">
+          <img src="img/terrabloc.svg" alt="" width="160" height="160">
+        </div>
+        <div class="destacada__text">
+          <p class="avantitol avantitol--clar" data-i18n="L'app destacada">L'app destacada</p>
+          <h2 data-i18n="Terra Bloc: el terreny, en un bloc que pots imprimir">Terra Bloc: el terreny, en un bloc que pots imprimir</h2>
+          <p data-i18n="Tria una parcel·la del Cadastre o dibuixa una zona a qualsevol lloc del món. Terra Bloc en fa un model 3D amb la imatge aèria i el converteix en una peça sòlida per a la impressora 3D, amb la mida en mil·límetres.">Tria una parcel·la del Cadastre o dibuixa una zona a qualsevol lloc del món. Terra Bloc en fa un model 3D amb la imatge aèria i el converteix en una peça sòlida per a la impressora 3D, amb la mida en mil·límetres.</p>
+          <ul class="llista-punts">
+            <li data-i18n="Relleu de 5 m de l'IGN a Espanya i de ~30 m a la resta del món">Relleu de 5 m de l'IGN a Espanya i de ~30 m a la resta del món</li>
+            <li data-i18n="Ortofoto, color per altitud o aspecte de maqueta">Ortofoto, color per altitud o aspecte de maqueta</li>
+            <li data-i18n="Sòlid tancat amb base, a l'escala que triïs">Sòlid tancat amb base, a l'escala que triïs</li>
+            <li data-i18n="Exportació a STL i OBJ amb Terra Bloc Pro">Exportació a STL i OBJ amb Terra Bloc Pro</li>
+          </ul>
+          <a class="boto boto--clar boto--gran" href="https://mario_escuder.codeberg.page/terrabloc/" data-i18n="Obre Terra Bloc">Obre Terra Bloc</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Totes les apps -->
+    <section id="apps" class="seccio">
+      <div class="contingut">
+        <h2 data-i18n="Una família d'apps, una per a cada pregunta">Una família d'apps, una per a cada pregunta</h2>
+        <p class="seccio__entrada" data-i18n="Totes comparteixen el mateix mapa, les mateixes dades obertes i la mateixa manera de treballar. Si en saps fer servir una, les saps fer servir totes.">Totes comparteixen el mateix mapa, les mateixes dades obertes i la mateixa manera de treballar. Si en saps fer servir una, les saps fer servir totes.</p>
+
+        <ul class="graella-apps">
+          <li class="targeta-app">
+            <img src="img/terrabloc.svg" alt="" width="64" height="64">
+            <h3>Terra Bloc</h3>
+            <p class="targeta-app__pregunta" data-i18n="Com és aquest terreny en 3D?">Com és aquest terreny en 3D?</p>
+            <p data-i18n="Models 3D del relleu per veure'ls a la pantalla o imprimir-los.">Models 3D del relleu per veure'ls a la pantalla o imprimir-los.</p>
+            <p class="targeta-app__per-a" data-i18n="Maquetes, docència, regals, impressió 3D">Maquetes, docència, regals, impressió 3D</p>
+            <a class="targeta-app__enllac" href="https://mario_escuder.codeberg.page/terrabloc/" data-i18n="Obre l'app">Obre l'app</a>
+          </li>
+          <li class="targeta-app">
+            <img src="img/terraanalisi.svg" alt="" width="64" height="64">
+            <h3>Terra Anàlisi</h3>
+            <p class="targeta-app__pregunta" data-i18n="Quin pendent i quina orientació té?">Quin pendent i quina orientació té?</p>
+            <p data-i18n="Altitud, pendents, orientacions i ombrejat d'una parcel·la, amb estadístiques i informe PDF.">Altitud, pendents, orientacions i ombrejat d'una parcel·la, amb estadístiques i informe PDF.</p>
+            <p class="targeta-app__per-a" data-i18n="Agricultura, forestal, enginyeria, peritatges">Agricultura, forestal, enginyeria, peritatges</p>
+            <a class="targeta-app__enllac" href="https://mario_escuder.codeberg.page/terraanalisi/" data-i18n="Obre l'app">Obre l'app</a>
+          </li>
+          <li class="targeta-app">
+            <img src="img/terravisibilitat.svg" alt="" width="64" height="64">
+            <h3>Terra Visibilitat</h3>
+            <p class="targeta-app__pregunta" data-i18n="Què es veu des d'aquí?">Què es veu des d'aquí?</p>
+            <p data-i18n="La conca visual d'un punt sobre el relleu, amb l'alçada de l'observador i de l'objectiu.">La conca visual d'un punt sobre el relleu, amb l'alçada de l'observador i de l'objectiu.</p>
+            <p class="targeta-app__per-a" data-i18n="Antenes, internet rural, incendis, impacte visual">Antenes, internet rural, incendis, impacte visual</p>
+            <a class="targeta-app__enllac" href="https://mario_escuder.codeberg.page/terravisibilitat/" data-i18n="Obre l'app">Obre l'app</a>
+          </li>
+          <li class="targeta-app">
+            <img src="img/terrasol.svg" alt="" width="64" height="64">
+            <h3>Terra Sol</h3>
+            <p class="targeta-app__pregunta" data-i18n="Quantes hores de sol hi toquen?">Quantes hores de sol hi toquen?</p>
+            <p data-i18n="Hores de sol directe d'un punt o d'una parcel·la, amb l'ombra de les muntanyes, qualsevol dia de l'any.">Hores de sol directe d'un punt o d'una parcel·la, amb l'ombra de les muntanyes, qualsevol dia de l'any.</p>
+            <p class="targeta-app__per-a" data-i18n="Cultius, hivernacles, plaques solars, cases">Cultius, hivernacles, plaques solars, cases</p>
+            <a class="targeta-app__enllac" href="https://mario_escuder.codeberg.page/terrasol/" data-i18n="Obre l'app">Obre l'app</a>
+          </li>
+          <li class="targeta-app">
+            <img src="img/terrarutes.svg" alt="" width="64" height="64">
+            <h3>Terra Rutes</h3>
+            <p class="targeta-app__pregunta" data-i18n="Com és aquesta ruta?">Com és aquesta ruta?</p>
+            <p data-i18n="Obre tracks GPX o KML, mira'n el perfil i el relleu 3D, uneix-los i edita'ls.">Obre tracks GPX o KML, mira'n el perfil i el relleu 3D, uneix-los i edita'ls.</p>
+            <p class="targeta-app__per-a" data-i18n="Senderisme, ciclisme, curses de muntanya">Senderisme, ciclisme, curses de muntanya</p>
+            <a class="targeta-app__enllac" href="https://mario_escuder.codeberg.page/terrarutes/" data-i18n="Obre l'app">Obre l'app</a>
+          </li>
+          <li class="targeta-app">
+            <img src="img/custodia.svg" alt="" width="64" height="64">
+            <h3>Custòdia</h3>
+            <p class="targeta-app__pregunta" data-i18n="Com gestiono les meves finques?">Com gestiono les meves finques?</p>
+            <p data-i18n="Registra parcel·les rústiques, consulta'n el Cadastre, el pendent i un índex experimental de risc d'incendi.">Registra parcel·les rústiques, consulta'n el Cadastre, el pendent i un índex experimental de risc d'incendi.</p>
+            <p class="targeta-app__per-a" data-i18n="Propietaris rurals, entitats de custòdia">Propietaris rurals, entitats de custòdia</p>
+            <a class="targeta-app__enllac" href="https://mario_escuder.codeberg.page/custodia/" data-i18n="Obre l'app">Obre l'app</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Com funcionen -->
+    <section id="com-funcionen" class="seccio seccio--suau">
+      <div class="contingut">
+        <h2 data-i18n="Com funcionen">Com funcionen</h2>
+        <ul class="graella-principis">
+          <li>
+            <h3 data-i18n="Gratuïtes, amb un Pro de pagament únic">Gratuïtes, amb un Pro de pagament únic</h3>
+            <p data-i18n="Cada app es pot fer servir de franc. Les funcions avançades es desbloquegen amb un sol pagament, sense subscripcions.">Cada app es pot fer servir de franc. Les funcions avançades es desbloquegen amb un sol pagament, sense subscripcions.</p>
+          </li>
+          <li>
+            <h3 data-i18n="Les teves dades no surten del dispositiu">Les teves dades no surten del dispositiu</h3>
+            <p data-i18n="No hi ha comptes ni servidor propi. Les zones, els tracks i les parcel·les es desen només al teu mòbil o ordinador.">No hi ha comptes ni servidor propi. Les zones, els tracks i les parcel·les es desen només al teu mòbil o ordinador.</p>
+          </li>
+          <li>
+            <h3 data-i18n="Dades públiques i obertes">Dades públiques i obertes</h3>
+            <p data-i18n="El relleu i les imatges vénen de l'IGN i del Cadastre a Espanya, i de fonts mundials obertes a la resta del món.">El relleu i les imatges vénen de l'IGN i del Cadastre a Espanya, i de fonts mundials obertes a la resta del món.</p>
+          </li>
+          <li>
+            <h3 data-i18n="Sense instal·lar res">Sense instal·lar res</h3>
+            <p data-i18n="S'obren al navegador i es poden afegir a la pantalla d'inici. Aviat, també a Google Play.">S'obren al navegador i es poden afegir a la pantalla d'inici. Aviat, també a Google Play.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Codi lliure -->
+    <section id="codi-lliure" class="seccio">
+      <div class="contingut codi-lliure">
+        <div>
+          <h2 data-i18n="Codi lliure">Codi lliure</h2>
+          <p data-i18n="Totes les apps són programari lliure amb llicència AGPLv3: pots llegir-ne el codi, estudiar com calculen cada resultat i millorar-les.">Totes les apps són programari lliure amb llicència AGPLv3: pots llegir-ne el codi, estudiar com calculen cada resultat i millorar-les.</p>
+        </div>
+        <a class="boto boto--secundari boto--gran" href="https://codeberg.org/mario_escuder" data-i18n="Mira el codi">Mira el codi</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="peu">
+    <div class="contingut peu__fila">
+      <span class="marca marca--petita">
+        <img src="img/marca.svg" alt="" width="24" height="24">
+        <span>L'Abelluco</span>
+      </span>
+      <span data-i18n="Fet amb dades obertes, per a tot el món.">Fet amb dades obertes, per a tot el món.</span>
+      <span>AGPLv3 · 2026</span>
+    </div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

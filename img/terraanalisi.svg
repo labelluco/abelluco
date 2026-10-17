@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#396a49"/>
+  <!-- Full de mapa amb un turó en bandes de colors (com el mapa de pendents) i una barra d'estadístiques -->
+  <clipPath id="full"><rect x="96" y="96" width="320" height="320" rx="28"/></clipPath>
+  <rect x="96" y="96" width="320" height="320" rx="28" fill="#f3f1ea"/>
+  <g clip-path="url(#full)">
+    <ellipse cx="236" cy="236" rx="190" ry="160" fill="#4f9a4a"/>
+    <ellipse cx="226" cy="226" rx="132" ry="110" fill="#d8c32c"/>
+    <ellipse cx="218" cy="218" rx="80" ry="66" fill="#e5862b"/>
+    <ellipse cx="212" cy="212" rx="34" ry="28" fill="#c0392b"/>
+  </g>
+  <rect x="300" y="300" width="98" height="98" rx="18" fill="#ffffff"/>
+  <rect x="318" y="352" width="16" height="30" rx="3" fill="#396a49"/>
+  <rect x="341" y="332" width="16" height="50" rx="3" fill="#396a49"/>
+  <rect x="364" y="316" width="16" height="66" rx="3" fill="#396a49"/>
+</svg>
