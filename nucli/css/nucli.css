@@ -543,7 +543,9 @@ select.camp__entrada {
   bottom: 0;
   max-height: 72vh;
   overflow-y: auto;
-  padding: var(--espai-xs) var(--espai-s) calc(var(--espai-s) + env(safe-area-inset-bottom));
+  /* Al mòbil, l'atribució del mapa (per damunt del panell) ocupa el peu:
+     el marge de baix deixa l'última línia del panell fora de sota. */
+  padding: var(--espai-xs) var(--espai-s) calc(var(--espai-s) + 2.25rem + env(safe-area-inset-bottom));
   border-radius: var(--radi-gran) var(--radi-gran) 0 0;
   background-color: var(--color-superficie-translucida);
   box-shadow: var(--ombra-flotant);
@@ -659,8 +661,39 @@ select.camp__entrada {
   color: var(--color-primari);
 }
 
+/* Signatura de la marca L'Abelluco (img/abelluco/) al peu dels panells. */
+.signatura-marca {
+  margin: var(--espai-xs) 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espai-xs);
+  font-size: 0.75rem;
+  color: var(--color-text-mut);
+}
+
+.signatura-marca a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.signatura-marca img {
+  height: 1.15rem;
+  width: auto;
+}
+
+.signatura-marca a:hover,
+.signatura-marca a:focus-visible {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
 @media (min-width: 900px) {
   .panell {
+    padding-bottom: var(--espai-s);
     left: var(--espai-s);
     right: auto;
     top: calc(72px + env(safe-area-inset-top));

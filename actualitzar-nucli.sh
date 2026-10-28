@@ -22,6 +22,7 @@ fi
 rm -rf nucli
 mkdir -p nucli
 cp -r "$ORIGEN/js" "$ORIGEN/css" "$ORIGEN/eines" nucli/
+[ -d "$ORIGEN/img" ] && cp -r "$ORIGEN/img" nucli/
 cp "$ORIGEN/LICENSE" nucli/
 
 VERSIO=$(git -C "$ORIGEN" describe --tags --always --dirty 2>/dev/null || echo "sense-git")

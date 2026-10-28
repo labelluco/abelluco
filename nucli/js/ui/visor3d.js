@@ -30,6 +30,29 @@ import { trianglesModel } from '../geometria/solid.js';
 const COLOR_NEUTRE = '#b8ad95';
 const COLOR_LATERALS = '#d9cfba';
 
+/**
+ * El costat més gran (px) d'una textura que pot fer servir aquest
+ * dispositiu, sense passar de `limit`. Per demanar l'ortofoto tan gran com
+ * es pugui pintar (vegeu generadorModel.js): una imatge més gran que el
+ * límit de la targeta gràfica es reduiria igualment en carregar-la. Es
+ * mira amb un context WebGL temporal, que s'allibera de seguida; sense
+ * WebGL, 2048 (el que es feia servir abans).
+ * @param {number} [limit] 4096 per defecte: el màxim que serveix la PNOA, i
+ *   una textura de 8192² ja ocupa uns 256 MB de memòria gràfica.
+ */
+export function midaMaximaTextura(limit = 4096) {
+  try {
+    const canvas = document.createElement('canvas');
+    const gl = canvas.getContext('webgl2') || canvas.getContext('webgl');
+    if (!gl) return Math.min(2048, limit);
+    const mida = gl.getParameter(gl.MAX_TEXTURE_SIZE);
+    gl.getExtension('WEBGL_lose_context')?.loseContext();
+    return Math.min(limit, Number.isFinite(mida) ? mida : 2048);
+  } catch {
+    return Math.min(2048, limit);
+  }
+}
+
 export class Visor3D {
   constructor(contenidor) {
     this.contenidor = contenidor;
@@ -91,7 +114,10 @@ export class Visor3D {
     this._camera = new THREE.PerspectiveCamera(40, amplada / Math.max(alcada, 1), 0.5, 200000);
     this._renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     this._renderer.setClearColor(0x000000, 0);
-    this._renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    // Fins a 3 píxels per punt de pantalla: els mòbils en tenen 3 o més, i
+    // amb el límit de 2 d'abans l'escena es pintava a dos terços de la
+    // resolució i s'estirava (es veia tova a Android).
+    this._renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 3));
     this._renderer.outputEncoding = THREE.sRGBEncoding;
     this._renderer.setSize(amplada, alcada);
     this._aplicarMarges(amplada, alcada);

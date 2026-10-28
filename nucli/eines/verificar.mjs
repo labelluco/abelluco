@@ -1,7 +1,8 @@
 // Verificacions obligatòries de cada ronda (vegeu la skill de les apps):
 //   1. node --check de tots els JS
 //   2. claus i18n (data-i18n*, t('...')) creuades amb els diccionaris
-//   3. fitxers reals vs. llista del service worker
+//   3. fitxers reals vs. llista del service worker (tret dels de
+//      foraDelServiceWorker a verificar.json, si l'app en té)
 //   4. recordatori de NOM_CACHE
 //
 // S'executa des de l'arrel de l'app:   node nucli/eines/verificar.mjs
@@ -18,7 +19,10 @@ const error = (text) => {
 };
 
 // Fitxers que formen part de l'app publicada (no eines ni documentació).
-const IGNORATS = /^(\.git|\.claude|node_modules|eines|nucli[\\/]eines|proves)([\\/]|$)|(^|[\\/])(README\.md|LLEGIU-ME\.\w+|LICENSE|VERSIO|\.gitignore|.*\.sh|.*\.mjs)$/;
+// La versió Android (Capacitor) afegeix android/ (el projecte natiu), www/
+// (la còpia de l'app que va dins de l'APK) i la seva configuració: tampoc
+// no formen part de la web.
+const IGNORATS = /^(\.git|\.claude|node_modules|eines|nucli[\\/]eines|proves|android|www)([\\/]|$)|(^|[\\/])(README\.md|LLEGIU-ME\.\w+|LICENSE|VERSIO|\.gitignore|.*\.sh|.*\.mjs)$|^(package(-lock)?\.json|capacitor\.config\.json)$/;
 function llistar(dir) {
   return readdirSync(dir).flatMap((nom) => {
     const cami = join(dir, nom);
@@ -84,7 +88,12 @@ if (existsSync('service-worker.js')) {
   const sw = readFileSync('service-worker.js', 'utf8');
   const llista = [...(sw.match(/FITXERS_PER_CACHE\s*=\s*\[([\s\S]*?)\]/)?.[1] ?? '').matchAll(/'\.\/([^']*)'/g)].map((m) => m[1]);
   const enSw = new Set(llista.filter((f) => f !== ''));
-  for (const f of fitxers) if (f !== 'service-worker.js' && !enSw.has(f)) error(`no és a la llista del service worker: ${f}`);
+  // Carpetes publicades que el service worker no ha de guardar (per
+  // exemple, les dades de zones de Terra Rutes i la seva eina
+  // d'administració): verificar.json de l'app, { "foraDelServiceWorker": ["zones/"] }.
+  const fora = existsSync('verificar.json') ? JSON.parse(readFileSync('verificar.json', 'utf8')).foraDelServiceWorker ?? [] : [];
+  const esFora = (f) => fora.some((prefix) => f.startsWith(prefix));
+  for (const f of fitxers) if (f !== 'service-worker.js' && f !== 'verificar.json' && !esFora(f) && !enSw.has(f)) error(`no és a la llista del service worker: ${f}`);
   for (const f of enSw) if (!fitxers.includes(f)) error(`a la llista del service worker però no existeix: ${f}`);
   console.log(`4. NOM_CACHE actual: ${sw.match(/NOM_CACHE\s*=\s*'([^']+)'/)?.[1]} (puja'l si has canviat fitxers)`);
 } else {

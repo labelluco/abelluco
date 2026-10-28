@@ -5,7 +5,7 @@
 //
 // Cada font ofereix:
 //   graella(requadre, pas)  -> graella d'altituds (vegeu ServeiMDT)
-//   textura(requadre)       -> { url, requadre, aUV? } per al visor 3D
+//   textura(requadre, maxPixels?) -> { url, requadre, aUV? } per al visor 3D
 //   pasMinim                -> no té sentit un pas més fi que les dades
 //   etiqueta, atribucio     -> per explicar-ho a la persona usuària
 
@@ -28,7 +28,7 @@ export function fontIGN(crs) {
     etiqueta: 'MDT de l\'IGN (5 m) i PNOA',
     atribucio: `${ATRIBUCIO_MDT_IGN}. ${ATRIBUCIO_PNOA}`,
     graella: (requadre, pas) => ServeiMDT.consultarGraella(requadre, pas, crs),
-    textura: (requadre) => ({ url: urlOrtofoto(requadre, 2048, crs).url, requadre }),
+    textura: (requadre, maxPixels = 2048) => ({ url: urlOrtofoto(requadre, maxPixels, crs).url, requadre }),
   };
 }
 
@@ -43,7 +43,7 @@ export function fontMundial(crs) {
     etiqueta: 'relleu mundial (~30 m) i Sentinel-2 (10 m)',
     atribucio: `${ATRIBUCIO_TERRARIUM}. ${ATRIBUCIO_SENTINEL2}`,
     graella: (requadre, pas) => ServeiMDTMundial.consultarGraella(requadre, pas, crs),
-    textura: (requadre) => {
+    textura: (requadre, maxPixels = 1024) => {
       // La imatge és en lat/lng: es calcula el requadre geogràfic que
       // cobreix el requadre UTM, i cada vèrtex del model rep la seva
       // coordenada de textura a partir de la seva lat/lng (aUV).
@@ -58,7 +58,7 @@ export function fontMundial(crs) {
         maxLng: Math.max(...cantonades.map(([, lng]) => lng)),
       };
       return {
-        url: urlSentinel2(geo).url,
+        url: urlSentinel2(geo, maxPixels).url,
         requadre,
         aUV: (x, y) => {
           const [lat, lng] = utmALatLng([x, y], crs);

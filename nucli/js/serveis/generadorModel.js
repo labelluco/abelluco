@@ -37,11 +37,14 @@ export function pasPerDetall(parts, detall, pasMinim = PAS_MINIM_METRES) {
  *   crs: sistema de les parts (per defecte EPSG:25830, com fins ara).
  * @param {string} detall
  * @param {(fase: 'terreny'|'model') => void} [onProgres]
+ * @param {{maxPixelsTextura?: number}} [opcions] costat màxim de la imatge de
+ *   la textura (vegeu midaMaximaTextura del visor); per defecte, el de la
+ *   font (2048 la PNOA, 1024 Sentinel-2).
  *   terreny: la graella del relleu (en el sistema de la font, sense el gir),
  *   per si l'app hi ha de posar coses a sobre (un track al visor 3D).
  * @returns {Promise<{model: object, pas: number, terreny: Terreny, textura: {url: string, requadre: object, aUV?: Function}, font: {id: string, etiqueta: string, atribucio: string}}>}
  */
-export async function generarModel(zona, detall, onProgres = () => {}) {
+export async function generarModel(zona, detall, onProgres = () => {}, { maxPixelsTextura } = {}) {
   const costat = costatMaxim(zona.parts);
   if (costat > COSTAT_MAXIM_METRES) {
     throw new Error('zona-massa-gran');
@@ -77,7 +80,7 @@ export async function generarModel(zona, detall, onProgres = () => {}) {
     maxX: modelUtm.limits.maxX + 1,
     maxY: modelUtm.limits.maxY + 1,
   };
-  let textura = font.textura(requadreTextura);
+  let textura = font.textura(requadreTextura, maxPixelsTextura);
   let model = modelUtm;
 
   // Zona girada respecte a la quadrícula (rectangle recte a la pantalla):

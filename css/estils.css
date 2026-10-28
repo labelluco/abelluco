@@ -107,10 +107,25 @@ p {
   font-size: 1.15rem;
   color: var(--color-primari-fosc);
   text-decoration: none;
+  /* Sense la càpsula de .marca del nucli (la de les apps, damunt del mapa). */
+  padding: 0;
+  background: none;
+  box-shadow: none;
 }
 
 .marca--petita {
   font-size: 0.95rem;
+}
+
+/* Logotip de L'Abelluco (nucli/img/abelluco/): el gran a la capçalera, el nom
+   sol al peu. */
+.marca img {
+  height: 3.4rem;
+  width: auto;
+}
+
+.marca--petita img {
+  height: 1.2rem;
 }
 
 .navegacio {

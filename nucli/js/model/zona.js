@@ -9,7 +9,8 @@
 // model ha de desfer perquè quedi recte (rectangles dibuixats rectes a la
 // pantalla; vegeu ui/dibuixRectangle.js). 0 per a la resta.
 
-export const ORIGENS_ZONA = ['referencia', 'poligon-parcela', 'mapa', 'dibuix'];
+// enllac: diverses parcel·les que arriben juntes d'una altra app (?rc=REF1,REF2).
+export const ORIGENS_ZONA = ['referencia', 'poligon-parcela', 'mapa', 'dibuix', 'enllac'];
 
 export class Zona {
   constructor({
