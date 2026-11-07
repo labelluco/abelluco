@@ -46,8 +46,6 @@ node nucli/eines/servidor.mjs 8070
 ## Pendent
 
 - Confirmar la marca L'Abelluco i registrar-la abans del domini.
-- On s'allotja la web (i les apps) en sortir de Codeberg; ara la web i els
-  enllaços a les apps són a `mario_escuder.codeberg.page/`.
 - Captures reals de les apps, enllaç a Google Play quan hi siguen, i un
   contacte.
 
