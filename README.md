@@ -1,9 +1,22 @@
 # L'Abelluco
 
-Web de difusió de la família d'apps Terra/Custòdia: una portada amb Terra
-Bloc com a app destacada, una fitxa per app (Terra Bloc, Terra Anàlisi,
-Terra Visibilitat, Terra Sol, Terra Rutes i Custòdia), com funcionen i el
-codi lliure. Pàgina estàtica sense build, en català, castellà i anglès.
+Web de L'Abelluco: tecnologia al servei del territori. Cinc pàgines
+estàtiques, sense build, en català, castellà i anglès:
+
+- `index.html`: portada amb foto de fons (la vall del Millars, de Mario), què faig, carrusel de les apps (Terra
+  Bloc, Terra Rutes i Terra Parcel·les) i clients;
+- `apps.html`: la família d'apps (Terra Bloc, Terra Anàlisi, Terra
+  Visibilitat, Terra Sol, Terra Rutes i Custòdia), com funcionen i el codi;
+- `serveis.html`: desenvolupament, Arduino, territori i educació ambiental,
+  valors de l'ESS i clients;
+- `qui-soc.html`: presentació, visió i decàleg sobre l'ús de la IA;
+- `contacte.html`: correu i què cal explicar.
+
+Imatges de tercers: logotips dels clients a `img/clients/` (el del CITA, de
+la seva pàgina d'identitat corporativa) i `img/vall-olba.jpg`, de Juan Emilio
+Prades Bel, CC BY-SA 4.0 (Wikimedia Commons), amb el crèdit al peu de foto.
+
+Les pàgines de privacitat de les apps són al repositori de cada app.
 
 Publicada a https://mario_escuder.codeberg.page/abelluco/ (provisional:
 el codi sortirà de Codeberg).
@@ -11,9 +24,10 @@ el codi sortirà de Codeberg).
 ## Estructura
 
 ```
-index.html          La pàgina (els textos en català fan de clau de traducció)
+*.html              Les pàgines; la capçalera i el peu es repeteixen a cada una
+                    (els textos en català fan de clau de traducció)
 css/estils.css      Disposició; colors, botons i selector d'idioma del nucli
-js/app.js           Tradueix la pàgina amb el sistema d'idiomes del nucli
+js/app.js           Tradueix cada pàgina amb el sistema d'idiomes del nucli
 js/i18n/es.js, en.js
 img/                Marca i icones de les apps (copiades de cada app)
 nucli/              Còpia del nucli (./actualitzar-nucli.sh)

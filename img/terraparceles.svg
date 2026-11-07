@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#396a49"/>
+  <!-- Unes quantes parcel·les vistes des de dalt; la destacada, amb la xinxeta -->
+  <rect x="96" y="96" width="320" height="320" rx="28" fill="#f3f1ea"/>
+  <path d="M96 124 Q96 96 124 96 L236 96 L214 236 L96 250 Z" fill="#cfe0b8" stroke="#396a49" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M236 96 L388 96 Q416 96 416 124 L416 214 L214 236 Z" fill="#dfe8cf" stroke="#396a49" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M96 250 L214 236 L196 416 L124 416 Q96 416 96 388 Z" fill="#dfe8cf" stroke="#396a49" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M214 236 L416 214 L416 388 Q416 416 388 416 L196 416 Z" fill="#e8452c" fill-opacity="0.22" stroke="#e8452c" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M306 370 C306 370 262 326 262 296 A44 44 0 0 1 350 296 C350 326 306 370 306 370 Z" fill="#e8452c" stroke="#ffffff" stroke-width="10" stroke-linejoin="round"/>
+  <circle cx="306" cy="296" r="15" fill="#ffffff"/>
+</svg>

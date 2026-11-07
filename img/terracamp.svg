@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#396a49"/>
+  <!-- Un camp vist des de dalt, amb el polígon mesurat (vermell) i els vèrtexs -->
+  <rect x="96" y="96" width="320" height="320" rx="28" fill="#f3f1ea"/>
+  <path d="M96 300 L416 236 L416 388 Q416 416 388 416 L124 416 Q96 416 96 388 Z" fill="#cfe0b8"/>
+  <path d="M96 210 L250 96 L124 96 Q96 96 96 124 Z" fill="#dfe8cf"/>
+  <path d="M150 178 L318 138 L372 286 L246 372 L140 318 Z" fill="#e8452c" fill-opacity="0.18" stroke="#e8452c" stroke-width="16" stroke-linejoin="round"/>
+  <g fill="#ffffff" stroke="#e8452c" stroke-width="10">
+    <circle cx="150" cy="178" r="20"/>
+    <circle cx="318" cy="138" r="20"/>
+    <circle cx="372" cy="286" r="20"/>
+    <circle cx="140" cy="318" r="20"/>
+  </g>
+  <!-- El vèrtex que s'està prenent, amb el cercle de precisió -->
+  <circle cx="246" cy="372" r="44" fill="#2f7de1" fill-opacity="0.2"/>
+  <circle cx="246" cy="372" r="20" fill="#2f7de1" stroke="#ffffff" stroke-width="9"/>
+</svg>

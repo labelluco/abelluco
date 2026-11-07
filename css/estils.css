@@ -5,7 +5,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 72px;
+  scroll-padding-top: 120px;
 }
 
 body {
@@ -128,13 +128,24 @@ p {
   height: 1.2rem;
 }
 
+/* Al mòbil, la navegació va en una segona fila sota el logotip i l'idioma. */
+.capcalera__fila {
+  flex-wrap: wrap;
+  row-gap: 0;
+}
+
 .navegacio {
-  display: none;
-  gap: var(--espai-m);
-  margin-left: auto;
+  order: 3;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--espai-s);
+  width: 100%;
+  padding-bottom: var(--espai-xs);
 }
 
 .navegacio a {
+  padding: var(--espai-xxs) 0;
+  border-bottom: 2px solid transparent;
   color: var(--color-text);
   text-decoration: none;
   font-weight: 600;
@@ -145,13 +156,27 @@ p {
   color: var(--color-primari);
 }
 
+.navegacio a[aria-current="page"] {
+  color: var(--color-primari-fosc);
+  border-bottom-color: var(--color-primari);
+}
+
 .capcalera .selector-idioma {
   margin-left: auto;
 }
 
 @media (min-width: 720px) {
+  .capcalera__fila {
+    flex-wrap: nowrap;
+  }
+
   .navegacio {
-    display: flex;
+    order: 0;
+    width: auto;
+    padding-bottom: 0;
+    justify-content: flex-start;
+    gap: var(--espai-m);
+    margin-left: auto;
   }
 
   .capcalera .selector-idioma {
@@ -381,29 +406,6 @@ p {
   color: var(--color-text-mut);
 }
 
-/* --- Codi lliure --- */
-.codi-lliure {
-  display: grid;
-  gap: var(--espai-m);
-  align-items: center;
-}
-
-.codi-lliure p {
-  max-width: 40em;
-  color: var(--color-text-mut);
-  font-size: 1.05rem;
-}
-
-.codi-lliure .boto {
-  justify-self: start;
-}
-
-@media (min-width: 720px) {
-  .codi-lliure {
-    grid-template-columns: 1fr auto;
-  }
-}
-
 /* --- Peu --- */
 .peu {
   padding: var(--espai-l) 0;
@@ -418,4 +420,524 @@ p {
   gap: var(--espai-xs) var(--espai-m);
   align-items: center;
   justify-content: space-between;
+}
+
+@media (min-width: 720px) {
+  html {
+    scroll-padding-top: 88px;
+  }
+}
+
+/* =====================================================================
+   Pàgines interiors (Apps, Serveis, Qui soc) i blocs compartits
+   ===================================================================== */
+
+/* --- Capçalera d'una pàgina interior --- */
+.capcalera-pagina {
+  padding: 3rem 0 2rem;
+}
+
+.capcalera-pagina h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+}
+
+.capcalera-pagina p {
+  max-width: 40em;
+  font-size: 1.1rem;
+  color: var(--color-text-mut);
+}
+
+/* --- Graella de tres (què faig, serveis) --- */
+.graella-blocs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--espai-s);
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.bloc {
+  display: flex;
+  flex-direction: column;
+  padding: var(--espai-m);
+  border: 1px solid var(--color-vora);
+  border-radius: var(--radi-gran);
+  background-color: var(--color-superficie);
+  box-shadow: var(--ombra);
+}
+
+.bloc p {
+  color: var(--color-text-mut);
+}
+
+.bloc__icona {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: var(--espai-s);
+  border-radius: 14px;
+  background-color: var(--color-primari-suau);
+  color: var(--color-primari);
+}
+
+.bloc__icona svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.bloc ul {
+  margin: 0 0 var(--espai-s);
+  padding-left: 1.1rem;
+  color: var(--color-text-mut);
+}
+
+.bloc li + li {
+  margin-top: var(--espai-xxs);
+}
+
+.bloc__enllac {
+  margin-top: auto;
+  align-self: flex-start;
+  font-weight: 700;
+  color: var(--color-primari);
+  text-decoration: none;
+}
+
+.bloc__enllac::after {
+  content: " →";
+}
+
+.bloc__enllac:hover {
+  text-decoration: underline;
+}
+
+/* --- Presentació (text a dues columnes) --- */
+.presentacio {
+  display: grid;
+  gap: var(--espai-m);
+  align-items: start;
+}
+
+.presentacio p {
+  max-width: 40em;
+  font-size: 1.05rem;
+}
+
+@media (min-width: 900px) {
+  .presentacio {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+/* --- Trajectòria (línia de temps) --- */
+.trajectoria {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-left: 2px solid var(--color-vora);
+}
+
+.trajectoria li {
+  position: relative;
+  padding: 0 0 var(--espai-m) var(--espai-m);
+}
+
+.trajectoria li::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 0.35em;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-primari);
+  box-shadow: 0 0 0 3px var(--color-fons);
+}
+
+.trajectoria__anys {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.trajectoria h3 {
+  margin: 0.1rem 0 0.2rem;
+}
+
+.trajectoria p {
+  margin: 0;
+  color: var(--color-text-mut);
+}
+
+/* --- Decàleg de la IA --- */
+.decaleg {
+  margin: var(--espai-m) 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: decaleg;
+  display: grid;
+  gap: var(--espai-m) var(--espai-l);
+}
+
+/* Deu punts: en dues columnes (en tres, el desè quedaria sol). */
+@media (min-width: 760px) {
+  .decaleg {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.decaleg li {
+  counter-increment: decaleg;
+  position: relative;
+  padding-left: 3rem;
+}
+
+.decaleg li::before {
+  content: counter(decaleg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: grid;
+  place-items: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background-color: var(--color-primari);
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.decaleg p {
+  margin: 0;
+  color: var(--color-text-mut);
+}
+
+/* --- Crida al contacte --- */
+.crida {
+  padding: 3rem 0;
+  background-color: var(--color-primari-fosc);
+  color: #e9efe9;
+}
+
+.crida h2 {
+  color: #ffffff;
+}
+
+.crida p {
+  max-width: 36em;
+  font-size: 1.05rem;
+}
+
+.crida .boto {
+  margin-top: var(--espai-xs);
+}
+
+/* --- Peu: enllaços --- */
+.peu__enllacos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espai-s);
+}
+
+.peu__enllacos a {
+  color: var(--color-text-mut);
+  text-decoration: none;
+}
+
+.peu__enllacos a:hover {
+  color: var(--color-primari);
+}
+
+/* --- Portada amb foto de fons (la vall del Millars, foto de Mario) --- */
+.portada--foto {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: min(78vh, 640px);
+  background:
+    linear-gradient(90deg, rgba(243, 241, 234, 0.96) 0%, rgba(243, 241, 234, 0.92) 46%, rgba(243, 241, 234, 0.3) 78%, rgba(243, 241, 234, 0) 100%),
+    url("../img/portada-millars.jpg") center 30% / cover no-repeat;
+}
+
+.portada--foto .portada__fila {
+  grid-template-columns: 1fr;
+}
+
+.portada--foto .portada__text {
+  max-width: 36rem;
+}
+
+/* Al mòbil el text ocupa tota l'amplada: la vela clara el cobreix sencer. */
+@media (max-width: 719px) {
+  .portada--foto {
+    background:
+      linear-gradient(180deg, rgba(243, 241, 234, 0.94) 0%, rgba(243, 241, 234, 0.86) 70%, rgba(243, 241, 234, 0.55) 100%),
+      url("../img/portada-millars.jpg") center 30% / cover no-repeat;
+  }
+}
+
+/* Cinc fitxes: dues per fila en tauleta (la cinquena, sola i ampla) i, en
+   pantalla gran, tres a dalt i dues a baix, centrades en una graella de sis. */
+@media (min-width: 640px) {
+  .graella-blocs--cinc {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .graella-blocs--cinc > :last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1000px) {
+  .graella-blocs--cinc {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .graella-blocs--cinc > * {
+    grid-column: span 2;
+  }
+
+  .graella-blocs--cinc > :nth-child(4),
+  .graella-blocs--cinc > :nth-child(5) {
+    grid-column: span 3;
+  }
+}
+
+/* --- Carrusel de les apps (portada) --- */
+.carrusel__capcalera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--espai-m);
+}
+
+.carrusel__capcalera .avantitol {
+  margin: 0;
+}
+
+.carrusel__fletxes {
+  display: flex;
+  gap: var(--espai-xs);
+}
+
+.carrusel__fletxa {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color var(--transicio);
+}
+
+.carrusel__fletxa:hover,
+.carrusel__fletxa:focus-visible {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.carrusel__fletxa svg {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.carrusel__pista {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+
+.carrusel__pista::-webkit-scrollbar {
+  display: none;
+}
+
+.carrusel__fitxa {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  padding: 0 2px;
+  /* Que l'ombra de la icona no es vegi a la vora de la fitxa veïna. */
+  clip-path: inset(-60px 0);
+}
+
+.carrusel__punts {
+  display: flex;
+  justify-content: center;
+  gap: var(--espai-xs);
+  margin-top: var(--espai-l);
+}
+
+.carrusel__punt {
+  width: 0.7rem;
+  height: 0.7rem;
+  padding: 0;
+  border: none;
+  border-radius: var(--radi-rodo);
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: width var(--transicio), background-color var(--transicio);
+}
+
+.carrusel__punt[aria-current="true"] {
+  width: 2rem;
+  background-color: #e8b54a;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carrusel__pista {
+    scroll-behavior: auto;
+  }
+}
+
+/* --- Logotips dels clients --- */
+.clients__titol {
+  text-align: center;
+  margin-bottom: var(--espai-l);
+}
+
+.logos-clients {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--espai-l) 4rem;
+}
+
+.logo-client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espai-xs);
+  max-width: 16rem;
+  text-align: center;
+}
+
+/* Els logotips, en gris fins que s'hi passa per sobre (com a les webs). */
+.logo-client img {
+  height: 86px;
+  width: auto;
+  filter: grayscale(1);
+  opacity: 0.75;
+  transition: filter var(--transicio), opacity var(--transicio);
+}
+
+.logo-client:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+/* --- Qui soc: presentació amb foto --- */
+.seccio--sense-dalt {
+  padding-top: 0;
+}
+
+.presentacio--foto {
+  align-items: center;
+}
+
+.presentacio__text p {
+  font-size: 1.1rem;
+}
+
+.foto {
+  margin: 0;
+}
+
+.foto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radi-gran);
+  box-shadow: var(--ombra-flotant);
+}
+
+.foto figcaption {
+  margin-top: var(--espai-xs);
+  font-size: 0.8rem;
+}
+
+.foto figcaption a {
+  color: var(--color-text-mut);
+  text-decoration: none;
+}
+
+.foto figcaption a:hover {
+  text-decoration: underline;
+}
+
+/* --- Contacte --- */
+.contacte {
+  display: grid;
+  gap: var(--espai-l);
+  align-items: start;
+}
+
+.contacte__correu .boto {
+  align-self: flex-start;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.contacte__detalls h2 {
+  font-size: 1.3rem;
+}
+
+.contacte__detalls h2 + * {
+  margin-bottom: var(--espai-l);
+}
+
+@media (min-width: 900px) {
+  .contacte {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+/* --- Apps: grups i apps en desenvolupament --- */
+.apps__grup {
+  margin-top: var(--espai-l);
+  font-size: 1.4rem;
+}
+
+.apps__grup + .graella-apps {
+  margin-top: var(--espai-s);
+}
+
+/* En gris i sense ombra: es veu que hi són però que encara no es poden fer servir. */
+.targeta-app--desenvolupament {
+  border-style: dashed;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.targeta-app--desenvolupament:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.targeta-app--desenvolupament img {
+  filter: grayscale(1);
+  opacity: 0.6;
+}
+
+.targeta-app--desenvolupament h3,
+.targeta-app--desenvolupament .targeta-app__pregunta {
+  color: var(--color-text-mut);
+}
+
+.targeta-app__estat {
+  align-self: flex-start;
 }

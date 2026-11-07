@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#396a49"/>
+  <!-- Un camp vist des de dalt amb la principal, una tuberia de zona i les línies de goteig -->
+  <rect x="96" y="96" width="320" height="320" rx="28" fill="#f3f1ea"/>
+  <g stroke="#1f9d4c" stroke-width="10" stroke-linecap="round">
+    <path d="M200 150H130M200 200H130M200 250H130M200 300H130M200 350H130"/>
+    <path d="M212 150H282M212 200H282M212 250H282"/>
+  </g>
+  <g stroke="#d8362a" stroke-width="10" stroke-linecap="round">
+    <path d="M212 300H282M212 350H282"/>
+  </g>
+  <path d="M206 120V384" stroke="#2f6f8f" stroke-width="16" stroke-linecap="round"/>
+  <path d="M120 390H392" stroke="#2f6f8f" stroke-width="22" stroke-linecap="round"/>
+  <!-- La gota -->
+  <path d="M360 120s44 48 44 80a44 44 0 0 1-88 0c0-32 44-80 44-80z" fill="#2f6f8f"/>
+</svg>
