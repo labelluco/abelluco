@@ -18,8 +18,7 @@ Prades Bel, CC BY-SA 4.0 (Wikimedia Commons), amb el crèdit al peu de foto.
 
 Les pàgines de privacitat de les apps són al repositori de cada app.
 
-Publicada a https://mario_escuder.codeberg.page/abelluco/ (provisional:
-el codi sortirà de Codeberg).
+Publicada a https://labelluco.github.io/abelluco/.
 
 ## Estructura
 
@@ -35,12 +34,8 @@ nucli/              Còpia del nucli (./actualitzar-nucli.sh)
 
 ## Publicar
 
-```
-./publicar.sh "Missatge del commit"
-```
-
-Verifica, puja `main` i la porta a la branca `pages`, que és la que serveix
-Codeberg Pages (webhook Forgejo, només push, filtre `pages`).
+El codi és a https://github.com/labelluco/abelluco (públic). Cada push a
+`main` el publica GitHub Pages a **https://labelluco.github.io/abelluco/**.
 
 ## Provar en local
 
