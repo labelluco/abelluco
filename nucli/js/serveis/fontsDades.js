@@ -6,12 +6,13 @@
 // Cada font ofereix:
 //   graella(requadre, pas)  -> graella d'altituds (vegeu ServeiMDT)
 //   textura(requadre, maxPixels?) -> { url, requadre, aUV? } per al visor 3D
+//   carregarTextura(...)    -> el mateix, asíncron (opcional; més ràpid)
 //   pasMinim                -> no té sentit un pas més fi que les dades
 //   etiqueta, atribucio     -> per explicar-ho a la persona usuària
 
 import { ServeiMDT } from './mdt.js';
 import { ServeiMDTMundial } from './mdtMundial.js';
-import { urlOrtofoto, urlSentinel2, ATRIBUCIO_PNOA, ATRIBUCIO_SENTINEL2 } from './ortofoto.js';
+import { urlOrtofoto, urlSentinel2, texturaPnoaTesseles, ATRIBUCIO_PNOA, ATRIBUCIO_SENTINEL2 } from './ortofoto.js';
 import { utmALatLng } from '../geometria/projeccio.js';
 import { paisDe } from '../paisos/paisos.js';
 
@@ -29,6 +30,17 @@ export function fontIGN(crs) {
     atribucio: `${ATRIBUCIO_MDT_IGN}. ${ATRIBUCIO_PNOA}`,
     graella: (requadre, pas) => ServeiMDT.consultarGraella(requadre, pas, crs),
     textura: (requadre, maxPixels = 2048) => ({ url: urlOrtofoto(requadre, maxPixels, crs).url, requadre }),
+    // Asíncrona i preferible: amb tessel·les WMTS, que arriben de seguida;
+    // si fallen, la de sempre (el WMS, que pot trigar mig minut).
+    carregarTextura: async (requadre, maxPixels = 2048) => {
+      try {
+        const { url, aUV } = await texturaPnoaTesseles(requadre, maxPixels, (punt) => utmALatLng(punt, crs));
+        return { url, requadre, aUV };
+      } catch (error) {
+        console.warn(error);
+        return { url: urlOrtofoto(requadre, maxPixels, crs).url, requadre };
+      }
+    },
   };
 }
 

@@ -80,7 +80,14 @@ export async function generarModel(zona, detall, onProgres = () => {}, { maxPixe
     maxX: modelUtm.limits.maxX + 1,
     maxY: modelUtm.limits.maxY + 1,
   };
-  let textura = font.textura(requadreTextura, maxPixelsTextura);
+  let textura = font.carregarTextura
+    ? await font.carregarTextura(requadreTextura, maxPixelsTextura)
+    : font.textura(requadreTextura, maxPixelsTextura);
+  // Coordenades de textura en UTM, sense cap gir: un altre model de la
+  // mateixa zona (p. ex. a una altra resolució, vegeu mosaic.js) hi troba
+  // les seves desfent el seu propi gir.
+  const { minX: tx0, minY: ty0, maxX: tx1, maxY: ty1 } = requadreTextura;
+  textura.aUVUtm = textura.aUV ?? ((x, y) => [(x - tx0) / (tx1 - tx0), (y - ty0) / (ty1 - ty0)]);
   let model = modelUtm;
 
   // Zona girada respecte a la quadrícula (rectangle recte a la pantalla):
@@ -88,9 +95,7 @@ export async function generarModel(zona, detall, onProgres = () => {}, { maxPixe
   // girat troba la seva coordenada de textura desfent el gir.
   if (zona.rotacio) {
     model = girarModel(modelUtm, -zona.rotacio);
-    const { minX, minY, maxX, maxY } = requadreTextura;
-    const uvOriginal =
-      textura.aUV ?? ((x, y) => [(x - minX) / (maxX - minX), (y - minY) / (maxY - minY)]);
+    const uvOriginal = textura.aUVUtm;
     textura = { ...textura, aUV: (x, y) => uvOriginal(...desferGir([x, y], model.gir)) };
   }
 

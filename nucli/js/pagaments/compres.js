@@ -4,9 +4,9 @@
 // la Play Store, on Google obliga a fer servir Play Billing) i per un
 // proveïdor web (Lemon Squeezy, Paddle...) quan s'obre al navegador.
 //
-// Límit honest d'aquest disseny: el codi és lliure (AGPL) i tot passa
-// al dispositiu, de manera que algú amb coneixements pot saltar-se el
-// bloqueig. Una verificació forta necessitaria un servidor propi que
+// Límit honest d'aquest disseny: el codi arriba sencer al dispositiu (a la
+// web, com a JavaScript) i tot hi passa, de manera que algú amb
+// coneixements pot saltar-se el bloqueig. Una verificació forta necessitaria un servidor propi que
 // validi els rebuts; la interfície ja està pensada perquè es pugui
 // afegir dins d'un proveïdor sense tocar les apps.
 //

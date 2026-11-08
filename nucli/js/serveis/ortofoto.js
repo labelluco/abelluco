@@ -12,6 +12,10 @@
 // Tots dos admeten CORS (comprovat el 2026-10-17) i es poden fer servir
 // com a textura WebGL. Aquí només es construeix l'URL: carregar-la és
 // cosa de la interfície.
+//
+//  - texturaPnoaTesseles: la mateixa PNOA, però feta amb tessel·les WMTS ja
+//    fetes en lloc d'una imatge del WMS, que pot trigar mig minut (vegeu
+//    més avall). És la que fa servir generarModel.
 
 const URL_WMS_PNOA = 'https://www.ign.es/wms-inspire/pnoa-ma';
 const URL_WMS_EOX = 'https://tiles.maps.eox.at/wms';
@@ -81,4 +85,114 @@ export function urlSentinel2(requadre, maxPixels = 1024) {
     FORMAT: 'image/jpeg',
   });
   return { url: `${URL_WMS_EOX}?${params.toString()}`, amplada, alcada };
+}
+
+// --- PNOA per tessel·les (WMTS) ---------------------------------------
+//
+// El WMS fa la imatge a cada petició: per a una zona nova pot trigar més de
+// 30 s (33 s al mòbil, comprovat el 2026-11-05), i a l'app d'Android la
+// càrrega acabava fallant i el model sortia sense ortofoto. El WMTS dona
+// tessel·les ja fetes (en desenes de mil·lisegons, amb CORS i un any de
+// memòria cau): les mateixes que el mapa. Aquí s'ajunten en un canvas.
+
+const URL_WMTS_PNOA =
+  'https://www.ign.es/wmts/pnoa-ma?request=GetTile&service=WMTS&version=1.0.0' +
+  '&layer=OI.OrthoimageCoverage&style=default&tilematrixset=GoogleMapsCompatible&format=image/jpeg';
+// L'IGN té la PNOA al WMTS fins al zoom 20 (comprovat el 2026-10-28).
+const ZOOM_MAXIM_WMTS = 20;
+const COSTAT_TESSELLA = 256;
+// Si en falten més d'aquesta part, la imatge no serveix (es farà amb el WMS).
+const FRACCIO_TESSELLES_FALLIDES_MAXIMA = 0.1;
+const TEMPS_MAXIM_TESSELLA_MS = 20000;
+
+/** Píxel Web Mercator (a un zoom) d'un punt [lat, lng]. */
+function pixelMercator([lat, lng], zoom) {
+  const mida = COSTAT_TESSELLA * 2 ** zoom;
+  const sinLat = Math.sin((lat * Math.PI) / 180);
+  return [((lng + 180) / 360) * mida, (0.5 - Math.log((1 + sinLat) / (1 - sinLat)) / (4 * Math.PI)) * mida];
+}
+
+function carregarImatge(url) {
+  return new Promise((resoldre, rebutjar) => {
+    const imatge = new Image();
+    imatge.crossOrigin = 'anonymous';
+    const temps = setTimeout(() => {
+      imatge.src = '';
+      rebutjar(new Error('temps esgotat'));
+    }, TEMPS_MAXIM_TESSELLA_MS);
+    imatge.onload = () => {
+      clearTimeout(temps);
+      resoldre(imatge);
+    };
+    imatge.onerror = () => {
+      clearTimeout(temps);
+      rebutjar(new Error(`no s'ha pogut carregar ${url}`));
+    };
+    imatge.src = url;
+  });
+}
+
+/**
+ * Ortofoto PNOA d'un requadre feta amb tessel·les WMTS, al zoom més alt
+ * que hi cap amb maxPixels. Com que la imatge és en Web Mercator i el model
+ * en UTM, cada vèrtex hi troba la seva coordenada pel seu lat/lng (aUV).
+ *
+ * @param {{minX: number, minY: number, maxX: number, maxY: number}} requadre En metres, en el sistema crs
+ * @param {number} maxPixels Costat més llarg de la imatge
+ * @param {(punt: [number, number]) => [number, number]} aLatLng De metres del crs a [lat, lng]
+ * @returns {Promise<{url: string, aUV: (x: number, y: number) => [number, number]}>}
+ *   url: un blob: (JPEG) per a TextureLoader.
+ */
+export async function texturaPnoaTesseles(requadre, maxPixels, aLatLng) {
+  const cantonades = [
+    [requadre.minX, requadre.minY], [requadre.maxX, requadre.minY],
+    [requadre.maxX, requadre.maxY], [requadre.minX, requadre.maxY],
+  ].map(aLatLng);
+
+  // El zoom més alt amb què la imatge no passa de maxPixels de costat.
+  let zoom = ZOOM_MAXIM_WMTS;
+  let x0;
+  let y0;
+  let ample;
+  let alt;
+  for (; zoom >= 1; zoom--) {
+    const pixels = cantonades.map((punt) => pixelMercator(punt, zoom));
+    x0 = Math.floor(Math.min(...pixels.map(([x]) => x)));
+    y0 = Math.floor(Math.min(...pixels.map(([, y]) => y)));
+    ample = Math.ceil(Math.max(...pixels.map(([x]) => x))) - x0;
+    alt = Math.ceil(Math.max(...pixels.map(([, y]) => y))) - y0;
+    if (Math.max(ample, alt) <= maxPixels) break;
+  }
+
+  const canvas = document.createElement('canvas');
+  canvas.width = Math.max(1, ample);
+  canvas.height = Math.max(1, alt);
+  const ctx = canvas.getContext('2d');
+  const tessellesX = [Math.floor(x0 / COSTAT_TESSELLA), Math.floor((x0 + ample - 1) / COSTAT_TESSELLA)];
+  const tessellesY = [Math.floor(y0 / COSTAT_TESSELLA), Math.floor((y0 + alt - 1) / COSTAT_TESSELLA)];
+  const peticions = [];
+  for (let ty = tessellesY[0]; ty <= tessellesY[1]; ty++) {
+    for (let tx = tessellesX[0]; tx <= tessellesX[1]; tx++) {
+      const url = `${URL_WMTS_PNOA}&tilematrix=${zoom}&tilerow=${ty}&tilecol=${tx}`;
+      peticions.push(
+        carregarImatge(url).then((imatge) =>
+          ctx.drawImage(imatge, tx * COSTAT_TESSELLA - x0, ty * COSTAT_TESSELLA - y0)
+        )
+      );
+    }
+  }
+  const resultats = await Promise.allSettled(peticions);
+  const fallides = resultats.filter((r) => r.status === 'rejected').length;
+  if (fallides > resultats.length * FRACCIO_TESSELLES_FALLIDES_MAXIMA) {
+    throw new Error(`texturaPnoaTesseles: han fallat ${fallides} de ${resultats.length} tessel·les`);
+  }
+
+  const blob = await new Promise((resoldre) => canvas.toBlob(resoldre, 'image/jpeg', 0.92));
+  return {
+    url: URL.createObjectURL(blob),
+    aUV: (x, y) => {
+      const [px, py] = pixelMercator(aLatLng([x, y]), zoom);
+      return [(px - x0) / ample, 1 - (py - y0) / alt];
+    },
+  };
 }

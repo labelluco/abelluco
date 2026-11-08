@@ -3,9 +3,13 @@
 //
 // Amb ambMon, l'ortofoto també cobreix la resta del món: a sota hi ha
 // Sentinel-2 cloudless 2016 d'EOX (10 m, llicència CC BY 4.0) i, a sobre,
-// la PNOA en PNG transparent: fora d'Espanya el WMS de l'IGN retorna
-// imatges buides (comprovat el 2026-10-17), i s'hi veu Sentinel-2. Sense
-// ambMon (Custòdia) tot queda com abans: PNOA en JPEG, més lleugera.
+// la PNOA en PNG transparent: fora d'Espanya l'IGN retorna tessel·les
+// buides (comprovat el 2026-10-17), i s'hi veu Sentinel-2. Sense ambMon
+// (Custòdia) tot queda com abans: PNOA en JPEG, més lleugera.
+//
+// La PNOA es demana al WMTS de l'IGN (tessel·les ja fetes, 0,15-0,25 s
+// cadascuna) i no al WMS (les pinta a cada petició, 0,4-0,7 s): comprovat
+// el 2026-10-28, té les mateixes imatges fins al zoom 20.
 //
 // L'app tria la capa amb canviarCapa(); no s'hi posa el control de capes
 // de Leaflet perquè cada app el pugui integrar al seu propi disseny.
@@ -33,15 +37,22 @@ export function crearMapaBase(idContenidor, { centre = [40.2, -1.2], zoom = 6, a
     mapa.getContainer().appendChild(bruixola);
   }
 
-  const pnoa = L.tileLayer.wms('https://www.ign.es/wms-inspire/pnoa-ma?', {
-    layers: 'OI.OrthoimageCoverage',
-    format: ambMon ? 'image/png' : 'image/jpeg',
-    transparent: ambMon,
-    // Amb ambMon, per sobre de Sentinel-2 (zIndex 0) dins del mateix grup.
-    zIndex: 1,
-    maxZoom: 20,
-    attribution: 'PNOA &copy; <a href="https://www.ign.es">IGN</a>',
-  });
+  const pnoa = L.tileLayer(
+    'https://www.ign.es/wmts/pnoa-ma?request=GetTile&service=WMTS&version=1.0.0' +
+      '&layer=OI.OrthoimageCoverage&style=default&tilematrixset=GoogleMapsCompatible' +
+      '&format={format}&tilematrix={z}&tilerow={y}&tilecol={x}',
+    {
+      format: ambMon ? 'image/png' : 'image/jpeg',
+      // Amb ambMon, per sobre de Sentinel-2 (zIndex 0) dins del mateix grup,
+      // i només des del zoom 9: a les vistes de país Sentinel-2 n'hi ha prou,
+      // i així no es carreguen desenes de PNG de 160 KB en obrir l'app.
+      zIndex: 1,
+      minZoom: ambMon ? 9 : 0,
+      maxZoom: 20,
+      maxNativeZoom: 20,
+      attribution: 'PNOA &copy; <a href="https://www.ign.es">IGN</a>',
+    }
+  );
 
   const capes = {
     mapa: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -70,7 +81,10 @@ export function crearMapaBase(idContenidor, { centre = [40.2, -1.2], zoom = 6, a
       const punts = [limits.getNorthWest(), limits.getNorthEast(), limits.getSouthWest(), limits.getSouthEast(), limits.getCenter()];
       const totDins = punts.every(({ lat, lng }) => PAISOS.espanya.conte([lat, lng]));
       const format = totDins ? 'image/jpeg' : 'image/png';
-      if (pnoa.wmsParams.format !== format) pnoa.setParams({ format, transparent: !totDins });
+      if (pnoa.options.format !== format) {
+        pnoa.options.format = format;
+        pnoa.redraw();
+      }
     };
     mapa.on('moveend', ajustarFormat);
     ajustarFormat();
@@ -102,15 +116,11 @@ export function crearMapaBase(idContenidor, { centre = [40.2, -1.2], zoom = 6, a
     if (nom === 'mapa') return `https://tile.openstreetmap.org/${zoom}/${x}/${y}.png`;
 
     const { lat, lng } = mapa.getCenter();
-    if (!ambMon || PAISOS.espanya.conte([lat, lng])) {
-      // PNOA: la mateixa tessel·la, demanada al WMS pel seu requadre Web Mercator.
-      const costat = 40075016.686 / total;
-      const minX = -20037508.343 + x * costat;
-      const maxY = 20037508.343 - y * costat;
+    if (!ambMon || (mapa.getZoom() >= 9 && PAISOS.espanya.conte([lat, lng]))) {
       return (
-        'https://www.ign.es/wms-inspire/pnoa-ma?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap' +
-        '&LAYERS=OI.OrthoimageCoverage&STYLES=&CRS=EPSG:3857&WIDTH=256&HEIGHT=256&FORMAT=image/jpeg' +
-        `&BBOX=${minX},${maxY - costat},${minX + costat},${maxY}`
+        'https://www.ign.es/wmts/pnoa-ma?request=GetTile&service=WMTS&version=1.0.0' +
+        '&layer=OI.OrthoimageCoverage&style=default&tilematrixset=GoogleMapsCompatible' +
+        `&format=image/jpeg&tilematrix=${zoom}&tilerow=${y}&tilecol=${x}`
       );
     }
     return `https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless_3857/default/g/${zoom}/${y}/${x}.jpg`;
