@@ -16,7 +16,7 @@ Imatges de tercers: logotips dels clients a `img/clients/` (el del CITA, de
 la seva pàgina d'identitat corporativa) i `img/vall-olba.jpg`, de Juan Emilio
 Prades Bel, CC BY-SA 4.0 (Wikimedia Commons), amb el crèdit al peu de foto.
 
-Les pàgines de privacitat de les apps són al repositori de cada app.
+Polítiques de privadesa (`privacitat/<app>.html`) i condicions d'ús (`condicions/<app>.html`, versió provisional pendent de revisió jurídica) de Terra Bloc, Terra Rutes i Terra Parcel·les.
 
 Publicada a https://labelluco.github.io/abelluco/.
 
