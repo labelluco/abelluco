@@ -255,6 +255,12 @@ export const EN = {
     "CITA, Agrifood Research and Technology Centre of Aragon",
   "Proyecto Caravana, companyia de teatre":
     "Proyecto Caravana, theatre company",
+  "Ecograu, agricultura ecològica":
+    "Ecograu, organic farming",
+  "Soc soci de":
+    "I am a member of",
+  ", una cooperativa de treball de l'economia social: els encàrrecs i les apps es facturen a través de la cooperativa.":
+    ", a social economy worker cooperative: commissions and apps are invoiced through the cooperative.",
 
   // Qui soc i contacte
   "Contacte · L'Abelluco":

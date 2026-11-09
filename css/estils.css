@@ -406,6 +406,11 @@ p {
   color: var(--color-text-mut);
 }
 
+.valors__cooperativa {
+  margin: var(--espai-l) 0 0;
+  color: var(--color-text-mut);
+}
+
 /* --- Peu --- */
 .peu {
   padding: var(--espai-l) 0;
