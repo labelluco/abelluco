@@ -806,6 +806,35 @@ p {
 }
 
 /* --- Logotips dels clients --- */
+.clients__columnes {
+  display: grid;
+  gap: var(--espai-xl, 3rem);
+}
+
+/* A l'ordinador: clients a l'esquerra i xarxes a la dreta, separats per una línia */
+@media (min-width: 900px) {
+  .clients__columnes {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  .clients__bloc--xarxes {
+    padding-left: var(--espai-l);
+    border-left: 1px solid var(--color-vora, rgba(0, 0, 0, 0.1));
+  }
+}
+
+/* Logotips que només són text (com el de Smart Ibérica): més baixos perquè no pesin més que els altres */
+.logo-client.logo-client--paraula img {
+  height: 52px;
+}
+
+/* Que el logotip de text quedi centrat a l'altura dels altres (86 px) */
+.clients__bloc--xarxes .logos-clients {
+  min-height: 86px;
+  align-items: center;
+}
+
 .clients__titol {
   text-align: center;
   margin-bottom: var(--espai-l);

@@ -257,6 +257,10 @@ export const EN = {
     "Proyecto Caravana, theatre company",
   "Ecograu, agricultura ecològica":
     "Ecograu, organic farming",
+  "Formo part de":
+    "Member of",
+  "Smart Ibérica, cooperativa de treball":
+    "Smart Ibérica, worker cooperative",
   "Soc soci de":
     "I am a member of",
   ", una cooperativa de treball de l'economia social: els encàrrecs i les apps es facturen a través de la cooperativa.":
