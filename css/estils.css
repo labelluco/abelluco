@@ -806,33 +806,24 @@ p {
 }
 
 /* --- Logotips dels clients --- */
+/* Dues columnes (clients i xarxes) una al costat de l'altra; al mòbil, una
+   sota l'altra amb espai entre totes dues. */
 .clients__columnes {
   display: grid;
-  gap: var(--espai-xl, 3rem);
+  gap: 3rem;
 }
 
-/* A l'ordinador: clients a l'esquerra i xarxes a la dreta, separats per una línia */
-@media (min-width: 900px) {
+@media (min-width: 720px) {
   .clients__columnes {
     grid-template-columns: 2fr 1fr;
     align-items: start;
+    gap: 2rem;
   }
 
   .clients__bloc--xarxes {
-    padding-left: var(--espai-l);
+    padding-left: 2rem;
     border-left: 1px solid var(--color-vora, rgba(0, 0, 0, 0.1));
   }
-}
-
-/* Logotips que només són text (com el de Smart Ibérica): més baixos perquè no pesin més que els altres */
-.logo-client.logo-client--paraula img {
-  height: 52px;
-}
-
-/* Que el logotip de text quedi centrat a l'altura dels altres (86 px) */
-.clients__bloc--xarxes .logos-clients {
-  min-height: 86px;
-  align-items: center;
 }
 
 .clients__titol {
@@ -847,7 +838,8 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var(--espai-l) 4rem;
+  align-items: center;
+  gap: var(--espai-m) 2.5rem;
 }
 
 .logo-client {
@@ -855,14 +847,15 @@ p {
   flex-direction: column;
   align-items: center;
   gap: var(--espai-xs);
-  max-width: 16rem;
+  max-width: 13rem;
   text-align: center;
 }
 
 /* Els logotips, en gris fins que s'hi passa per sobre (com a les webs). */
 .logo-client img {
-  height: 86px;
+  height: 56px;
   width: auto;
+  max-width: 100%;
   filter: grayscale(1);
   opacity: 0.75;
   transition: filter var(--transicio), opacity var(--transicio);
@@ -871,6 +864,16 @@ p {
 .logo-client:hover img {
   filter: none;
   opacity: 1;
+}
+
+/* Logotips que només són text (com el de Smart Ibérica): més baixos perquè
+   no pesin més que els altres, i centrats a la seva altura. */
+.logo-client.logo-client--paraula img {
+  height: 32px;
+}
+
+.clients__bloc--xarxes .logos-clients {
+  min-height: 56px;
 }
 
 /* --- Qui soc: presentació amb foto --- */
