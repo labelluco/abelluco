@@ -275,8 +275,12 @@ export const ES = {
     "Una app, un proyecto con Arduino, un asesoramiento o solo una idea: cuéntame qué necesitas y te responderé con una propuesta clara y un precio justo.",
   "Escriu-me":
     "Escríbeme",
-  "La manera més ràpida de parlar amb mi és el correu.":
-    "La forma más rápida de hablar conmigo es el correo.",
+  "Escriu-me per WhatsApp":
+    "Escríbeme por WhatsApp",
+  "Hola, t'escric des de la web de L'Abelluco.":
+    "Hola, te escribo desde la web de L'Abelluco.",
+  "Escriu-me un correu o un WhatsApp i et respondré tan aviat com pugui.":
+    "Escríbeme un correo o un WhatsApp y te responderé lo antes posible.",
   "Què m'ajuda saber":
     "Qué me ayuda saber",
   "Qui sou i a què us dediqueu":

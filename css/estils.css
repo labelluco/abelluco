@@ -637,8 +637,22 @@ p {
   font-size: 1.05rem;
 }
 
-.crida .boto {
+.crida__botons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espai-s);
   margin-top: var(--espai-xs);
+}
+
+/* Botó secundari sobre fons fosc: només la vora */
+.boto--contorn-clar {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.6);
+  color: #ffffff;
+}
+
+.boto--contorn-clar:hover {
+  background-color: rgba(255, 255, 255, 0.12);
 }
 
 /* --- Peu: enllaços --- */
@@ -926,6 +940,10 @@ p {
   align-self: flex-start;
   max-width: 100%;
   overflow-wrap: anywhere;
+}
+
+.contacte__correu .boto + .boto {
+  margin-top: var(--espai-s);
 }
 
 .contacte__detalls h2 {

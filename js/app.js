@@ -23,6 +23,11 @@ function traduirPagina() {
   document.querySelectorAll('[data-i18n-alt]').forEach((el) => {
     el.alt = t(el.dataset.i18nAlt);
   });
+  // Botons de WhatsApp: el missatge preescrit, en l'idioma de la pàgina.
+  document.querySelectorAll('[data-whatsapp]').forEach((el) => {
+    // encodeURIComponent i no URLSearchParams: WhatsApp no entén «+» com a espai.
+    el.href = el.href.split('?')[0] + '?text=' + encodeURIComponent(t(el.dataset.whatsapp));
+  });
 }
 
 traduirPagina();
