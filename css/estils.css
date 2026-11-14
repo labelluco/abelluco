@@ -717,6 +717,11 @@ p {
   .graella-blocs--cinc > :last-child {
     grid-column: 1 / -1;
   }
+
+  /* Dues fitxes: una al costat de l'altra, ocupant tota l'amplada. */
+  .graella-blocs--dos {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 1000px) {

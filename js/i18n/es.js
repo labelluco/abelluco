@@ -87,8 +87,6 @@ export const ES = {
     "Las apps",
   "Desenvolupament a mida":
     "Desarrollo a medida",
-  "Els serveis de tecnologia":
-    "Los servicios de tecnología",
   "Han confiat en L'Abelluco":
     "Han confiado en L'Abelluco",
   "Parlem del teu projecte":
@@ -105,8 +103,8 @@ export const ES = {
     "Desarrollo de apps para Google Play y a medida, multiplataforma, Arduino, gestión forestal y asesoramiento en educación ambiental y nuevas tecnologías.",
   "Programari, electrònica i coneixement del medi natural per a entitats, cooperatives, centres de recerca, administracions i persones que viuen i treballen al medi rural.":
     "Software, electrónica y conocimiento del medio natural para entidades, cooperativas, centros de investigación, administraciones y personas que viven y trabajan en el medio rural.",
-  "Desenvolupament de programari i electrònica":
-    "Desarrollo de software y electrónica",
+  "Tecnologia":
+    "Tecnología",
   "Apps per a Google Play":
     "Apps para Google Play",
   "Publicació d'apps a Google Play, amb versió gratuïta i funcions de pagament si cal, i manteniment després de llançar-les.":
@@ -125,8 +123,8 @@ export const ES = {
     "formularios e inventarios de campo",
   "catàlegs i bases de dades, com la d'un banc de llavors":
     "catálogos y bases de datos, como la de un banco de semillas",
-  "Territori, medi natural i educació":
-    "Territorio, medio natural y educación",
+  "Educació ambiental i medi natural":
+    "Educación ambiental y medio natural",
   "Gestió forestal i del medi natural":
     "Gestión forestal y del medio natural",
   "Inventaris, cartografia i SIG, anàlisi del relleu i suport a la custòdia del territori.":

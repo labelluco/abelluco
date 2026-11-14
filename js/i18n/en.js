@@ -87,8 +87,6 @@ export const EN = {
     "The apps",
   "Desenvolupament a mida":
     "Custom development",
-  "Els serveis de tecnologia":
-    "Technology services",
   "Han confiat en L'Abelluco":
     "They have trusted L'Abelluco",
   "Parlem del teu projecte":
@@ -105,8 +103,8 @@ export const EN = {
     "Google Play and custom app development, cross-platform, Arduino, forest management and advice on environmental education and new technologies.",
   "Programari, electrònica i coneixement del medi natural per a entitats, cooperatives, centres de recerca, administracions i persones que viuen i treballen al medi rural.":
     "Software, electronics and knowledge of the natural environment for associations, cooperatives, research centres, public bodies and people who live and work in rural areas.",
-  "Desenvolupament de programari i electrònica":
-    "Software and electronics development",
+  "Tecnologia":
+    "Technology",
   "Apps per a Google Play":
     "Apps for Google Play",
   "Publicació d'apps a Google Play, amb versió gratuïta i funcions de pagament si cal, i manteniment després de llançar-les.":
@@ -125,8 +123,8 @@ export const EN = {
     "field forms and inventories",
   "catàlegs i bases de dades, com la d'un banc de llavors":
     "catalogues and databases, such as a seed bank's",
-  "Territori, medi natural i educació":
-    "Land, natural environment and education",
+  "Educació ambiental i medi natural":
+    "Environmental education and the natural environment",
   "Gestió forestal i del medi natural":
     "Forest and natural environment management",
   "Inventaris, cartografia i SIG, anàlisi del relleu i suport a la custòdia del territori.":
