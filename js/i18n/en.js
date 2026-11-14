@@ -17,8 +17,8 @@ export const EN = {
   'Obre Terra Bloc': 'Open Terra Bloc',
 
   "Una família d'apps, una per a cada pregunta": 'A family of apps, one for each question',
-  'Totes comparteixen el mateix mapa, les mateixes dades obertes i la mateixa manera de treballar. Si en saps fer servir una, les saps fer servir totes.':
-    'They all share the same map, the same open data and the same way of working. If you can use one, you can use them all.',
+  'Cada app respon una pregunta concreta sobre el terreny, a partir de dades obertes.':
+    'Each app answers a specific question about the land, using open data.',
   "Obre l'app": 'Open the app',
 
   'Com és aquest terreny en 3D?': 'What does this terrain look like in 3D?',
@@ -41,8 +41,8 @@ export const EN = {
   'Cultius, hivernacles, plaques solars, cases': 'Crops, greenhouses, solar panels, homes',
 
   'Com és aquesta ruta?': 'What is this route like?',
-  "Obre tracks GPX o KML, mira'n el perfil i el relleu 3D, uneix-los i edita'ls.":
-    'Open GPX or KML tracks, see their profile and the 3D terrain, join them and edit them.',
+  "Grava les teves sortides i segueix tracks sobre el mapa. Obre GPX o KML, mira'n el perfil i el relleu 3D, uneix-los i edita'ls.":
+    'Record your outings and follow tracks on the map. Open GPX or KML files, see their profile and the 3D terrain, join them and edit them.',
   'Senderisme, ciclisme, curses de muntanya': 'Hiking, cycling, trail running',
 
   'Com gestiono les meves finques?': 'How do I manage my land?',
