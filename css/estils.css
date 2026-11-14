@@ -690,6 +690,14 @@ p {
   max-width: 36rem;
 }
 
+/* En pantalla gran el títol va en una sola línia en tots els idiomes
+   (en castellà i anglès és més llarg que l'amplada del text). */
+@media (min-width: 1000px) {
+  .portada--foto h1 {
+    white-space: nowrap;
+  }
+}
+
 /* Al mòbil el text ocupa tota l'amplada: la vela clara el cobreix sencer. */
 @media (max-width: 719px) {
   .portada--foto {
