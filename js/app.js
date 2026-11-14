@@ -1,7 +1,7 @@
 // Web de L'Abelluco: tradueix la pàgina (català, castellà i anglès) amb el
 // sistema d'idiomes del nucli, el mateix de les apps, i mou el carrusel.
 // Totes les pàgines (inici, apps, serveis, qui soc) carreguen aquest fitxer.
-import { configurarI18n, aplicarTraduccions, inicialitzarSelectorIdioma, t } from '../nucli/js/i18n/i18n.js';
+import { configurarI18n, aplicarTraduccions, inicialitzarSelectorIdioma, establirIdioma, idiomaActual, idiomes, t } from '../nucli/js/i18n/i18n.js';
 import { ES } from './i18n/es.js';
 import { EN } from './i18n/en.js';
 import { inicialitzarCarrusel } from './carrusel.js';
@@ -12,6 +12,34 @@ configurarI18n({
   perDefecte: 'en',
   diccionaris: { es: ES, en: EN },
 });
+
+// Cada idioma té la seva adreça (?idioma=ca|es|en) perquè els cercadors
+// trobin les tres versions; el sitemap les enllaça amb hreflang. Sense el
+// paràmetre, l'idioma es tria com sempre (preferència desada o navegador).
+const parametres = new URLSearchParams(window.location.search);
+const idiomaUrl = parametres.get('idioma');
+if (idiomes().includes(idiomaUrl)) establirIdioma(idiomaUrl, { recarregar: false });
+
+// Adreça canònica: sense «index.html» i amb l'idioma si la pàgina el porta.
+function posarCanonica() {
+  let enllac = document.querySelector('link[rel="canonical"]');
+  if (!enllac) {
+    enllac = document.createElement('link');
+    enllac.rel = 'canonical';
+    document.head.append(enllac);
+  }
+  const ruta = window.location.pathname.replace(/index\.html$/, '');
+  const idioma = parametres.get('idioma');
+  enllac.href = 'https://labelluco.net' + ruta + (idioma ? '?idioma=' + idioma : '');
+}
+
+// Si la persona canvia d'idioma en una adreça amb ?idioma=, l'adreça el segueix.
+function actualitzarAdreca() {
+  if (!parametres.has('idioma')) return;
+  parametres.set('idioma', idiomaActual());
+  history.replaceState(null, '', '?' + parametres.toString() + window.location.hash);
+  posarCanonica();
+}
 
 function traduirPagina() {
   aplicarTraduccions();
@@ -31,6 +59,10 @@ function traduirPagina() {
 }
 
 traduirPagina();
+posarCanonica();
 inicialitzarSelectorIdioma('selector-idioma', { recarregar: false });
-document.addEventListener('canvi-idioma', traduirPagina);
+document.addEventListener('canvi-idioma', () => {
+  traduirPagina();
+  actualitzarAdreca();
+});
 inicialitzarCarrusel(document.querySelector('.carrusel'));

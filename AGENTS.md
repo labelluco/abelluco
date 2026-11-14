@@ -13,7 +13,9 @@ privadesa i les condicions d'ús de les apps Terra. Pàgines estàtiques, sense 
 ## Estructura
 - `*.html`: les pàgines; la capçalera i el peu es repeteixen a cada una
 - `privacitat/<app>.html`, `condicions/<app>.html`: textos legals de cada app (les URL són a les fitxes de Google Play)
-- `css/estils.css`, `js/app.js` (tradueix cada pàgina), `js/i18n/es.js` i `en.js`, `img/`
+- `css/estils.css`, `js/app.js` (tradueix cada pàgina; `?idioma=ca|es|en` força l'idioma i és l'adreça de cada versió per als cercadors), `js/i18n/es.js` i `en.js`, `img/`
+- `sitemap.xml`: cada pàgina traduïda hi va 4 vegades (sense idioma i amb `?idioma=`), amb hreflang; les pàgines noves s'hi afegeixen igual.
+  Cada pàgina porta etiquetes Open Graph (imatge `img/compartir.jpg`)
 - `nucli/` és una CÒPIA del repositori nucli: no s'edita mai aquí; s'actualitza amb `./actualitzar-nucli.sh`.
 
 ## Normes

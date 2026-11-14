@@ -2,6 +2,7 @@
 
 Una línia per decisió, la més recent a dalt: data — decisió — perquè.
 
+- 2026-11-14 — SEO: cada idioma té adreça pròpia (`?idioma=ca|es|en`, que `js/app.js` aplica i desa) enllaçada amb hreflang al `sitemap.xml` (sense paràmetre = x-default); canònica posada per JS; Open Graph (`img/compartir.jpg`, 1200×630) a les 5 pàgines; JSON-LD `ProfessionalService` a la portada — el robot de Google renderitza en anglès i només indexava aquesta versió; així troba també la castellana i la catalana i en mostra cadascuna a qui la busca
 - 2026-11-14 — Privadesa de la web a `privacitat/web.html` (GoatCounter, idioma desat, GitHub Pages, contacte), enllaçada al peu — explicar les estadístiques i el tractament del contacte
 - 2026-11-14 — Domini propi labelluco.net (fitxer `CNAME`, domini arrel; www redirigeix) a GitHub Pages — la marca ja té domini; GitHub redirigeix sol les adreces antigues de github.io
 - 2026-11-14 — Estadístiques amb GoatCounter (servei allotjat gratuït, codi `labelluco`), sense galetes; `sitemap.xml` i `robots.txt` — sense galetes no cal bàner de consentiment; és gratuït per a petites empreses

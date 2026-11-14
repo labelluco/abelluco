@@ -1,12 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Pàgines de la web per als cercadors. Si afegeixes una pàgina, afegeix-la aquí. -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://labelluco.net/</loc></url>
-  <url><loc>https://labelluco.net/apps.html</loc></url>
-  <url><loc>https://labelluco.net/serveis.html</loc></url>
-  <url><loc>https://labelluco.net/qui-soc.html</loc></url>
-  <url><loc>https://labelluco.net/contacte.html</loc></url>
-  <url><loc>https://labelluco.net/privacitat/web.html</loc></url>
+<!-- Pàgines de la web per als cercadors. Si afegeixes una pàgina, afegeix-la aquí.
+     Cada pàgina traduïda hi és quatre vegades: sense idioma (tria el navegador) i amb ?idioma=ca|es|en,
+     totes enllaçades amb hreflang perquè Google mostri a cadascú la seva llengua. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://labelluco.net/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/?idioma=ca</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/?idioma=es</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/?idioma=en</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/apps.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/apps.html?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/apps.html?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/apps.html?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/apps.html?idioma=ca</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/apps.html?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/apps.html?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/apps.html?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/apps.html?idioma=es</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/apps.html?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/apps.html?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/apps.html?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/apps.html?idioma=en</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/apps.html?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/apps.html?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/apps.html?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/serveis.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/serveis.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/serveis.html?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/serveis.html?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/serveis.html?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/serveis.html?idioma=ca</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/serveis.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/serveis.html?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/serveis.html?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/serveis.html?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/serveis.html?idioma=es</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/serveis.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/serveis.html?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/serveis.html?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/serveis.html?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/serveis.html?idioma=en</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/serveis.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/serveis.html?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/serveis.html?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/serveis.html?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/qui-soc.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/qui-soc.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/qui-soc.html?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/qui-soc.html?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/qui-soc.html?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/qui-soc.html?idioma=ca</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/qui-soc.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/qui-soc.html?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/qui-soc.html?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/qui-soc.html?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/qui-soc.html?idioma=es</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/qui-soc.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/qui-soc.html?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/qui-soc.html?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/qui-soc.html?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/qui-soc.html?idioma=en</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/qui-soc.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/qui-soc.html?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/qui-soc.html?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/qui-soc.html?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/contacte.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/contacte.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/contacte.html?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/contacte.html?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/contacte.html?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/contacte.html?idioma=ca</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/contacte.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/contacte.html?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/contacte.html?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/contacte.html?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/contacte.html?idioma=es</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/contacte.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/contacte.html?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/contacte.html?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/contacte.html?idioma=en"/>
+  </url>
+  <url><loc>https://labelluco.net/contacte.html?idioma=en</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/contacte.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/contacte.html?idioma=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/contacte.html?idioma=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/contacte.html?idioma=en"/>
+  </url>
   <url><loc>https://labelluco.net/privacitat/terrabloc.html</loc></url>
   <url><loc>https://labelluco.net/privacitat/terrarutes.html</loc></url>
   <url><loc>https://labelluco.net/privacitat/terraparceles.html</loc></url>
