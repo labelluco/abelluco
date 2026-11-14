@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Pàgines de la web per als cercadors. Si afegeixes una pàgina, afegeix-la aquí.
+     Quan la web passi al domini propi, canvia l'adreça base de totes les línies. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://labelluco.github.io/abelluco/</loc></url>
+  <url><loc>https://labelluco.github.io/abelluco/apps.html</loc></url>
+  <url><loc>https://labelluco.github.io/abelluco/serveis.html</loc></url>
+  <url><loc>https://labelluco.github.io/abelluco/qui-soc.html</loc></url>
+  <url><loc>https://labelluco.github.io/abelluco/contacte.html</loc></url>
+  <url><loc>https://labelluco.github.io/abelluco/privacitat/terrabloc.html</loc></url>
+  <url><loc>https://labelluco.github.io/abelluco/privacitat/terrarutes.html</loc></url>
+  <url><loc>https://labelluco.github.io/abelluco/privacitat/terraparceles.html</loc></url>
+  <url><loc>https://labelluco.github.io/abelluco/condicions/terrabloc.html</loc></url>
+  <url><loc>https://labelluco.github.io/abelluco/condicions/terrarutes.html</loc></url>
+  <url><loc>https://labelluco.github.io/abelluco/condicions/terraparceles.html</loc></url>
+</urlset>
