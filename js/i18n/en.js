@@ -161,8 +161,10 @@ export const EN = {
     "Mario Escuder: software engineer and forestry technician. Background, vision and a ten-point charter on the use of AI.",
   "La meva visió":
     "My vision",
-  "I crec que el territori necessita gent que el conegui i el cuidi. Les dades obertes, els mapes i les apps poden ajudar a prendre millors decisions sobre el bosc, l'aigua, els conreus o el paisatge, si es fan al costat de qui hi viu.":
-    "And I believe the land needs people who know it and care for it. Open data, maps and apps can help make better decisions about forests, water, crops and landscape, if they are made alongside the people who live there.",
+  "Per això combino la gestió del medi natural, que el cuida amb criteris ecològics, i l'educació ambiental, que ajuda a entendre'l, valorar-lo i implicar-s'hi.":
+    "That's why I combine natural environment management, which looks after it with ecological criteria, and environmental education, which helps people understand it, value it and get involved.",
+  "La tecnologia hi és una eina més, no el centre: petita, útil i fàcil d'entendre, sense fer dependre ningú d'una gran plataforma. Les dades obertes, els mapes i les apps poden ajudar a prendre millors decisions si es fan al costat de qui hi viu.":
+    "Technology is one more tool, not the centre: small, useful and easy to understand, without making anyone depend on a big platform. Open data, maps and apps can help make better decisions if they are made alongside the people who live there.",
   "Transparència":
     "Transparency",
   "Decàleg sobre l'ús de la IA":
@@ -295,10 +297,10 @@ export const EN = {
     "Who is behind L'Abelluco",
   "Actualment, L'Abelluco el forma una sola persona: jo, Mario Escuder. A banda d'aquest projecte, soc professor de secundària.":
     "Right now, L'Abelluco is one person: me, Mario Escuder. Alongside this project, I'm a secondary school teacher.",
-  "Soc enginyer informàtic i tècnic superior en gestió forestal i del medi natural, i m'he format també en permacultura, agricultura ecològica i eines SIG.":
-    "I'm a software engineer and a forest and natural environment management technician, and I have also trained in permaculture, organic farming and GIS tools.",
-  "Visc a Olba, a la vall del Millars, a la comarca de Gúdar-Javalambre (Terol). Des d'aquí ajunto dues coses que sovint van per separat: el programari i la cura del territori.":
-    "I live in Olba, in the Mijares valley, in the Gúdar-Javalambre district (Teruel). From here I bring together two things that often go separately: software and caring for the land.",
+  "Soc enginyer informàtic i tècnic superior en gestió forestal i del medi natural. M'he format també com a educador ambiental i en permacultura, agricultura ecològica i eines SIG.":
+    "I'm a software engineer and a forest and natural environment management technician. I have also trained as an environmental educator and in permaculture, organic farming and GIS tools.",
+  "Visc a Olba, a la vall del Millars, a la comarca de Gúdar-Javalambre (Terol). Des d'aquí ajunto dues coses que sovint van per separat: les eines digitals i la cura del territori.":
+    "I live in Olba, in the Mijares valley, in the Gúdar-Javalambre district (Teruel). From here I bring together two things that often go separately: digital tools and caring for the land.",
   "La vall d'Olba, amb bancals, el poble i muntanyes de pins":
     "The Olba valley, with terraces, the village and pine-covered mountains",
   "La vall d'Olba. Foto: Juan Emilio Prades Bel, CC BY-SA 4.0":
@@ -349,8 +351,8 @@ export const EN = {
     "Apps to see, measure and understand the terrain anywhere in the world: printable 3D models, slopes, visibility, sun hours and routes.",
   "Apps per conèixer el terreny, desenvolupament a mida, electrònica, gestió del territori i educació ambiental, amb els valors de l'economia social i solidària.":
     "Apps to know the land, custom development, electronics, land management and environmental education, with the values of the social and solidarity economy.",
-  "Crec en una tecnologia petita i útil: eines que resolen un problema concret, fàcils d'entendre i que no fan dependre ningú d'una gran plataforma.":
-    "I believe in small, useful technology: tools that solve a specific problem, easy to understand, and that don't make anyone depend on a big platform.",
+  "Crec que el territori necessita gent que el conegui i el cuidi, i que cal mirar-lo com un tot: el bosc, l'aigua, els conreus, el paisatge i les persones que hi viuen.":
+    "I believe the land needs people who know it and care for it, and that it has to be seen as a whole: forests, water, crops, landscape and the people who live there.",
 
   // Model: nucli lliure i apps de pagament
   "Les apps tenen una versió gratuïta per a tothom i un Pro de pagament únic. És el que fa que el projecte es pugui sostenir i continuar creixent, amb preus justos i sense subscripcions.":
