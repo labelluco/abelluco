@@ -121,8 +121,8 @@ export const ES = {
     "mapas y visores de datos del territorio",
   "formularis i inventaris de camp":
     "formularios e inventarios de campo",
-  "catàlegs i bases de dades, com la d'un banc de llavors":
-    "catálogos y bases de datos, como la de un banco de semillas",
+  "catàlegs i bases de dades":
+    "catálogos y bases de datos",
   "Educació ambiental i medi natural":
     "Educación ambiental y medio natural",
   "Gestió forestal i del medi natural":

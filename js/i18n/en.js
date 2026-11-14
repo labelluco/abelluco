@@ -121,8 +121,8 @@ export const EN = {
     "maps and viewers for land data",
   "formularis i inventaris de camp":
     "field forms and inventories",
-  "catàlegs i bases de dades, com la d'un banc de llavors":
-    "catalogues and databases, such as a seed bank's",
+  "catàlegs i bases de dades":
+    "catalogues and databases",
   "Educació ambiental i medi natural":
     "Environmental education and the natural environment",
   "Gestió forestal i del medi natural":
