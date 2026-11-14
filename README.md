@@ -18,7 +18,7 @@ la seva pàgina d'identitat corporativa). Les fotos (`img/portada-millars.jpg`,
 
 Polítiques de privadesa (`privacitat/<app>.html`) i condicions d'ús (`condicions/<app>.html`, versió provisional pendent de revisió jurídica) de Terra Bloc, Terra Rutes i Terra Parcel·les.
 
-Publicada a https://labelluco.github.io/abelluco/.
+Publicada a https://labelluco.net/.
 
 ## Estructura
 
@@ -35,7 +35,7 @@ nucli/              Còpia del nucli (./actualitzar-nucli.sh)
 ## Publicar
 
 El codi és a https://github.com/labelluco/abelluco (públic). Cada push a
-`main` el publica GitHub Pages a **https://labelluco.github.io/abelluco/**.
+`main` el publica GitHub Pages a **https://labelluco.net/**.
 
 ## Provar en local
 

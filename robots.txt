@@ -1,6 +1,4 @@
-# Els cercadors només llegeixen aquest fitxer a l'arrel del domini: fa efecte quan la web tingui domini propi.
-# Llavors cal canviar també l'adreça del sitemap.
 User-agent: *
 Allow: /
 
-Sitemap: https://labelluco.github.io/abelluco/sitemap.xml
+Sitemap: https://labelluco.net/sitemap.xml

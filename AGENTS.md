@@ -36,4 +36,4 @@ delega per iniciativa pròpia les subtasques aïllables, registra-ho a delegacio
 a Codex (només lectura) abans de publicar o en canvis delicats.
 
 ## Publicar
-Cada push a `main` publica la web a GitHub Pages (https://labelluco.github.io/abelluco/): no facis push sense l'OK de Mario.
+Cada push a `main` publica la web a GitHub Pages amb el domini propi (https://labelluco.net/, fitxer `CNAME`): no facis push sense l'OK de Mario.
