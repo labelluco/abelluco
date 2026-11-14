@@ -71,6 +71,8 @@ export const ES = {
     "Servicios",
   "Qui soc":
     "Quién soy",
+  "Privadesa":
+    "Privacidad",
   "Contacte":
     "Contacto",
   "Tecnologia i medi natural al servei del territori":
