@@ -185,16 +185,16 @@ export const ES = {
     "La uso cuando aporta de verdad, no por costumbre ni para ir más rápido a cualquier precio.",
   "No és bona per a tot":
     "No sirve para todo",
-  "L'aprofito per a tasques concretes: escriure i revisar codi, proves, documentació i traduccions. No la faig servir per substituir el coneixement del territori ni el tracte amb les persones.":
-    "La aprovecho para tareas concretas: escribir y revisar código, pruebas, documentación y traducciones. No la uso para sustituir el conocimiento del territorio ni el trato con las personas.",
+  "L'aprofito per a tasques concretes: escriure i revisar codi, documentació, traduccions o esborranys de textos i materials. No la faig servir per substituir el coneixement del territori, el treball de camp ni el tracte amb les persones.":
+    "La aprovecho para tareas concretas: escribir y revisar código, documentación, traducciones o borradores de textos y materiales. No la uso para sustituir el conocimiento del territorio, el trabajo de campo ni el trato con las personas.",
   "Les decisions són meves":
     "Las decisiones son mías",
   "Què es fa, per a qui, com ha de funcionar i com ha de ser: les decisions creatives i estratègiques les prenc jo.":
     "Qué se hace, para quién, cómo debe funcionar y cómo debe ser: las decisiones creativas y estratégicas las tomo yo.",
   "Superviso i valido tot el que fa":
     "Superviso y valido todo lo que hace",
-  "Llegeixo el codi, el provo amb casos reals i comprovo els càlculs abans de donar-lo per bo.":
-    "Leo el código, lo pruebo con casos reales y compruebo los cálculos antes de darlo por bueno.",
+  "Reviso tot el que fa: llegeixo i provo el codi amb casos reals, comprovo els càlculs i les dades, i corregeixo els textos abans de donar-los per bons.":
+    "Reviso todo lo que hace: leo y pruebo el código con casos reales, compruebo los cálculos y los datos, y corrijo los textos antes de darlos por buenos.",
   "En responc jo":
     "Respondo yo",
   "El resultat és responsabilitat meva. Si alguna cosa falla, darrere hi ha una persona que ho arregla.":

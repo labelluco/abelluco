@@ -185,16 +185,16 @@ export const EN = {
     "I use it when it genuinely helps, not out of habit or to go faster at any cost.",
   "No és bona per a tot":
     "It isn't right for everything",
-  "L'aprofito per a tasques concretes: escriure i revisar codi, proves, documentació i traduccions. No la faig servir per substituir el coneixement del territori ni el tracte amb les persones.":
-    "I use it for specific tasks: writing and reviewing code, tests, documentation and translations. I don't use it to replace knowledge of the land or dealing with people.",
+  "L'aprofito per a tasques concretes: escriure i revisar codi, documentació, traduccions o esborranys de textos i materials. No la faig servir per substituir el coneixement del territori, el treball de camp ni el tracte amb les persones.":
+    "I use it for specific tasks: writing and reviewing code, documentation, translations or drafts of texts and materials. I don't use it to replace knowledge of the land, fieldwork or dealing with people.",
   "Les decisions són meves":
     "The decisions are mine",
   "Què es fa, per a qui, com ha de funcionar i com ha de ser: les decisions creatives i estratègiques les prenc jo.":
     "What gets made, for whom, how it should work and what it should look like: I make the creative and strategic decisions.",
   "Superviso i valido tot el que fa":
     "I review and check everything it does",
-  "Llegeixo el codi, el provo amb casos reals i comprovo els càlculs abans de donar-lo per bo.":
-    "I read the code, test it with real cases and check the calculations before I sign it off.",
+  "Reviso tot el que fa: llegeixo i provo el codi amb casos reals, comprovo els càlculs i les dades, i corregeixo els textos abans de donar-los per bons.":
+    "I review everything it does: I read the code and test it with real cases, check the calculations and the data, and correct the texts before I sign them off.",
   "En responc jo":
     "I am accountable",
   "El resultat és responsabilitat meva. Si alguna cosa falla, darrere hi ha una persona que ho arregla.":
