@@ -271,8 +271,8 @@ export const ES = {
     "Contacto · L'Abelluco",
   "Contacta amb L'Abelluco per parlar del teu projecte: apps, Arduino, gestió forestal, educació ambiental o noves tecnologies.":
     "Contacta con L'Abelluco para hablar de tu proyecto: apps, Arduino, gestión forestal, educación ambiental o nuevas tecnologías.",
-  "Una app, un projecte amb Arduino, un assessorament o només una idea: explica'm què necessites i et respondré amb una proposta clara i un preu just.":
-    "Una app, un proyecto con Arduino, un asesoramiento o solo una idea: cuéntame qué necesitas y te responderé con una propuesta clara y un precio justo.",
+  "Explica'm què necessites.":
+    "Cuéntame qué necesitas.",
   "Escriu-me":
     "Escríbeme",
   "Escriu-me per WhatsApp":
