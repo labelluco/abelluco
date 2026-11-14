@@ -209,10 +209,10 @@ export const ES = {
     "La IA cambia deprisa. Revisaré estos compromisos siempre que haga falta, y lo haré aquí, en abierto.",
 
   // Portada nova: carrusel de les apps i clients
-  "Tecnologia, educació ambiental i gestió del medi natural al servei del territori.":
-    "Tecnología, educación ambiental y gestión del medio natural al servicio del territorio.",
-  "A L'Abelluco unim les eines digitals i el coneixement de l'entorn per entendre i cuidar el territori. Ho fem des del món rural i amb els valors de l'economia social i solidària.":
-    "En L'Abelluco unimos las herramientas digitales y el conocimiento del entorno para entender y cuidar el territorio. Lo hacemos desde el mundo rural y con los valores de la economía social y solidaria.",
+  "Tecnologia i ruralitat.":
+    "Tecnología y ruralidad.",
+  "A L'Abelluco treballem amb eines digitals, educació ambiental i gestió del medi natural per entendre i cuidar el territori. Ho fem des del món rural i amb els valors de l'economia social i solidària.":
+    "En L'Abelluco trabajamos con herramientas digitales, educación ambiental y gestión del medio natural para entender y cuidar el territorio. Lo hacemos desde el mundo rural y con los valores de la economía social y solidaria.",
   "Més informació":
     "Más información",
   "App anterior":
