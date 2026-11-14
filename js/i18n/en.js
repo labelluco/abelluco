@@ -131,8 +131,8 @@ export const EN = {
     "Inventories, mapping and GIS, terrain analysis and support for land stewardship.",
   "Assessorament en educació ambiental":
     "Environmental education advice",
-  "Disseny de programes, activitats i materials, i gestió d'equipaments d'educació ambiental.":
-    "Design of programmes, activities and materials, and management of environmental education centres.",
+  "Disseny de programes, activitats i materials.":
+    "Design of programmes, activities and materials.",
   "Assessorament en noves tecnologies":
     "New technologies advice",
   "Ajuda per triar, implantar i aprendre a fer servir eines digitals, amb preferència pel programari lliure.":

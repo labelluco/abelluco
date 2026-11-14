@@ -131,8 +131,8 @@ export const ES = {
     "Inventarios, cartografía y SIG, análisis del relieve y apoyo a la custodia del territorio.",
   "Assessorament en educació ambiental":
     "Asesoramiento en educación ambiental",
-  "Disseny de programes, activitats i materials, i gestió d'equipaments d'educació ambiental.":
-    "Diseño de programas, actividades y materiales, y gestión de equipamientos de educación ambiental.",
+  "Disseny de programes, activitats i materials.":
+    "Diseño de programas, actividades y materiales.",
   "Assessorament en noves tecnologies":
     "Asesoramiento en nuevas tecnologías",
   "Ajuda per triar, implantar i aprendre a fer servir eines digitals, amb preferència pel programari lliure.":
