@@ -149,8 +149,8 @@ export const ES = {
     "Presupuestos claros, sin sorpresas, adaptados al tamaño de cada entidad.",
   "Arrelat al medi rural":
     "Arraigado en el medio rural",
-  "Visc i treballo al món rural: conec de primera mà les necessitats del territori.":
-    "Vivo y trabajo en el mundo rural: conozco de primera mano las necesidades del territorio.",
+  "Visc i treballo al món rural. Sóc conscient de les necessitats del territori.":
+    "Vivo y trabajo en el mundo rural. Soy consciente de las necesidades del territorio.",
   "Cooperació i sostenibilitat":
     "Cooperación y sostenibilidad",
   "Prefereixo col·laborar amb altres projectes de l'economia social i fer eines lleugeres, que durin i que gastin poc.":

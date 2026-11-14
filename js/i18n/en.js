@@ -149,8 +149,8 @@ export const EN = {
     "Clear quotes, no surprises, adapted to the size of each organisation.",
   "Arrelat al medi rural":
     "Rooted in rural life",
-  "Visc i treballo al món rural: conec de primera mà les necessitats del territori.":
-    "I live and work in the countryside: I know the needs of the land first-hand.",
+  "Visc i treballo al món rural. Sóc conscient de les necessitats del territori.":
+    "I live and work in the countryside. I am aware of the needs of the land.",
   "Cooperació i sostenibilitat":
     "Cooperation and sustainability",
   "Prefereixo col·laborar amb altres projectes de l'economia social i fer eines lleugeres, que durin i que gastin poc.":
