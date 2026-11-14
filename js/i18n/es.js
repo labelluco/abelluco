@@ -209,10 +209,10 @@ export const ES = {
     "La IA cambia deprisa. Revisaré estos compromisos siempre que haga falta, y lo haré aquí, en abierto.",
 
   // Portada nova: carrusel de les apps i clients
-  "Tecnologia, educació ambiental i gestió forestal al servei del territori.":
-    "Tecnología, educación ambiental y gestión forestal al servicio del territorio.",
-  "A L'Abelluco unim les eines digitals i el coneixement del medi natural per entendre i cuidar el territori. Ho fem des del món rural i amb els valors de l'economia social i solidària.":
-    "En L'Abelluco unimos las herramientas digitales y el conocimiento del medio natural para entender y cuidar el territorio. Lo hacemos desde el mundo rural y con los valores de la economía social y solidaria.",
+  "Tecnologia, educació ambiental i gestió del medi natural al servei del territori.":
+    "Tecnología, educación ambiental y gestión del medio natural al servicio del territorio.",
+  "A L'Abelluco unim les eines digitals i el coneixement de l'entorn per entendre i cuidar el territori. Ho fem des del món rural i amb els valors de l'economia social i solidària.":
+    "En L'Abelluco unimos las herramientas digitales y el conocimiento del entorno para entender y cuidar el territorio. Lo hacemos desde el mundo rural y con los valores de la economía social y solidaria.",
   "Més informació":
     "Más información",
   "App anterior":
@@ -333,8 +333,8 @@ export const ES = {
     "Agricultores, huertos, instaladores de riego",
   "Aplicacions multiplataforma i projectes d'electrònica amb plataformes com Arduino, micro:bit o Compluino.":
     "Aplicaciones multiplataforma y proyectos de electrónica con plataformas como Arduino, micro:bit o Compluino.",
-  "Gestió del territori":
-    "Gestión del territorio",
+  "Gestió del medi natural":
+    "Gestión del medio natural",
   "Gestió forestal i del medi natural: inventaris, cartografia i SIG, i suport a la custòdia del territori.":
     "Gestión forestal y del medio natural: inventarios, cartografía y SIG, y apoyo a la custodia del territorio.",
   "Educació ambiental":

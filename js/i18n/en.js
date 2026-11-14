@@ -209,10 +209,10 @@ export const EN = {
     "AI changes fast. I will revise these commitments whenever needed, and I'll do it here, in the open.",
 
   // Portada nova: carrusel de les apps i clients
-  "Tecnologia, educació ambiental i gestió forestal al servei del territori.":
-    "Technology, environmental education and forest management in service of the land.",
-  "A L'Abelluco unim les eines digitals i el coneixement del medi natural per entendre i cuidar el territori. Ho fem des del món rural i amb els valors de l'economia social i solidària.":
-    "At L'Abelluco we bring together digital tools and knowledge of the natural environment to understand and care for the land. We do it from the countryside, with the values of the social and solidarity economy.",
+  "Tecnologia, educació ambiental i gestió del medi natural al servei del territori.":
+    "Technology, environmental education and natural environment management in service of the land.",
+  "A L'Abelluco unim les eines digitals i el coneixement de l'entorn per entendre i cuidar el territori. Ho fem des del món rural i amb els valors de l'economia social i solidària.":
+    "At L'Abelluco we bring together digital tools and knowledge of the local environment to understand and care for the land. We do it from the countryside, with the values of the social and solidarity economy.",
   "Més informació":
     "Learn more",
   "App anterior":
@@ -333,8 +333,8 @@ export const EN = {
     "Farmers, gardens, irrigation installers",
   "Aplicacions multiplataforma i projectes d'electrònica amb plataformes com Arduino, micro:bit o Compluino.":
     "Cross-platform apps and electronics projects with platforms such as Arduino, micro:bit or Compluino.",
-  "Gestió del territori":
-    "Land management",
+  "Gestió del medi natural":
+    "Natural environment management",
   "Gestió forestal i del medi natural: inventaris, cartografia i SIG, i suport a la custòdia del territori.":
     "Forest and natural environment management: inventories, mapping and GIS, and support for land stewardship.",
   "Educació ambiental":
