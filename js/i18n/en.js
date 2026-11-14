@@ -209,10 +209,10 @@ export const EN = {
     "AI changes fast. I will revise these commitments whenever needed, and I'll do it here, in the open.",
 
   // Portada nova: carrusel de les apps i clients
-  "Tecnologia al servei del territori.":
-    "Technology in service of the land.",
-  "A L'Abelluco desenvolupem eines digitals per entendre i cuidar el territori. Ho fem des del món rural i amb els valors de l'economia social i solidària.":
-    "At L'Abelluco we build digital tools to understand and care for the land. We do it from the countryside, with the values of the social and solidarity economy.",
+  "Tecnologia, educació ambiental i gestió forestal al servei del territori.":
+    "Technology, environmental education and forest management in service of the land.",
+  "A L'Abelluco unim les eines digitals i el coneixement del medi natural per entendre i cuidar el territori. Ho fem des del món rural i amb els valors de l'economia social i solidària.":
+    "At L'Abelluco we bring together digital tools and knowledge of the natural environment to understand and care for the land. We do it from the countryside, with the values of the social and solidarity economy.",
   "Més informació":
     "Learn more",
   "App anterior":
@@ -366,7 +366,7 @@ export const EN = {
   "Quan el projecte ho permet, el codi es publica amb llicència lliure i qualsevol pot revisar què fa i com ho fa.":
     "When the project allows it, the code is published under a free licence and anyone can review what it does and how.",
 
-  // Aviat a Google Play
-  "Aplicacions per entendre i cuidar el territori, per a Android i aviat a Google Play.":
-    "Apps to understand and care for the land, for Android and coming soon to Google Play.",
+  // Apps pròpies: Android i web
+  "Aplicacions per entendre i cuidar el territori, a Google Play (Android) i al navegador (web).":
+    "Apps to understand and care for the land, on Google Play (Android) and in your browser (web).",
 };
