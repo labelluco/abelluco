@@ -73,8 +73,8 @@ export const ES = {
     "Quién soy",
   "Contacte":
     "Contacto",
-  "Tecnologia al servei del territori":
-    "Tecnología al servicio del territorio",
+  "Tecnologia i medi natural al servei del territori":
+    "Tecnología y medio natural al servicio del territorio",
   "Què puc fer per tu":
     "Qué puedo hacer por ti",
   "Descobreix les apps":
@@ -101,8 +101,8 @@ export const ES = {
     "Servicios · L'Abelluco",
   "Desenvolupament d'apps per a Google Play i a mida, multiplataforma, Arduino, gestió forestal i assessorament en educació ambiental i noves tecnologies.":
     "Desarrollo de apps para Google Play y a medida, multiplataforma, Arduino, gestión forestal y asesoramiento en educación ambiental y nuevas tecnologías.",
-  "Programari, electrònica i coneixement del medi natural per a entitats, cooperatives, centres de recerca, administracions i persones que viuen i treballen al medi rural.":
-    "Software, electrónica y conocimiento del medio natural para entidades, cooperativas, centros de investigación, administraciones y personas que viven y trabajan en el medio rural.",
+  "Eines digitals, educació ambiental i gestió del medi natural per a entitats, cooperatives, centres de recerca, administracions i persones que viuen i treballen al medi rural.":
+    "Herramientas digitales, educación ambiental y gestión del medio natural para entidades, cooperativas, centros de investigación, administraciones y personas que viven y trabajan en el medio rural.",
   "Tecnologia":
     "Tecnología",
   "Apps per a Google Play":

@@ -678,7 +678,7 @@ p {
   align-items: center;
   min-height: min(78vh, 640px);
   background:
-    linear-gradient(90deg, rgba(243, 241, 234, 0.96) 0%, rgba(243, 241, 234, 0.92) 46%, rgba(243, 241, 234, 0.3) 78%, rgba(243, 241, 234, 0) 100%),
+    linear-gradient(90deg, rgba(243, 241, 234, 0.88) 0%, rgba(243, 241, 234, 0.72) 42%, rgba(243, 241, 234, 0.12) 70%, rgba(243, 241, 234, 0) 100%),
     url("../img/portada-millars.jpg") center 30% / cover no-repeat;
 }
 
@@ -702,7 +702,7 @@ p {
 @media (max-width: 719px) {
   .portada--foto {
     background:
-      linear-gradient(180deg, rgba(243, 241, 234, 0.94) 0%, rgba(243, 241, 234, 0.86) 70%, rgba(243, 241, 234, 0.55) 100%),
+      linear-gradient(180deg, rgba(243, 241, 234, 0.86) 0%, rgba(243, 241, 234, 0.74) 70%, rgba(243, 241, 234, 0.4) 100%),
       url("../img/portada-millars.jpg") center 30% / cover no-repeat;
   }
 }
