@@ -928,20 +928,6 @@ p {
   box-shadow: var(--ombra-flotant);
 }
 
-.foto figcaption {
-  margin-top: var(--espai-xs);
-  font-size: 0.8rem;
-}
-
-.foto figcaption a {
-  color: var(--color-text-mut);
-  text-decoration: none;
-}
-
-.foto figcaption a:hover {
-  text-decoration: underline;
-}
-
 /* --- Contacte --- */
 .contacte {
   display: grid;

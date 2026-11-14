@@ -301,10 +301,8 @@ export const EN = {
     "I'm a software engineer and a forest and natural environment management technician. I have also trained as an environmental educator and in permaculture, organic farming and GIS tools.",
   "Visc a Olba, a la vall del Millars, a la comarca de Gúdar-Javalambre (Terol). Des d'aquí ajunto dues coses que sovint van per separat: les eines digitals i la cura del territori.":
     "I live in Olba, in the Mijares valley, in the Gúdar-Javalambre district (Teruel). From here I bring together two things that often go separately: digital tools and caring for the land.",
-  "La vall d'Olba, amb bancals, el poble i muntanyes de pins":
-    "The Olba valley, with terraces, the village and pine-covered mountains",
-  "La vall d'Olba. Foto: Juan Emilio Prades Bel, CC BY-SA 4.0":
-    "The Olba valley. Photo: Juan Emilio Prades Bel, CC BY-SA 4.0",
+  "Olba entre muntanyes de pins, vist entre la vegetació":
+    "Olba among pine-covered mountains, seen through the vegetation",
 
   // Portada amb foto, cinc fitxes i apps en desenvolupament
   "Ja disponibles":

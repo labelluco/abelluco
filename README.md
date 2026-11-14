@@ -13,8 +13,8 @@ estàtiques, sense build, en català, castellà i anglès:
 - `contacte.html`: correu i què cal explicar.
 
 Imatges de tercers: logotips dels clients a `img/clients/` (el del CITA, de
-la seva pàgina d'identitat corporativa) i `img/vall-olba.jpg`, de Juan Emilio
-Prades Bel, CC BY-SA 4.0 (Wikimedia Commons), amb el crèdit al peu de foto.
+la seva pàgina d'identitat corporativa). Les fotos (`img/portada-millars.jpg`,
+`img/olba.jpg`) són de Mario.
 
 Polítiques de privadesa (`privacitat/<app>.html`) i condicions d'ús (`condicions/<app>.html`, versió provisional pendent de revisió jurídica) de Terra Bloc, Terra Rutes i Terra Parcel·les.
 
