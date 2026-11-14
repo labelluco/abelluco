@@ -93,8 +93,8 @@ export const EN = {
     "They have trusted L'Abelluco",
   "Parlem del teu projecte":
     "Let's talk about your project",
-  "Explica'm què necessites i et respondré amb una proposta clara i un preu just.":
-    "Tell me what you need and I'll reply with a clear proposal and a fair price.",
+  "Què puc fer per tu?":
+    "What can I do for you?",
   "Pàgines":
     "Pages",
   "Apps · L'Abelluco":

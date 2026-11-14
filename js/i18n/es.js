@@ -93,8 +93,8 @@ export const ES = {
     "Han confiado en L'Abelluco",
   "Parlem del teu projecte":
     "Hablemos de tu proyecto",
-  "Explica'm què necessites i et respondré amb una proposta clara i un preu just.":
-    "Cuéntame qué necesitas y te responderé con una propuesta clara y un precio justo.",
+  "Què puc fer per tu?":
+    "¿Qué puedo hacer por ti?",
   "Pàgines":
     "Páginas",
   "Apps · L'Abelluco":
