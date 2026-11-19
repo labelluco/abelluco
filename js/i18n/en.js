@@ -249,6 +249,32 @@ export const EN = {
     "Boundary as GPX or KML to walk it in the field",
   "Obre Terra Parcel·les":
     "Open Terra Parcel·les",
+  "Terra Anàlisi: el relleu d'una parcel·la, en mapes i xifres":
+    "Terra Anàlisi: a plot's terrain, in maps and figures",
+  "Tria una parcel·la del Cadastre o dibuixa una zona a qualsevol lloc del món. Terra Anàlisi en fa els mapes d'altitud i de pendent sobre la imatge aèria, el resum del relleu i la vista 3D.":
+    "Choose a cadastral parcel or draw an area anywhere in the world. Terra Anàlisi makes elevation and slope maps over aerial imagery, a terrain summary and a 3D view.",
+  "Altituds, desnivell i pendents mitjà i màxim":
+    "Elevations, elevation range, and mean and maximum slope",
+  "Vista 3D del terreny, que pots girar i ampliar":
+    "A 3D view of the terrain that you can rotate and zoom",
+  "Orientació, ombrejat, superfície per classes i informe PDF amb Terra Anàlisi Pro":
+    "Aspect, hillshade, area by class and PDF report with Terra Anàlisi Pro",
+  "Obre Terra Anàlisi":
+    "Open Terra Anàlisi",
+  "Terra Camp: mesura la parcel·la i compara-la amb el Cadastre":
+    "Terra Camp: measure your plot and compare it with the Cadastre",
+  "Camina la parcel·la amb el mòbil i pren cada cantonada amb el GPS. Terra Camp en calcula la superfície i la compara amb la del Cadastre: veus de seguida si les lindes del camp són les del mapa.":
+    "Walk your plot with your phone and take each corner with the GPS. Terra Camp works out its area and compares it with the Cadastre's: you see at once whether the boundaries in the field match the map.",
+  "Mitjana de diverses lectures del GPS a cada vèrtex":
+    "Several GPS readings averaged at each corner",
+  "Diferència de superfície en m² i en %, pintada al mapa":
+    "Area difference in m² and %, shown on the map",
+  "Vista 3D del relleu amb la parcel·la i la mesura":
+    "3D terrain view with the parcel and your measurement",
+  "Exportació i informe PDF amb Terra Camp Pro":
+    "Export and PDF report with Terra Camp Pro",
+  "Obre Terra Camp":
+    "Open Terra Camp",
   "Tria una app":
     "Choose an app",
 
