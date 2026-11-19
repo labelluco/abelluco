@@ -165,6 +165,11 @@ p {
   margin-left: auto;
 }
 
+/* A la web, les opcions del selector són enllaços a les pàgines de cada idioma. */
+.selector-idioma__opcio {
+  text-decoration: none;
+}
+
 @media (min-width: 720px) {
   .capcalera__fila {
     flex-wrap: nowrap;

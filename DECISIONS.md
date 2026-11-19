@@ -2,6 +2,7 @@
 
 Una línia per decisió, la més recent a dalt: data — decisió — perquè.
 
+- 2026-11-19 — Idiomes en pàgines estàtiques: català a l'arrel, `es/` i `en/` generats per `eines/generar-idiomes.mjs` amb canònica i hreflang a l'HTML; `?idioma=` només redirigeix (JS); a les pàgines catalanes, la primera visita va a l'idioma desat o del navegador, excepte els robots — Search Console marcava les adreces `?idioma=` com a duplicats («Google chose different canonical») i no indexava la portada: l'HTML era el mateix per a totes i la canònica la posava el JS. Substitueix la decisió del 2026-11-14
 - 2026-11-17 — Condicions i privadesa de Terra Bloc, Rutes i Parcel·les: a la web la compra la gestiona Polar (venedor registrat; clau de llicència per a fins a 5 dispositius), en lloc de «compra de demostració»; mateixes URL — el pagament web real amb Polar ja és actiu a les tres apps
 - 2026-11-14 — SEO: cada idioma té adreça pròpia (`?idioma=ca|es|en`, que `js/app.js` aplica i desa) enllaçada amb hreflang al `sitemap.xml` (sense paràmetre = x-default); canònica posada per JS; Open Graph (`img/compartir.jpg`, 1200×630) a les 5 pàgines; JSON-LD `ProfessionalService` a la portada — el robot de Google renderitza en anglès i només indexava aquesta versió; així troba també la castellana i la catalana i en mostra cadascuna a qui la busca
 - 2026-11-14 — Privadesa de la web a `privacitat/web.html` (GoatCounter, idioma desat, GitHub Pages, contacte), enllaçada al peu — explicar les estadístiques i el tractament del contacte

@@ -1,68 +1,67 @@
-// Web de L'Abelluco: tradueix la pàgina (català, castellà i anglès) amb el
-// sistema d'idiomes del nucli, el mateix de les apps, i mou el carrusel.
-// Totes les pàgines (inici, apps, serveis, qui soc) carreguen aquest fitxer.
-import { configurarI18n, aplicarTraduccions, inicialitzarSelectorIdioma, establirIdioma, idiomaActual, idiomes, t } from '../nucli/js/i18n/i18n.js';
-import { ES } from './i18n/es.js';
-import { EN } from './i18n/en.js';
+// Web de L'Abelluco: selector d'idioma i carrusel. Totes les pàgines (inici,
+// apps, serveis, qui soc, contacte) carreguen aquest fitxer.
+//
+// Cada idioma té les seves pàgines: el català a l'arrel, el castellà a es/ i
+// l'anglès a en/, generades per eines/generar-idiomes.mjs. Aquí no es tradueix
+// res: el selector porta a la mateixa pàgina en l'altre idioma (les adreces
+// surten dels <link rel="alternate" hreflang> de la capçalera).
+import { configurarI18n, idiomaActual, idiomes } from '../nucli/js/i18n/i18n.js';
 import { inicialitzarCarrusel } from './carrusel.js';
 
-configurarI18n({
-  clau: 'abelluco-idioma',
-  idiomes: ['ca', 'es', 'en'],
-  perDefecte: 'en',
-  diccionaris: { es: ES, en: EN },
-});
+const CLAU = 'abelluco-idioma';
+configurarI18n({ clau: CLAU, idiomes: ['ca', 'es', 'en'], perDefecte: 'en' });
 
-// Cada idioma té la seva adreça (?idioma=ca|es|en) perquè els cercadors
-// trobin les tres versions; el sitemap les enllaça amb hreflang. Sense el
-// paràmetre, l'idioma es tria com sempre (preferència desada o navegador).
-const parametres = new URLSearchParams(window.location.search);
-const idiomaUrl = parametres.get('idioma');
-if (idiomes().includes(idiomaUrl)) establirIdioma(idiomaUrl, { recarregar: false });
+const idiomaPagina = document.documentElement.lang;
 
-// Adreça canònica: sense «index.html» i amb l'idioma si la pàgina el porta.
-function posarCanonica() {
-  let enllac = document.querySelector('link[rel="canonical"]');
-  if (!enllac) {
-    enllac = document.createElement('link');
-    enllac.rel = 'canonical';
-    document.head.append(enllac);
+// Adreça d'aquesta pàgina en un altre idioma, al mateix servidor (també en local).
+function adrecaEn(idioma) {
+  const enllac = document.querySelector(`link[rel="alternate"][hreflang="${idioma}"]`);
+  return new URL(enllac.href).pathname + window.location.hash;
+}
+
+function desarIdioma(idioma) {
+  try {
+    localStorage.setItem(CLAU, idioma);
+  } catch {
+    // Sense emmagatzematge (mode privat...): no es recorda per a la propera visita.
   }
-  const ruta = window.location.pathname.replace(/index\.html$/, '');
-  const idioma = parametres.get('idioma');
-  enllac.href = 'https://labelluco.net' + ruta + (idioma ? '?idioma=' + idioma : '');
 }
 
-// Si la persona canvia d'idioma en una adreça amb ?idioma=, l'adreça el segueix.
-function actualitzarAdreca() {
-  if (!parametres.has('idioma')) return;
-  parametres.set('idioma', idiomaActual());
-  history.replaceState(null, '', '?' + parametres.toString() + window.location.hash);
-  posarCanonica();
+// On ha d'anar qui arriba a aquesta pàgina:
+//  - adreces antigues amb ?idioma=ca|es|en: a la pàgina d'aquell idioma;
+//  - a les pàgines catalanes (les de l'arrel, que són les que es comparteixen),
+//    qui ja va triar un idioma o té el navegador en castellà o anglès va a la
+//    seva versió. Els robots no: han de veure cada pàgina tal com és.
+function idiomaDesti() {
+  const parametre = new URLSearchParams(window.location.search).get('idioma');
+  if (idiomes().includes(parametre)) {
+    desarIdioma(parametre);
+    return parametre;
+  }
+  const esRobot = /bot|crawl|spider|slurp|Google-InspectionTool|Lighthouse|facebookexternalhit|WhatsApp/i.test(navigator.userAgent);
+  if (idiomaPagina === 'ca' && !esRobot) return idiomaActual();
+  return idiomaPagina;
 }
 
-function traduirPagina() {
-  aplicarTraduccions();
-  // El títol (<title data-i18n>) ja el tradueix el nucli; la descripció i
-  // el text alternatiu dels logotips van en atributs que el nucli no coneix.
-  document.querySelectorAll('[data-i18n-content]').forEach((el) => {
-    el.setAttribute('content', t(el.dataset.i18nContent));
-  });
-  document.querySelectorAll('[data-i18n-alt]').forEach((el) => {
-    el.alt = t(el.dataset.i18nAlt);
-  });
-  // Botons de WhatsApp: el missatge preescrit, en l'idioma de la pàgina.
-  document.querySelectorAll('[data-whatsapp]').forEach((el) => {
-    // encodeURIComponent i no URLSearchParams: WhatsApp no entén «+» com a espai.
-    el.href = el.href.split('?')[0] + '?text=' + encodeURIComponent(t(el.dataset.whatsapp));
+const desti = idiomaDesti();
+if (desti !== idiomaPagina) {
+  window.location.replace(adrecaEn(desti));
+} else if (window.location.search) {
+  history.replaceState(null, '', window.location.pathname + window.location.hash);
+}
+
+// Selector: enllaços normals (els cercadors també els segueixen).
+function pintarSelector() {
+  const contenidor = document.getElementById('selector-idioma');
+  if (!contenidor) return;
+  contenidor.innerHTML = idiomes().map((idioma) => {
+    const actiu = idioma === idiomaPagina;
+    return `<a class="selector-idioma__opcio${actiu ? ' selector-idioma__opcio--actiu' : ''}" href="${adrecaEn(idioma)}" hreflang="${idioma}" lang="${idioma}"${actiu ? ' aria-current="true"' : ''}>${idioma.toUpperCase()}</a>`;
+  }).join('');
+  contenidor.querySelectorAll('a').forEach((enllac) => {
+    enllac.addEventListener('click', () => desarIdioma(enllac.hreflang));
   });
 }
 
-traduirPagina();
-posarCanonica();
-inicialitzarSelectorIdioma('selector-idioma', { recarregar: false });
-document.addEventListener('canvi-idioma', () => {
-  traduirPagina();
-  actualitzarAdreca();
-});
+pintarSelector();
 inicialitzarCarrusel(document.querySelector('.carrusel'));
