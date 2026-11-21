@@ -287,6 +287,8 @@ export const EN = {
     "Ecograu, organic farming",
   "Formo part de":
     "Member of",
+  "Centre de Professorat Ángel Sanz Briz, Terol":
+    "Ángel Sanz Briz Teacher Training Centre, Teruel",
   "Smart Ibérica, cooperativa de treball":
     "Smart Ibérica, worker cooperative",
   "Soc soci de":
