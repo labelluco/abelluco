@@ -28,7 +28,7 @@
   <meta name="theme-color" content="#396a49">
   <link rel="icon" href="../nucli/img/abelluco/abella.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../nucli/css/nucli.css">
-  <link rel="stylesheet" href="../css/estils.css?v=2026-11-22c">
+  <link rel="stylesheet" href="../css/estils.css?v=2026-11-22d">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -74,11 +74,48 @@
           <a class="boto boto--primari boto--gran" href="https://era.labelluco.net/" data-i18n="Visita ERA">Visit ERA</a>
           <a class="boto boto--secundari boto--gran" href="https://github.com/labelluco/hortescolar" data-i18n="Codi font">Source code</a>
         </div>
-        <ul class="captures captures--web" aria-label="Screenshots" data-i18n-aria-label="Captures de pantalla">
-          <li><img src="../img/treballs/era/1.webp" alt="ERA home page" data-i18n-alt="Pàgina d'inici d'ERA" width="800" height="538" loading="lazy"></li>
-          <li><img src="../img/treballs/era/2.webp" alt="ERA activity table, with basic knowledge, stages and season" data-i18n-alt="Taula d'activitats d'ERA, amb els sabers bàsics, les etapes i l'època" width="800" height="538" loading="lazy"></li>
-          <li><img src="../img/treballs/era/3.webp" alt="The biodigester activity sheet in ERA" data-i18n-alt="Fitxa de l'activitat del biodigestor a ERA" width="800" height="538" loading="lazy"></li>
+      </div>
+    </section>
+
+    <!-- Captures (carrusel) -->
+    <section class="seccio seccio--sense-dalt carrusel carrusel--clar" aria-roledescription="carrusel" aria-label="Screenshots" data-i18n-aria-label="Captures de pantalla">
+      <div class="contingut">
+        <div class="carrusel__capcalera">
+          <p class="avantitol" data-i18n="Captures de pantalla">Screenshots</p>
+          <div class="carrusel__fletxes">
+            <button type="button" class="carrusel__fletxa" data-carrusel="anterior" aria-label="Previous screenshot" data-i18n-aria-label="Captura anterior">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5 L8 12 L15 19"/></svg>
+            </button>
+            <button type="button" class="carrusel__fletxa" data-carrusel="seguent" aria-label="Next screenshot" data-i18n-aria-label="Captura següent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5 L16 12 L9 19"/></svg>
+            </button>
+          </div>
+        </div>
+        <ul class="carrusel__pista">
+          <li class="carrusel__fitxa" aria-roledescription="diapositiva" aria-label="1 / 3">
+            <figure class="captura-gran">
+              <img src="../img/treballs/era/1.webp" alt="ERA home page" data-i18n-alt="Pàgina d'inici d'ERA" width="1280" height="860">
+              <figcaption aria-hidden="true" data-i18n="Pàgina d'inici d'ERA">ERA home page</figcaption>
+            </figure>
+          </li>
+          <li class="carrusel__fitxa" aria-roledescription="diapositiva" aria-label="2 / 3">
+            <figure class="captura-gran">
+              <img src="../img/treballs/era/2.webp" alt="ERA activity table, with basic knowledge, stages and season" data-i18n-alt="Taula d'activitats d'ERA, amb els sabers bàsics, les etapes i l'època" width="1280" height="860">
+              <figcaption aria-hidden="true" data-i18n="Taula d'activitats d'ERA, amb els sabers bàsics, les etapes i l'època">ERA activity table, with basic knowledge, stages and season</figcaption>
+            </figure>
+          </li>
+          <li class="carrusel__fitxa" aria-roledescription="diapositiva" aria-label="3 / 3">
+            <figure class="captura-gran">
+              <img src="../img/treballs/era/3.webp" alt="The biodigester activity sheet in ERA" data-i18n-alt="Fitxa de l'activitat del biodigestor a ERA" width="1280" height="860">
+              <figcaption aria-hidden="true" data-i18n="Fitxa de l'activitat del biodigestor a ERA">The biodigester activity sheet in ERA</figcaption>
+            </figure>
+          </li>
         </ul>
+        <div class="carrusel__punts" role="group" aria-label="Choose a screenshot" data-i18n-aria-label="Tria una captura">
+          <button type="button" class="carrusel__punt" aria-label="1" aria-current="true"></button>
+          <button type="button" class="carrusel__punt" aria-label="2"></button>
+          <button type="button" class="carrusel__punt" aria-label="3"></button>
+        </div>
       </div>
     </section>
 

@@ -64,4 +64,4 @@ function pintarSelector() {
 }
 
 pintarSelector();
-inicialitzarCarrusel(document.querySelector('.carrusel'));
+document.querySelectorAll('.carrusel').forEach(inicialitzarCarrusel);

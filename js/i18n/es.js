@@ -797,4 +797,12 @@ export const ES = {
     "Un ejemplo: ERA",
   "ERA · CEIP d'Olba":
     "ERA · CEIP de Olba",
+
+  // Carrusel de captures (pàgines de treballs)
+  "Captura anterior":
+    "Captura anterior",
+  "Captura següent":
+    "Captura siguiente",
+  "Tria una captura":
+    "Elige una captura",
 };

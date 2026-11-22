@@ -1,4 +1,4 @@
-// Carrusel de les apps de la portada. No passa sol: es mou amb les fletxes,
+// Carrusels de la web (les apps de la portada, les captures dels treballs). No passa sol: es mou amb les fletxes,
 // els punts, el teclat o lliscant (la pista és un scroll horitzontal amb
 // scroll-snap, de manera que sense JS també es pot lliscar).
 //

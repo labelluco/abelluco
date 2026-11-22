@@ -1131,3 +1131,41 @@ p {
 .captures--web li {
   flex-basis: min(420px, 85vw);
 }
+
+/* Carrusel sobre fons clar (captures de la pàgina d'un treball) */
+.carrusel--clar .carrusel__fletxa {
+  border-color: var(--color-vora);
+  color: var(--color-text);
+}
+
+.carrusel--clar .carrusel__fletxa:hover,
+.carrusel--clar .carrusel__fletxa:focus-visible {
+  background-color: var(--color-primari-suau);
+}
+
+.carrusel--clar .carrusel__punt {
+  background-color: var(--color-vora);
+}
+
+.carrusel--clar .carrusel__punt[aria-current="true"] {
+  background-color: var(--color-primari);
+}
+
+.captura-gran {
+  margin: 0;
+}
+
+.captura-gran img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--color-vora);
+  border-radius: var(--radi-gran);
+}
+
+.captura-gran figcaption {
+  margin-top: var(--espai-xs);
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--color-text-mut);
+}
