@@ -1019,7 +1019,7 @@ p {
 }
 
 .capcalera-pagina .fitxa-app__nota {
-  margin-top: var(--espai-s);
+  margin-top: var(--espai-m);
   font-size: 0.9rem;
 }
 
@@ -1027,7 +1027,42 @@ p {
   font-size: 0.9rem;
 }
 
-.graella-principis .llista-punts {
+/* «Què pots fer»: una targeta per grup */
+.graella-funcions {
+  margin: var(--espai-m) 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--espai-s);
+}
+
+@media (min-width: 720px) {
+  .graella-funcions {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Si el nombre de grups és senar, l'últim ocupa tota l'amplada. */
+  .graella-funcions > li:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
+.graella-funcions > li {
+  padding: var(--espai-m);
+  border: 1px solid var(--color-vora);
+  border-radius: var(--radi-gran);
+  background-color: var(--color-superficie);
+  box-shadow: var(--ombra);
+}
+
+.graella-funcions h3 {
+  margin: 0 0 var(--espai-s);
+  font-size: 1.1rem;
+  color: var(--color-primari);
+}
+
+.graella-funcions .llista-punts {
   margin: 0;
-  color: var(--color-text-mut);
+  gap: var(--espai-s);
+  font-size: 0.95rem;
 }
