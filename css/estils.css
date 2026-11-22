@@ -1101,3 +1101,28 @@ p {
 .fitxa-app__preu {
   font-weight: 700;
 }
+
+/* --- Captures de pantalla de les apps: franja que llisca al mòbil --- */
+.captures {
+  display: flex;
+  gap: var(--espai-s);
+  margin: var(--espai-l) 0 0;
+  padding: 0 0 var(--espai-xs);
+  list-style: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.captures li {
+  flex: 0 0 min(220px, 62vw);
+  scroll-snap-align: start;
+}
+
+.captures img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--color-vora);
+  border-radius: var(--radi-gran);
+  box-shadow: var(--ombra);
+}

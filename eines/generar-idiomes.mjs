@@ -13,6 +13,8 @@
 //    WhatsApp (data-whatsapp); si falta una traducció, s'atura i la diu;
 //  - a es/ i en/, afegeix «../» a les adreces dels recursos (css, img, js...)
 //    i deixa igual els enllaços a les altres pàgines traduïdes;
+//  - les captures de pantalla de les apps tenen una carpeta per idioma
+//    (img/captures/<app>/ca/...): a es/ i en/ apunten a la seva;
 //  - a totes les pàgines (també les catalanes) escriu el bloc «idiomes» de la
 //    capçalera: canònica, hreflang, og:url i og:locale;
 //  - torna a escriure sitemap.xml.
@@ -104,6 +106,11 @@ function traduir(pagina, html, idioma) {
     if (missatge !== null) {
       const base = atribut(etiqueta, 'href').split('?')[0];
       etiqueta = canviarAtribut(etiqueta, 'href', base + '?text=' + encodeURIComponent(t(missatge)).replace(/'/g, '%27'));
+    }
+
+    const captura = atribut(etiqueta, 'src');
+    if (captura !== null && /^img\/captures\/[^/]+\/ca\//.test(captura)) {
+      etiqueta = canviarAtribut(etiqueta, 'src', captura.replace('/ca/', `/${idioma}/`));
     }
 
     for (const nomAtribut of ['href', 'src']) {

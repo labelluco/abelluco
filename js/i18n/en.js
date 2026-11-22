@@ -667,4 +667,48 @@ export const EN = {
     "Pro price: €3.99 (VAT included), one-time payment.",
   "Preu del Pro: 4,49 € (IVA inclòs), pagament únic.":
     "Pro price: €4.49 (VAT included), one-time payment.",
+
+  // Captures de pantalla de les pàgines de les apps (alt)
+  "Captures de pantalla":
+    "Screenshots",
+  "Model 3D del relleu dels Alps, amb la imatge aèria":
+    "3D terrain model of the Alps, with aerial imagery",
+  "Model 3D de tres parcel·les del Cadastre":
+    "3D model of three cadastral parcels",
+  "Opcions per imprimir el model en 3D: mida, base i exportació en STL":
+    "Options to 3D print the model: size, base and STL export",
+  "Zona dibuixada sobre el mapa, en qualsevol lloc del món":
+    "Area drawn on the map, anywhere in the world",
+  "Ruta sobre el relleu en 3D, amb el perfil d'altitud":
+    "Route on 3D terrain, with the elevation profile",
+  "Perfil d'altitud acolorit per pendent i pendents de la ruta":
+    "Elevation profile coloured by slope, with the route's slopes",
+  "Mapa de pendents del terreny al voltant de la ruta":
+    "Slope map of the terrain around the route",
+  "Gravant un track amb el GPS: temps, distància i desnivell":
+    "Recording a track with GPS: time, distance and elevation gain",
+  "Llista de parcel·les desades, amb el mapa i les etiquetes":
+    "List of saved plots, with the map and tags",
+  "Fitxa d'una parcel·la amb les dades del Cadastre i els cultius":
+    "Plot sheet with the Cadastre data and crops",
+  "Obrir la parcel·la a les altres apps Terra o exportar-la en GPX i KML":
+    "Open the plot in the other Terra apps or export it as GPX and KML",
+  "Agrupació de parcel·les en una finca, amb la superfície total":
+    "Plots grouped into an estate, with the total area",
+  "Mapa de pendents d'una parcel·la sobre la imatge aèria":
+    "Slope map of a plot over aerial imagery",
+  "Mapa d'orientacions d'una parcel·la":
+    "Aspect map of a plot",
+  "Resum del relleu i superfície per classes de pendent":
+    "Terrain summary and area by slope class",
+  "Vista 3D del terreny d'una parcel·la":
+    "3D view of a plot's terrain",
+  "Vèrtexs mesurats amb el GPS sobre el mapa":
+    "Vertices measured with GPS on the map",
+  "Prenent un vèrtex: l'app fa la mitjana de diverses lectures del GPS":
+    "Taking a vertex: the app averages several GPS readings",
+  "Comparació de la parcel·la mesurada amb la del Cadastre":
+    "Comparison of the measured plot with the Cadastre",
+  "Vista 3D de la parcel·la mesurada i la del Cadastre":
+    "3D view of the measured plot and the cadastral one",
 };

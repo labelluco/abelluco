@@ -667,4 +667,48 @@ export const ES = {
     "Precio del Pro: 3,99 € (IVA incluido), pago único.",
   "Preu del Pro: 4,49 € (IVA inclòs), pagament únic.":
     "Precio del Pro: 4,49 € (IVA incluido), pago único.",
+
+  // Captures de pantalla de les pàgines de les apps (alt)
+  "Captures de pantalla":
+    "Capturas de pantalla",
+  "Model 3D del relleu dels Alps, amb la imatge aèria":
+    "Modelo 3D del relieve de los Alpes, con la imagen aérea",
+  "Model 3D de tres parcel·les del Cadastre":
+    "Modelo 3D de tres parcelas del Catastro",
+  "Opcions per imprimir el model en 3D: mida, base i exportació en STL":
+    "Opciones para imprimir el modelo en 3D: tamaño, base y exportación en STL",
+  "Zona dibuixada sobre el mapa, en qualsevol lloc del món":
+    "Zona dibujada sobre el mapa, en cualquier lugar del mundo",
+  "Ruta sobre el relleu en 3D, amb el perfil d'altitud":
+    "Ruta sobre el relieve en 3D, con el perfil de altitud",
+  "Perfil d'altitud acolorit per pendent i pendents de la ruta":
+    "Perfil de altitud coloreado por pendiente y pendientes de la ruta",
+  "Mapa de pendents del terreny al voltant de la ruta":
+    "Mapa de pendientes del terreno alrededor de la ruta",
+  "Gravant un track amb el GPS: temps, distància i desnivell":
+    "Grabando un track con el GPS: tiempo, distancia y desnivel",
+  "Llista de parcel·les desades, amb el mapa i les etiquetes":
+    "Lista de parcelas guardadas, con el mapa y las etiquetas",
+  "Fitxa d'una parcel·la amb les dades del Cadastre i els cultius":
+    "Ficha de una parcela con los datos del Catastro y los cultivos",
+  "Obrir la parcel·la a les altres apps Terra o exportar-la en GPX i KML":
+    "Abrir la parcela en las demás apps Terra o exportarla en GPX y KML",
+  "Agrupació de parcel·les en una finca, amb la superfície total":
+    "Agrupación de parcelas en una finca, con la superficie total",
+  "Mapa de pendents d'una parcel·la sobre la imatge aèria":
+    "Mapa de pendientes de una parcela sobre la imagen aérea",
+  "Mapa d'orientacions d'una parcel·la":
+    "Mapa de orientaciones de una parcela",
+  "Resum del relleu i superfície per classes de pendent":
+    "Resumen del relieve y superficie por clases de pendiente",
+  "Vista 3D del terreny d'una parcel·la":
+    "Vista 3D del terreno de una parcela",
+  "Vèrtexs mesurats amb el GPS sobre el mapa":
+    "Vértices medidos con el GPS sobre el mapa",
+  "Prenent un vèrtex: l'app fa la mitjana de diverses lectures del GPS":
+    "Tomando un vértice: la app hace la media de varias lecturas del GPS",
+  "Comparació de la parcel·la mesurada amb la del Cadastre":
+    "Comparación de la parcela medida con la del Catastro",
+  "Vista 3D de la parcel·la mesurada i la del Cadastre":
+    "Vista 3D de la parcela medida y la del Catastro",
 };
