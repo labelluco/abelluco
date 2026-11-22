@@ -1097,3 +1097,7 @@ p {
 .targeta-app:hover .targeta-app__enllac {
   text-decoration: underline;
 }
+
+.fitxa-app__preu {
+  font-weight: 700;
+}

@@ -657,4 +657,14 @@ export const EN = {
     "Apps to get to know the land",
   "Apps, desenvolupament a mida i gestió forestal des d'Olba (Terol)":
     "Apps, custom development and forestry from Olba (Teruel, Spain)",
+
+  // Preus del Pro a les pàgines de les apps (IVA inclòs)
+  "Preu de l'exportació: 4,99 € (IVA inclòs), pagament únic.":
+    "Export price: €4.99 (VAT included), one-time payment.",
+  "Preu del Pro: 2,99 € (IVA inclòs), pagament únic.":
+    "Pro price: €2.99 (VAT included), one-time payment.",
+  "Preu del Pro: 3,99 € (IVA inclòs), pagament únic.":
+    "Pro price: €3.99 (VAT included), one-time payment.",
+  "Preu del Pro: 4,49 € (IVA inclòs), pagament únic.":
+    "Pro price: €4.49 (VAT included), one-time payment.",
 };
