@@ -1066,3 +1066,34 @@ p {
   gap: var(--espai-s);
   font-size: 0.95rem;
 }
+
+/* Targeta d'app clicable: l'enllaç és el nom i s'estén per tota la targeta;
+   «Més informació →» només és la pista visual (aria-hidden). */
+.targeta-app {
+  position: relative;
+}
+
+.targeta-app__nom {
+  color: inherit;
+  text-decoration: none;
+}
+
+.targeta-app__nom::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.targeta-app__nom:focus-visible {
+  outline: none;
+}
+
+.targeta-app:has(.targeta-app__nom:focus-visible) {
+  outline: 3px solid var(--color-primari);
+  outline-offset: 3px;
+}
+
+.targeta-app:hover .targeta-app__enllac {
+  text-decoration: underline;
+}
