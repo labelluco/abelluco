@@ -447,8 +447,8 @@ export const EN = {
     "What you can do",
   "Gratuïta, amb un Pro de pagament únic":
     "Free, with a one-time Pro purchase",
-  "Fer models i veure'ls en 3D és gratuït. Exportar els fitxers STL, 3MF i OBJ és una compra única, sense subscripció.":
-    "Making models and viewing them in 3D is free. Exporting STL, 3MF and OBJ files is a one-time purchase, with no subscription.",
+  "Fer models i veure'ls en 3D és gratuït. La versió Pro, una compra única sense subscripció, permet exportar els fitxers STL, 3MF i OBJ.":
+    "Making models and viewing them in 3D is free. The Pro version, a one-time purchase with no subscription, lets you export STL, 3MF and OBJ files.",
   "Els models són orientatius i surten de dades públiques: no serveixen per a tràmits oficials ni substitueixen un aixecament topogràfic.":
     "Models are for guidance only and come from public data: they are not valid for official procedures and do not replace a topographic survey.",
   "Fonts de les dades":
@@ -659,8 +659,8 @@ export const EN = {
     "Apps, custom development and forestry from Olba (Teruel, Spain)",
 
   // Preus del Pro a les pàgines de les apps (IVA inclòs)
-  "Preu de l'exportació: 4,99 € (IVA inclòs), pagament únic.":
-    "Export price: €4.99 (VAT included), one-time payment.",
+  "Preu del Pro: 4,99 € (IVA inclòs), pagament únic.":
+    "Pro price: €4.99 (VAT included), one-time payment.",
   "Preu del Pro: 2,99 € (IVA inclòs), pagament únic.":
     "Pro price: €2.99 (VAT included), one-time payment.",
   "Preu del Pro: 3,99 € (IVA inclòs), pagament únic.":
