@@ -11,7 +11,8 @@
 //  - tradueix data-i18n (text), data-i18n-content, -alt i -aria-label, els
 //    og:title i og:description, la descripció del JSON-LD i el missatge del
 //    WhatsApp (data-whatsapp); si falta una traducció, s'atura i la diu;
-//  - a es/ i en/, afegeix «../» a les adreces dels recursos (css, img, js...)
+//  - a es/ i en/, afegeix «../» a les adreces dels recursos (css, img, js...,
+//    també les de srcset)
 //    i deixa igual els enllaços a les altres pàgines traduïdes;
 //  - les captures de pantalla de les apps tenen una carpeta per idioma
 //    (img/captures/<app>/ca/...): a es/ i en/ apunten a la seva;
@@ -117,6 +118,16 @@ function traduir(pagina, html, idioma) {
     for (const nomAtribut of ['href', 'src']) {
       const valor = atribut(etiqueta, nomAtribut);
       if (valor !== null) etiqueta = canviarAtribut(etiqueta, nomAtribut, ajustarAdreca(valor));
+    }
+
+    // srcset: «adreça mida, adreça mida...»; cada adreça, com un src.
+    const srcset = atribut(etiqueta, 'srcset');
+    if (srcset !== null) {
+      const ajustat = srcset.split(',').map((candidat) => {
+        const [adreca, ...resta] = candidat.trim().split(/\s+/);
+        return [ajustarAdreca(adreca), ...resta].join(' ');
+      }).join(', ');
+      etiqueta = canviarAtribut(etiqueta, 'srcset', ajustat);
     }
     return etiqueta + text;
   });
