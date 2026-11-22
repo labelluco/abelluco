@@ -27,7 +27,10 @@ import { EN as EN_NUCLI } from '../nucli/js/i18n/en.js';
 
 const DOMINI = 'https://labelluco.net';
 // Pàgines traduïdes. Si n'afegeixes una, posa-la aquí.
-const PAGINES = ['index.html', 'apps.html', 'serveis.html', 'qui-soc.html', 'contacte.html'];
+const PAGINES = [
+  'index.html', 'apps.html', 'serveis.html', 'qui-soc.html', 'contacte.html',
+  'terra-bloc.html', 'terra-rutes.html', 'terra-parceles.html', 'terra-analisi.html', 'terra-camp.html',
+];
 // Pàgines només en català (textos legals), que també van al sitemap.
 const CARPETES_SENSE_TRADUIR = ['privacitat', 'condicions'];
 

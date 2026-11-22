@@ -65,8 +65,8 @@ export const ES = {
 
 
   // Pàgines noves: inici, serveis i qui soc
-  "L'Abelluco · Tecnologia al servei del territori":
-    "L'Abelluco · Tecnología al servicio del territorio",
+  "L'Abelluco · Apps del territori, desenvolupament a mida i gestió forestal":
+    "L'Abelluco · Apps del territorio, desarrollo a medida y gestión forestal",
   "Serveis":
     "Servicios",
   "Qui soc":
@@ -97,10 +97,10 @@ export const ES = {
     "¿Qué puedo hacer por ti?",
   "Pàgines":
     "Páginas",
-  "Apps · L'Abelluco":
-    "Apps · L'Abelluco",
-  "Serveis · L'Abelluco":
-    "Servicios · L'Abelluco",
+  "Apps del terreny: models 3D, pendents, rutes i Cadastre · L'Abelluco":
+    "Apps del terreno: modelos 3D, pendientes, rutas y Catastro · L'Abelluco",
+  "Serveis: apps a mida, Arduino i gestió forestal · L'Abelluco":
+    "Servicios: apps a medida, Arduino y gestión forestal · L'Abelluco",
   "Desenvolupament d'apps per a Google Play i a mida, multiplataforma, Arduino, gestió forestal i assessorament en educació ambiental i noves tecnologies.":
     "Desarrollo de apps para Google Play y a medida, multiplataforma, Arduino, gestión forestal y asesoramiento en educación ambiental y nuevas tecnologías.",
   "Eines digitals, educació ambiental i gestió del medi natural per a entitats, cooperatives, centres de recerca, administracions i persones que viuen i treballen al medi rural.":
@@ -157,8 +157,8 @@ export const ES = {
     "Cooperación y sostenibilidad",
   "Prefereixo col·laborar amb altres projectes de l'economia social i fer eines lleugeres, que durin i que gastin poc.":
     "Prefiero colaborar con otros proyectos de la economía social y hacer herramientas ligeras, que duren y que consuman poco.",
-  "Qui soc · L'Abelluco":
-    "Quién soy · L'Abelluco",
+  "Qui soc: Mario Escuder, enginyer informàtic i tècnic forestal · L'Abelluco":
+    "Quién soy: Mario Escuder, ingeniero informático y técnico forestal · L'Abelluco",
   "Mario Escuder: enginyer informàtic i tècnic forestal. Trajectòria, visió i decàleg sobre l'ús de la IA.":
     "Mario Escuder: ingeniero informático y técnico forestal. Trayectoria, visión y decálogo sobre el uso de la IA.",
   "La meva visió":
@@ -397,4 +397,264 @@ export const ES = {
   // Apps pròpies: Android i web
   "Aplicacions per entendre i cuidar el territori, a Google Play (Android) i al navegador (web).":
     "Aplicaciones para entender y cuidar el territorio, en Google Play (Android) y en el navegador (web).",
+
+  // Pàgines de cada app (terra-*.html), a partir de les fitxes de Google Play
+  "Terra Bloc: models 3D del terreny per imprimir · L'Abelluco":
+    "Terra Bloc: modelos 3D del terreno para imprimir · L'Abelluco",
+  "Models 3D del terreny de qualsevol lloc, per veure'ls o imprimir-los en 3D.":
+    "Modelos 3D del terreno de cualquier lugar, para verlos o imprimirlos en 3D.",
+  "Tria la zona com vulguis":
+    "Elige la zona como quieras",
+  "Amb la referència cadastral o el polígon i la parcel·la (Espanya)":
+    "Con la referencia catastral o el polígono y la parcela (España)",
+  "Tocant una parcel·la al mapa":
+    "Tocando una parcela en el mapa",
+  "Dibuixant un rectangle o una forma lliure en qualsevol lloc del món":
+    "Dibujando un rectángulo o una forma libre en cualquier lugar del mundo",
+  "Cercant un lloc pel nom":
+    "Buscando un lugar por su nombre",
+  "Fet per imprimir en 3D":
+    "Hecho para imprimir en 3D",
+  "Versió preparada per a impressió: un sòlid tancat amb base, a la mida que triïs en mil·límetres":
+    "Versión preparada para impresión: un sólido cerrado con base, al tamaño que elijas en milímetros",
+  "Exportació en STL, 3MF i OBJ; mosaics de fins a 10 × 10 peces":
+    "Exportación en STL, 3MF y OBJ; mosaicos de hasta 10 × 10 piezas",
+  "OBJ centrat o en coordenades reals, per encaixar-lo en programes de CAD i SIG":
+    "OBJ centrado o en coordenadas reales, para encajarlo en programas de CAD y SIG",
+  "Dades obertes i de qualitat":
+    "Datos abiertos y de calidad",
+  "A Espanya, el Cadastre, el model del terreny de l'IGN i les ortofotos del PNOA":
+    "En España, el Catastro, el modelo del terreno del IGN y las ortofotos del PNOA",
+  "A la resta del món, dades d'elevació obertes i imatges Sentinel-2":
+    "En el resto del mundo, datos de elevación abiertos e imágenes Sentinel-2",
+  "Privada":
+    "Privada",
+  "Sense comptes, sense anuncis i sense estadístiques":
+    "Sin cuentas, sin anuncios y sin estadísticas",
+  "Les teves zones es desen només al dispositiu":
+    "Tus zonas se guardan solo en el dispositivo",
+  "Terra Bloc: terreny en 3D":
+    "Terra Bloc: terreno en 3D",
+  "Terra Bloc converteix qualsevol tros de terra en un model 3D: una parcel·la, una muntanya, una vall o el teu poble.":
+    "Terra Bloc convierte cualquier trozo de tierra en un modelo 3D: una parcela, una montaña, un valle o tu pueblo.",
+  "En pocs segons tens el model en 3D, amb la imatge aèria per damunt, i el pots girar, ampliar i exagerar el relleu.":
+    "En pocos segundos tienes el modelo en 3D, con la imagen aérea encima, y puedes girarlo, ampliarlo y exagerar el relieve.",
+  "Totes les apps":
+    "Todas las apps",
+  "Funciona al navegador del mòbil o de l'ordinador, sense instal·lar res. Aviat, també a Google Play.":
+    "Funciona en el navegador del móvil o del ordenador, sin instalar nada. Pronto, también en Google Play.",
+  "Què pots fer":
+    "Qué puedes hacer",
+  "Gratuïta, amb un Pro de pagament únic":
+    "Gratis, con un Pro de pago único",
+  "Fer models i veure'ls en 3D és gratuït. Exportar els fitxers STL, 3MF i OBJ és una compra única, sense subscripció.":
+    "Crear modelos y verlos en 3D es gratis. Exportar los archivos STL, 3MF y OBJ es una compra única, sin suscripción.",
+  "Els models són orientatius i surten de dades públiques: no serveixen per a tràmits oficials ni substitueixen un aixecament topogràfic.":
+    "Los modelos son orientativos y salen de datos públicos: no sirven para trámites oficiales ni sustituyen un levantamiento topográfico.",
+  "Fonts de les dades":
+    "Fuentes de los datos",
+  "Cadastre: Direcció General del Cadastre":
+    "Catastro: Dirección General del Catastro",
+  "Model del terreny i ortofotos del PNOA: Institut Geogràfic Nacional (IGN)":
+    "Modelo del terreno y ortofotos del PNOA: Instituto Geográfico Nacional (IGN)",
+  "Terra Bloc és una app independent de L'Abelluco: no representa cap administració pública ni hi està vinculada.":
+    "Terra Bloc es una app independiente de L'Abelluco: no representa a ninguna administración pública ni está vinculada a ella.",
+  "Política de privadesa":
+    "Política de privacidad",
+  "Condicions d'ús":
+    "Condiciones de uso",
+  "Terra Rutes: grava, segueix i edita rutes GPX · L'Abelluco":
+    "Terra Rutes: graba, sigue y edita rutas GPX · L'Abelluco",
+  "Grava, segueix i edita rutes GPX al mapa i en 3D, amb el perfil i el desnivell.":
+    "Graba, sigue y edita rutas GPX en el mapa y en 3D, con el perfil y el desnivel.",
+  "Grava i segueix":
+    "Graba y sigue",
+  "Grava el track amb el GPS, amb pausa i waypoints (a Android, també amb la pantalla apagada)":
+    "Graba el track con el GPS, con pausa y waypoints (en Android, también con la pantalla apagada)",
+  "Segueix una ruta: on ets, quant has fet, quant en queda, la pujada i la baixada que falten i el temps estimat":
+    "Sigue una ruta: dónde estás, cuánto has hecho, cuánto queda, la subida y la bajada que faltan y el tiempo estimado",
+  "Avís si te'n surts, amb una línia fins al punt més proper":
+    "Aviso si te sales, con una línea hasta el punto más cercano",
+  "Funciona sense cobertura: la ruta ja és al mòbil":
+    "Funciona sin cobertura: la ruta ya está en el móvil",
+  "Obre i edita":
+    "Abre y edita",
+  "Obre tracks GPX i KML, diversos alhora":
+    "Abre tracks GPX y KML, varios a la vez",
+  "Uneix-los: l'app proposa l'ordre i el sentit":
+    "Únelos: la app propone el orden y el sentido",
+  "Mou, esborra o afegeix punts, retalla l'inici o el final, divideix el track i neteja els salts del GPS, amb desfer":
+    "Mueve, borra o añade puntos, recorta el inicio o el final, divide el track y limpia los saltos del GPS, con deshacer",
+  "Coneix la ruta":
+    "Conoce la ruta",
+  "Perfil d'altitud acolorit per pendent, sincronitzat amb el mapa":
+    "Perfil de altitud coloreado por pendiente, sincronizado con el mapa",
+  "Distància, desnivell, altituds, pendents i temps estimat amb el mètode MIDE":
+    "Distancia, desnivel, altitudes, pendientes y tiempo estimado con el método MIDE",
+  "Altituds del model del terreny de l'IGN (5 m), molt més fiables que les del GPS":
+    "Altitudes del modelo del terreno del IGN (5 m), mucho más fiables que las del GPS",
+  "La ruta sobre el relleu en 3D, amb la imatge aèria":
+    "La ruta sobre el relieve en 3D, con la imagen aérea",
+  "Per quines parcel·les del Cadastre passa i quins trams van per forests públiques i vies pecuàries (orientatiu)":
+    "Por qué parcelas del Catastro pasa y qué tramos van por montes públicos y vías pecuarias (orientativo)",
+  "Rutes d'ajuntaments i entitats":
+    "Rutas de ayuntamientos y entidades",
+  "Obre amb un enllaç o un codi QR les rutes que ofereixen ajuntaments, oficines de turisme i allotjaments":
+    "Abre con un enlace o un código QR las rutas que ofrecen ayuntamientos, oficinas de turismo y alojamientos",
+  "Les teves rutes i la teva ubicació es desen només al dispositiu":
+    "Tus rutas y tu ubicación se guardan solo en el dispositivo",
+  "Terra Rutes: rutes i tracks":
+    "Terra Rutes: rutas y tracks",
+  "Terra Rutes és l'app per a les teves rutes a peu, en bicicleta o a cavall: obre-les, grava-les, segueix-les sobre el terreny i deixa-les com vols.":
+    "Terra Rutes es la app para tus rutas a pie, en bicicleta o a caballo: ábrelas, grábalas, síguelas sobre el terreno y déjalas como quieras.",
+  "Gravar, seguir, veure en 3D i fins a tres rutes són gratuïts. La versió Pro (compra única, sense subscripció) afegeix rutes il·limitades, l'edició avançada, l'exportació a GPX i el creuament amb el Cadastre.":
+    "Grabar, seguir, ver en 3D y hasta tres rutas son gratis. La versión Pro (compra única, sin suscripción) añade rutas ilimitadas, la edición avanzada, la exportación a GPX y el cruce con el Catastro.",
+  "Les dades són orientatives i surten de dades públiques. El temps estimat no té en compte el tipus de camí, la meteorologia ni la forma física.":
+    "Los datos son orientativos y salen de datos públicos. El tiempo estimado no tiene en cuenta el tipo de camino, la meteorología ni la forma física.",
+  "Forests públiques i vies pecuàries: Inventari Espanyol del Patrimoni Natural i de la Biodiversitat (MITECO)":
+    "Montes públicos y vías pecuarias: Inventario Español del Patrimonio Natural y de la Biodiversidad (MITECO)",
+  "Terra Rutes és una app independent de L'Abelluco: no representa cap administració pública ni hi està vinculada.":
+    "Terra Rutes es una app independiente de L'Abelluco: no representa a ninguna administración pública ni está vinculada a ella.",
+  "Terra Parcel·les: les teves parcel·les del Cadastre · L'Abelluco":
+    "Terra Parcel·les: tus parcelas del Catastro · L'Abelluco",
+  "Les teves parcel·les del cadastre, amb notes, fotos i etiquetes, sempre a mà.":
+    "Tus parcelas del catastro, con notas, fotos y etiquetas, siempre a mano.",
+  "Afegeix-les com vulguis":
+    "Añádelas como quieras",
+  "Amb la referència cadastral":
+    "Con la referencia catastral",
+  "Amb la província, el municipi, el polígon i la parcel·la":
+    "Con la provincia, el municipio, el polígono y la parcela",
+  "Tocant-la al mapa, sobre la foto aèria":
+    "Tocándola en el mapa, sobre la foto aérea",
+  "Endreça-les al teu gust":
+    "Ordénalas a tu gusto",
+  "Etiquetes (olivera, regadiu, de lloguer…) per filtrar la llista":
+    "Etiquetas (olivo, regadío, de alquiler…) para filtrar la lista",
+  "Notes: les lindes, qui la treballa, quan es va podar":
+    "Notas: las lindes, quién la trabaja, cuándo se podó",
+  "Fotos de cada parcel·la":
+    "Fotos de cada parcela",
+  "Agrupacions: una finca, una herència o un coto, amb la superfície total":
+    "Agrupaciones: una finca, una herencia o un coto, con la superficie total",
+  "Porta-les al camp":
+    "Llévalas al campo",
+  "Informe en PDF de cada parcel·la, amb la parcel·la sobre l'ortofoto, un mapa de situació, les notes i les fotos":
+    "Informe en PDF de cada parcela, con la parcela sobre la ortofoto, un mapa de situación, las notas y las fotos",
+  "Descarrega el perímetre com a track GPX o KML i recorre'l amb el GPS":
+    "Descarga el perímetro como track GPX o KML y recórrelo con el GPS",
+  "Obre la parcel·la a les altres apps Terra: Terra Camp, Terra Rutes, Terra Anàlisi i Terra Bloc":
+    "Abre la parcela en las demás apps Terra: Terra Camp, Terra Rutes, Terra Anàlisi y Terra Bloc",
+  "Les teves dades són teves":
+    "Tus datos son tuyos",
+  "Tot es desa només al dispositiu":
+    "Todo se guarda solo en el dispositivo",
+  "Còpia de seguretat en un fitxer, per passar-les a un altre mòbil":
+    "Copia de seguridad en un archivo, para pasarlas a otro móvil",
+  "Terra Parcel·les: cadastre":
+    "Terra Parcel·les: catastro",
+  "Terra Parcel·les és el lloc on guardes les teves terres: les parcel·les del cadastre que tens, que treballes o que vols vigilar.":
+    "Terra Parcel·les es el lugar donde guardas tus tierras: las parcelas del catastro que tienes, que trabajas o que quieres vigilar.",
+  "De cada parcel·la tens la fitxa amb les dades públiques del Cadastre: la superfície oficial i la calculada, el perímetre, l'ús i els cultius.":
+    "De cada parcela tienes la ficha con los datos públicos del Catastro: la superficie oficial y la calculada, el perímetro, el uso y los cultivos.",
+  "La versió gratuïta desa 5 parcel·les i una agrupació, amb etiquetes, notes i exportació del perímetre. La versió Pro és una compra única, sense subscripció: parcel·les i agrupacions il·limitades, fotos, l'informe en PDF, exportar una agrupació sencera i la llista en CSV.":
+    "La versión gratuita guarda 5 parcelas y una agrupación, con etiquetas, notas y exportación del perímetro. La versión Pro es una compra única, sin suscripción: parcelas y agrupaciones ilimitadas, fotos, el informe en PDF, exportar una agrupación entera y la lista en CSV.",
+  "Les dades venen del Cadastre i són orientatives: no serveixen per a tràmits oficials de lindes.":
+    "Los datos vienen del Catastro y son orientativos: no sirven para trámites oficiales de lindes.",
+  "Ortofotos del PNOA i mapa IGN-Base: Institut Geogràfic Nacional (IGN)":
+    "Ortofotos del PNOA y mapa IGN-Base: Instituto Geográfico Nacional (IGN)",
+  "Terra Parcel·les és una app independent de L'Abelluco: no representa cap administració pública ni hi està vinculada.":
+    "Terra Parcel·les es una app independiente de L'Abelluco: no representa a ninguna administración pública ni está vinculada a ella.",
+  "Terra Anàlisi: pendent i orientació d'una parcel·la · L'Abelluco":
+    "Terra Anàlisi: pendiente y orientación de una parcela · L'Abelluco",
+  "Pendent, orientació i relleu d'una parcel·la o zona, amb informe PDF.":
+    "Pendiente, orientación y relieve de una parcela o zona, con informe PDF.",
+  "Amb la referència cadastral o la província, el municipi, el polígon i la parcel·la (Espanya)":
+    "Con la referencia catastral o la provincia, el municipio, el polígono y la parcela (España)",
+  "En pocs segons tens":
+    "En pocos segundos tienes",
+  "Mapes d'altitud i de pendent sobre la imatge aèria":
+    "Mapas de altitud y de pendiente sobre la imagen aérea",
+  "El resum del relleu: altituds mínima, màxima i mitjana, desnivell i pendents mitjà i màxim":
+    "El resumen del relieve: altitudes mínima, máxima y media, desnivel y pendientes media y máxima",
+  "La vista 3D del terreny, que pots girar i ampliar":
+    "La vista 3D del terreno, que puedes girar y ampliar",
+  "Amb la versió Pro":
+    "Con la versión Pro",
+  "Mapes d'orientació i d'ombrejat del relleu":
+    "Mapas de orientación y de sombreado del relieve",
+  "Superfície per classes de pendent i per orientació":
+    "Superficie por clases de pendiente y por orientación",
+  "Informe PDF amb mapes, llegendes i taules":
+    "Informe PDF con mapas, leyendas y tablas",
+  "Zones desades sense límit":
+    "Zonas guardadas sin límite",
+  "Terra Anàlisi: pendents":
+    "Terra Anàlisi: pendientes",
+  "Terra Anàlisi analitza el relleu de qualsevol tros de terra: una parcel·la, una finca, una muntanya o una zona que dibuixis al mapa.":
+    "Terra Anàlisi analiza el relieve de cualquier trozo de tierra: una parcela, una finca, una montaña o una zona que dibujes en el mapa.",
+  "Per a l'agricultura, la gestió forestal, l'enginyeria, els peritatges o simplement per conèixer millor el teu terreny.":
+    "Para la agricultura, la gestión forestal, la ingeniería, los peritajes o simplemente para conocer mejor tu terreno.",
+  "Analitzar zones, els mapes d'altitud i de pendent, la vista 3D i fins a tres zones desades són gratuïts. La versió Pro és una compra única, sense subscripció.":
+    "Analizar zonas, los mapas de altitud y de pendiente, la vista 3D y hasta tres zonas guardadas son gratis. La versión Pro es una compra única, sin suscripción.",
+  "Els resultats són orientatius i surten de dades públiques: no serveixen per a tràmits oficials ni substitueixen un aixecament topogràfic.":
+    "Los resultados son orientativos y salen de datos públicos: no sirven para trámites oficiales ni sustituyen un levantamiento topográfico.",
+  "Terra Anàlisi és una app independent de L'Abelluco: no representa cap administració pública ni hi està vinculada.":
+    "Terra Anàlisi es una app independiente de L'Abelluco: no representa a ninguna administración pública ni está vinculada a ella.",
+  "Terra Camp: mesura parcel·les amb el GPS · L'Abelluco":
+    "Terra Camp: mide parcelas con el GPS · L'Abelluco",
+  "Mesura una parcel·la amb el GPS i compara-la amb la del Cadastre.":
+    "Mide una parcela con el GPS y compárala con la del Catastro.",
+  "Camina i mesura":
+    "Camina y mide",
+  "Ves a cada cantonada i toca «Prendre el vèrtex»: l'app pren diverses lectures del GPS i en fa la mitjana, descartant les pitjors":
+    "Ve a cada esquina y toca «Tomar el vértice»: la app toma varias lecturas del GPS y hace la media, descartando las peores",
+  "A Android, continua mesurant amb la pantalla apagada, amb una notificació mentre dura":
+    "En Android, sigue midiendo con la pantalla apagada, con una notificación mientras dura",
+  "L'app et proposa tancar el polígon quan tornes al primer vèrtex":
+    "La app te propone cerrar el polígono cuando vuelves al primer vértice",
+  "Si l'app es tanca, la mesura continua on l'havies deixada":
+    "Si la app se cierra, la medición sigue donde la habías dejado",
+  "Compara amb el Cadastre":
+    "Compara con el Catastro",
+  "La parcel·la del lloc on ets, per referència cadastral, per polígon i parcel·la o tocant-la al mapa":
+    "La parcela del lugar donde estás, por referencia catastral, por polígono y parcela o tocándola en el mapa",
+  "Coincidència, superfície mesurada i del Cadastre, i la diferència en m² i en %":
+    "Coincidencia, superficie medida y del Catastro, y la diferencia en m² y en %",
+  "Les zones que només són a l'una o a l'altra, pintades al mapa":
+    "Las zonas que solo están en una o en otra, pintadas en el mapa",
+  "A quants metres és cada vèrtex de la linda":
+    "A cuántos metros está cada vértice de la linde",
+  "La vista 3D del relleu amb la parcel·la i el polígon mesurat":
+    "La vista 3D del relieve con la parcela y el polígono medido",
+  "Mesures desades sense límit":
+    "Mediciones guardadas sin límite",
+  "Promig configurable: lectures, segons entre elles i quantes se'n descarten":
+    "Promedio configurable: lecturas, segundos entre ellas y cuántas se descartan",
+  "L'error estimat de cada vèrtex i tornar a mesurar-ne un":
+    "El error estimado de cada vértice y volver a medir uno",
+  "Exportar a GeoJSON, KML, GPX i CSV":
+    "Exportar a GeoJSON, KML, GPX y CSV",
+  "Informe PDF amb la comparació, el dibuix a escala i la taula de vèrtexs":
+    "Informe PDF con la comparación, el dibujo a escala y la tabla de vértices",
+  "Les mesures es desen només al dispositiu":
+    "Las mediciones se guardan solo en el dispositivo",
+  "Terra Camp: mesura parcel·les":
+    "Terra Camp: medir parcelas",
+  "Terra Camp mesura una parcel·la sobre el terreny amb el GPS del mòbil i la compara amb la del Cadastre: saps de seguida si les lindes que veus al camp són les que diu el mapa.":
+    "Terra Camp mide una parcela sobre el terreno con el GPS del móvil y la compara con la del Catastro: sabes enseguida si las lindes que ves en el campo son las que dice el mapa.",
+  "Per a pagesos, propietaris, tècnics i qualsevol que vulgui saber què mesura de veritat el seu tros.":
+    "Para agricultores, propietarios, técnicos y cualquiera que quiera saber cuánto mide de verdad su finca.",
+  "Mesurar, comparar amb el Cadastre i la vista 3D són gratuïts, amb una mesura desada. La versió Pro és una compra única, sense subscripció.":
+    "Medir, comparar con el Catastro y la vista 3D son gratis, con una medición guardada. La versión Pro es una compra única, sin suscripción.",
+  "La precisió depèn del GPS del mòbil i de l'entorn: la mesura és orientativa i no serveix per a tràmits oficials de lindes, que demanen un tècnic topògraf.":
+    "La precisión depende del GPS del móvil y del entorno: la medición es orientativa y no sirve para trámites oficiales de lindes, que requieren un técnico topógrafo.",
+  "Terra Camp és una app independent de L'Abelluco: no representa cap administració pública ni hi està vinculada.":
+    "Terra Camp es una app independiente de L'Abelluco: no representa a ninguna administración pública ni está vinculada a ella.",
+
+  // Títols i encapçalaments per als cercadors
+  "Apps per conèixer el terreny":
+    "Apps para conocer el terreno",
+  "Apps, desenvolupament a mida i gestió forestal des d'Olba (Terol)":
+    "Apps, desarrollo a medida y gestión forestal desde Olba (Teruel)",
 };

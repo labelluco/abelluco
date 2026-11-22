@@ -401,7 +401,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
-.graella-principis li {
+.graella-principis > li {
   padding-top: var(--espai-s);
   border-top: 3px solid var(--color-primari);
 }
@@ -999,4 +999,35 @@ p {
 
 .targeta-app__estat {
   align-self: flex-start;
+}
+
+/* --- Pàgina de cada app (terra-*.html) --- */
+.fitxa-app__titol {
+  display: flex;
+  align-items: center;
+  gap: var(--espai-s);
+  margin-bottom: var(--espai-s);
+}
+
+.fitxa-app__titol img {
+  flex-shrink: 0;
+  border-radius: 16px;
+}
+
+.fitxa-app__titol h1 {
+  margin: 0;
+}
+
+.capcalera-pagina .fitxa-app__nota {
+  margin-top: var(--espai-s);
+  font-size: 0.9rem;
+}
+
+.fitxa-app__legal {
+  font-size: 0.9rem;
+}
+
+.graella-principis .llista-punts {
+  margin: 0;
+  color: var(--color-text-mut);
 }
