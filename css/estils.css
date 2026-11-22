@@ -1126,3 +1126,8 @@ p {
   border-radius: var(--radi-gran);
   box-shadow: var(--ombra);
 }
+
+/* Captures d'una web (apaïsades), per exemple a la pàgina d'un treball */
+.captures--web li {
+  flex-basis: min(420px, 85vw);
+}

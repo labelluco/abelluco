@@ -711,4 +711,90 @@ export const EN = {
     "Comparison of the measured plot with the Cadastre",
   "Vista 3D de la parcel·la mesurada i la del Cadastre":
     "3D view of the measured plot and the cadastral one",
+
+  // Treballs: ERA i formació al CEIP d'Olba
+  "ERA: activitats per a l'hort escolar i formació del professorat · L'Abelluco":
+    "ERA: school garden activities and teacher training · L'Abelluco",
+  "ERA és una web lliure d'activitats per a l'hort escolar, lligades al currículum d'Aragó, nascuda d'una formació per al professorat del CEIP d'Olba.":
+    "ERA is a free website of school garden activities linked to the Aragon curriculum, born from a training course for the teachers of CEIP de Olba.",
+  "Treballs":
+    "Work",
+  "ERA: l'aula a l'hort i l'hort a l'aula":
+    "ERA: the classroom in the garden, the garden in the classroom",
+  "ERA (Espacio de Recursos y Actividades) és una web perquè el professorat trobi, programi i comparteixi activitats per a l'hort escolar, lligades als sabers bàsics del currículum d'Infantil i Primària d'Aragó.":
+    "ERA (Espacio de Recursos y Actividades) is a website where teachers find, plan and share school garden activities, linked to the basic knowledge of the Aragon infant and primary curriculum.",
+  "Va néixer com a recurs d'una formació per als docents del CEIP d'Olba, feta a través del Centre de Professorat Ángel Sanz Briz de Terol.":
+    "It was born as a resource for a training course for the teachers of CEIP de Olba, run through the Ángel Sanz Briz Teacher Training Centre in Teruel.",
+  "Visita ERA":
+    "Visit ERA",
+  "Codi font":
+    "Source code",
+  "Pàgina d'inici d'ERA":
+    "ERA home page",
+  "Taula d'activitats d'ERA, amb els sabers bàsics, les etapes i l'època":
+    "ERA activity table, with basic knowledge, stages and season",
+  "Fitxa de l'activitat del biodigestor a ERA":
+    "The biodigester activity sheet in ERA",
+  "La formació":
+    "The training",
+  "Una formació per al claustre del CEIP d'Olba sobre com portar l'aula a l'hort i l'hort a l'aula: aprofitar l'hort de l'escola per treballar els sabers de totes les àrees, i no només per sembrar i regar.":
+    "A training course for the staff of CEIP de Olba on how to take the classroom to the garden and the garden to the classroom: using the school garden to work on every subject, not just for sowing and watering.",
+  "ERA en recull el material perquè el professorat el tingui a mà, el pugui ampliar i el pugui compartir amb altres escoles.":
+    "ERA gathers the material so that teachers have it at hand, can add to it and can share it with other schools.",
+  "Què hi ha a ERA":
+    "What's in ERA",
+  "Activitats lligades al currículum":
+    "Activities linked to the curriculum",
+  "Cada fitxa amb la descripció, els materials, els passos i les precaucions":
+    "Each sheet with description, materials, steps and safety notes",
+  "Per a cada etapa, la seva adaptació i els sabers bàsics del currículum d'Aragó":
+    "For each stage, its adaptation and the basic knowledge of the Aragon curriculum",
+  "Cerca per recurs, per saber, per etapa o per època de l'any":
+    "Search by resource, by subject, by stage or by time of year",
+  "Més que cultivar":
+    "More than growing",
+  "Experiments: el biodigestor, les cromatografies de la terra, el te de compost":
+    "Experiments: the biodigester, soil chromatography, compost tea",
+  "Tecnologia: estació meteorològica i reg automàtic amb micro:bit":
+    "Technology: weather station and automatic watering with micro:bit",
+  "Natura, cuina i tradició: plantes bioindicadores, empanadetes de bleda, el refranyer de l'hort":
+    "Nature, cooking and tradition: indicator plants, chard pasties, garden sayings",
+  "Itineraris":
+    "Plans",
+  "La programació de l'hort d'una etapa en un calendari, per a un mes, un trimestre o tot el curs":
+    "The garden programme for a stage on a calendar, for a month, a term or the whole year",
+  "Avisos d'època i d'etapa, i l'equilibri entre categories i àrees":
+    "Season and stage warnings, and the balance between categories and subjects",
+  "Privats, o compartits amb el professorat que triïs":
+    "Private, or shared with the teachers you choose",
+  "Fet entre tot el professorat":
+    "Built by the whole staff",
+  "Qualsevol docent amb compte pot proposar activitats, amb fotos i fitxes per descarregar":
+    "Any teacher with an account can propose activities, with photos and downloadable sheets",
+  "Una persona revisora les aprova abans de publicar-les":
+    "A reviewer approves them before they are published",
+  "Lliure i obert":
+    "Free and open",
+  "Les activitats es poden fer servir, adaptar i compartir amb la llicència CC BY-SA 4.0, i el codi de la web és programari lliure (AGPL-3.0).":
+    "The activities can be used, adapted and shared under the CC BY-SA 4.0 licence, and the website code is free software (AGPL-3.0).",
+  "Feta amb HTML, CSS i JavaScript, sense dependències, i amb Firebase per a les dades i els comptes del professorat.":
+    "Built with HTML, CSS and JavaScript, with no dependencies, and Firebase for the data and teacher accounts.",
+  "Si vols una formació com aquesta per a la teva escola, o un banc d'activitats per al teu projecte, parlem-ne.":
+    "If you'd like a training course like this for your school, or an activity bank for your project, let's talk.",
+  "Treballs: projectes fets amb escoles, entitats i empreses · L'Abelluco":
+    "Work: projects with schools, organisations and businesses · L'Abelluco",
+  "Alguns dels projectes que ha fet L'Abelluco: apps a mida, formació, educació ambiental i gestió del medi natural.":
+    "Some of L'Abelluco's projects: custom apps, training, environmental education and natural environment management.",
+  "Alguns dels projectes fets amb escoles, entitats i empreses.":
+    "Some of the projects done with schools, organisations and businesses.",
+  "Com es porta l'aula a l'hort?":
+    "How do you take the classroom to the garden?",
+  "Formació per al professorat del CEIP d'Olba i una web lliure d'activitats per a l'hort escolar, lligades al currículum d'Aragó.":
+    "Training for the teachers of CEIP de Olba and a free website of school garden activities, linked to the Aragon curriculum.",
+  "Educació ambiental, formació, desenvolupament web":
+    "Environmental education, training, web development",
+  "Un exemple: ERA":
+    "An example: ERA",
+  "ERA · CEIP d'Olba":
+    "ERA · CEIP de Olba",
 };

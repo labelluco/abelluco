@@ -182,6 +182,42 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/en/terra-camp.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/terra-camp.html"/>
   </url>
+  <url><loc>https://labelluco.net/treballs.html</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/treballs.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/es/treballs.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/en/treballs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/treballs.html"/>
+  </url>
+  <url><loc>https://labelluco.net/es/treballs.html</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/treballs.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/es/treballs.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/en/treballs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/treballs.html"/>
+  </url>
+  <url><loc>https://labelluco.net/en/treballs.html</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/treballs.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/es/treballs.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/en/treballs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/treballs.html"/>
+  </url>
+  <url><loc>https://labelluco.net/era.html</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/era.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/es/era.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/en/era.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/era.html"/>
+  </url>
+  <url><loc>https://labelluco.net/es/era.html</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/era.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/es/era.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/en/era.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/era.html"/>
+  </url>
+  <url><loc>https://labelluco.net/en/era.html</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/era.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/es/era.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/en/era.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/era.html"/>
+  </url>
   <url><loc>https://labelluco.net/privacitat/terraanalisi.html</loc></url>
   <url><loc>https://labelluco.net/privacitat/terrabloc.html</loc></url>
   <url><loc>https://labelluco.net/privacitat/terracamp.html</loc></url>

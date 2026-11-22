@@ -16,6 +16,8 @@ privadesa i les condicions d'ús de les apps Terra. Pàgines estàtiques, sense 
   quan una app nova estigui disponible, fes-ne una com aquestes i enllaça-la des d'`apps.html` i del carrusel de la portada
   Captures a `img/captures/<app>/<idioma>/N.webp` (360×640, de les captures de Play de cada app): a la pàgina catalana
   s'enllacen les de `ca/` i l'script d'idiomes posa les de `es/` i `en/`
+- `treballs.html` i una pàgina per treball (`era.html`): imatges a `img/treballs/<treball>/`; un treball nou, afegeix-lo a
+  `treballs.html` i a `PAGINES` de l'script
 - `privacitat/<app>.html`, `condicions/<app>.html`: textos legals de cada app (les URL són a les fitxes de Google Play)
 - Idiomes: el català a l'arrel (s'edita a mà); `es/` i `en/` els GENERA `node eines/generar-idiomes.mjs` amb els
   diccionaris `js/i18n/es.js` i `en.js` (el text català és la clau). No s'editen mai a mà: després de canviar una pàgina
