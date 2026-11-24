@@ -805,4 +805,65 @@ export const EN = {
     "Next screenshot",
   "Tria una captura":
     "Choose a screenshot",
+  // Treballs: Siembra Teruel (CITA)
+  "Siembra Teruel · CITA":
+    "Siembra Teruel · CITA",
+  "Com se segueix una campanya de llavors?":
+    "How do you keep track of a seed campaign?",
+  "Un panell web privat perquè el CITA segueixi les varietats de tomata del seu Banc de Llavors, els padrins que les cultiven i les fitxes de laboratori.":
+    "A private web dashboard for CITA to follow the tomato varieties in its Seed Bank, the growers who sponsor them and the lab records.",
+  "Desenvolupament web, dades, mapes":
+    "Web development, data, maps",
+  "Siembra Teruel: panell web de les tomates del Banc de Llavors del CITA · L'Abelluco":
+    "Siembra Teruel: web dashboard for the tomatoes in CITA's Seed Bank · L'Abelluco",
+  "Panell web privat per al CITA, dins del projecte Siembra Teruel: varietats tradicionals de tomata, padrins, apadrinaments i fitxes de laboratori, amb mapes i estadístiques.":
+    "A private web dashboard for CITA, as part of the Siembra Teruel project: traditional tomato varieties, sponsors, sponsorships and lab records, with maps and statistics.",
+  "Siembra Teruel: les tomates del Banc de Llavors del CITA":
+    "Siembra Teruel: the tomatoes in CITA's Seed Bank",
+  "Siembra Teruel és un projecte del CITA (Centre d'Investigació i Tecnologia Agroalimentària d'Aragó) en què persones de tota la província de Terol, els padrins, cultiven varietats tradicionals de tomata del seu Banc de Llavors.":
+    "Siembra Teruel is a project by CITA (the Agrifood Research and Technology Centre of Aragon) in which people from all over the province of Teruel, the sponsors, grow traditional tomato varieties from its Seed Bank.",
+  "Per a la campanya del 2026 he fet un panell web privat on l'equip del CITA consulta en un sol lloc les 56 varietats, els 180 padrins i els 214 apadrinaments, amb les fotos, els comentaris i les fitxes de laboratori.":
+    "For the 2026 campaign I built a private web dashboard where the CITA team can see the 56 varieties, 180 sponsors and 214 sponsorships in one place, with their photos, comments and lab records.",
+  "Web del CITA":
+    "CITA website",
+  "Les varietats de la campanya, amb el mapa dels municipis d'origen":
+    "The campaign's varieties, with a map of where they come from",
+  "Apadrinaments per comarca":
+    "Sponsorships by district",
+  "Fitxa d'una varietat, amb el resum de laboratori":
+    "A variety's page, with the lab summary",
+  "Com canvien els fruits segons l'altitud":
+    "How the fruit changes with altitude",
+  "Què hi ha al panell":
+    "What's in the dashboard",
+  "Les varietats":
+    "The varieties",
+  "Llista amb cercador i mapa dels municipis d'origen":
+    "A searchable list and a map of where each one comes from",
+  "Fitxa de cada varietat, amb el resum de les mesures de laboratori":
+    "A page for each variety, with a summary of the lab measurements",
+  "Comparació d'una mateixa varietat entre els llocs on es cultiva":
+    "The same variety compared across the places where it is grown",
+  "Padrins i apadrinaments":
+    "Sponsors and sponsorships",
+  "Fitxa de cada padrí, amb les varietats que cultiva":
+    "A page for each sponsor, with the varieties they grow",
+  "Cada apadrinament amb les seves fotos i els comentaris en ordre":
+    "Each sponsorship with its photos and comments in order",
+  "La fitxa de laboratori: pes i mides dels fruits i graus Brix":
+    "The lab record: fruit weight and size, and degrees Brix",
+  "Estadístiques":
+    "Statistics",
+  "Participació per comarca i per altitud, en gràfics i taules":
+    "Participation by district and by altitude, in charts and tables",
+  "Una primera mirada a com canvien els fruits segons l'altitud":
+    "A first look at how the fruit changes with altitude",
+  "Privat i fàcil de mantenir":
+    "Private and easy to maintain",
+  "El panell és privat: només hi entra l'equip del CITA, amb el seu compte. Les dades personals dels padrins no es publiquen enlloc, i les captures d'aquesta pàgina no en mostren cap.":
+    "The dashboard is private: only the CITA team can sign in, with their own accounts. The sponsors' personal data is not published anywhere, and the screenshots on this page show none of it.",
+  "Fet amb HTML, CSS i JavaScript, sense frameworks ni compilació, amb Firebase (servidors a Europa) per a les dades i els comptes, i mapes amb Leaflet i OpenStreetMap. El codi és en castellà perquè el CITA el pugui mantenir.":
+    "Built with HTML, CSS and JavaScript, with no frameworks or build step, Firebase (servers in Europe) for data and accounts, and maps with Leaflet and OpenStreetMap. The code is in Spanish so that CITA can maintain it.",
+  "Si tens un projecte de ciència ciutadana o un banc de llavors i en vols ordenar les dades, parlem-ne.":
+    "If you run a citizen science project or a seed bank and want to get its data in order, let's talk.",
 };

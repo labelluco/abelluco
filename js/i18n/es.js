@@ -805,4 +805,65 @@ export const ES = {
     "Captura siguiente",
   "Tria una captura":
     "Elige una captura",
+  // Treballs: Siembra Teruel (CITA)
+  "Siembra Teruel · CITA":
+    "Siembra Teruel · CITA",
+  "Com se segueix una campanya de llavors?":
+    "¿Cómo se sigue una campaña de semillas?",
+  "Un panell web privat perquè el CITA segueixi les varietats de tomata del seu Banc de Llavors, els padrins que les cultiven i les fitxes de laboratori.":
+    "Un panel web privado para que el CITA siga las variedades de tomate de su Banco de Semillas, los padrinos que las cultivan y las fichas de laboratorio.",
+  "Desenvolupament web, dades, mapes":
+    "Desarrollo web, datos, mapas",
+  "Siembra Teruel: panell web de les tomates del Banc de Llavors del CITA · L'Abelluco":
+    "Siembra Teruel: panel web de los tomates del Banco de Semillas del CITA · L'Abelluco",
+  "Panell web privat per al CITA, dins del projecte Siembra Teruel: varietats tradicionals de tomata, padrins, apadrinaments i fitxes de laboratori, amb mapes i estadístiques.":
+    "Panel web privado para el CITA, dentro del proyecto Siembra Teruel: variedades tradicionales de tomate, padrinos, apadrinamientos y fichas de laboratorio, con mapas y estadísticas.",
+  "Siembra Teruel: les tomates del Banc de Llavors del CITA":
+    "Siembra Teruel: los tomates del Banco de Semillas del CITA",
+  "Siembra Teruel és un projecte del CITA (Centre d'Investigació i Tecnologia Agroalimentària d'Aragó) en què persones de tota la província de Terol, els padrins, cultiven varietats tradicionals de tomata del seu Banc de Llavors.":
+    "Siembra Teruel es un proyecto del CITA (Centro de Investigación y Tecnología Agroalimentaria de Aragón) en el que personas de toda la provincia de Teruel, los padrinos, cultivan variedades tradicionales de tomate de su Banco de Semillas.",
+  "Per a la campanya del 2026 he fet un panell web privat on l'equip del CITA consulta en un sol lloc les 56 varietats, els 180 padrins i els 214 apadrinaments, amb les fotos, els comentaris i les fitxes de laboratori.":
+    "Para la campaña de 2026 he hecho un panel web privado donde el equipo del CITA consulta en un solo lugar las 56 variedades, los 180 padrinos y los 214 apadrinamientos, con las fotos, los comentarios y las fichas de laboratorio.",
+  "Web del CITA":
+    "Web del CITA",
+  "Les varietats de la campanya, amb el mapa dels municipis d'origen":
+    "Las variedades de la campaña, con el mapa de los municipios de origen",
+  "Apadrinaments per comarca":
+    "Apadrinamientos por comarca",
+  "Fitxa d'una varietat, amb el resum de laboratori":
+    "Ficha de una variedad, con el resumen de laboratorio",
+  "Com canvien els fruits segons l'altitud":
+    "Cómo cambian los frutos según la altitud",
+  "Què hi ha al panell":
+    "Qué hay en el panel",
+  "Les varietats":
+    "Las variedades",
+  "Llista amb cercador i mapa dels municipis d'origen":
+    "Lista con buscador y mapa de los municipios de origen",
+  "Fitxa de cada varietat, amb el resum de les mesures de laboratori":
+    "Ficha de cada variedad, con el resumen de las medidas de laboratorio",
+  "Comparació d'una mateixa varietat entre els llocs on es cultiva":
+    "Comparación de una misma variedad entre los lugares donde se cultiva",
+  "Padrins i apadrinaments":
+    "Padrinos y apadrinamientos",
+  "Fitxa de cada padrí, amb les varietats que cultiva":
+    "Ficha de cada padrino, con las variedades que cultiva",
+  "Cada apadrinament amb les seves fotos i els comentaris en ordre":
+    "Cada apadrinamiento con sus fotos y los comentarios en orden",
+  "La fitxa de laboratori: pes i mides dels fruits i graus Brix":
+    "La ficha de laboratorio: peso y medidas de los frutos y grados Brix",
+  "Estadístiques":
+    "Estadísticas",
+  "Participació per comarca i per altitud, en gràfics i taules":
+    "Participación por comarca y por altitud, en gráficos y tablas",
+  "Una primera mirada a com canvien els fruits segons l'altitud":
+    "Una primera mirada a cómo cambian los frutos según la altitud",
+  "Privat i fàcil de mantenir":
+    "Privado y fácil de mantener",
+  "El panell és privat: només hi entra l'equip del CITA, amb el seu compte. Les dades personals dels padrins no es publiquen enlloc, i les captures d'aquesta pàgina no en mostren cap.":
+    "El panel es privado: solo entra el equipo del CITA, con su cuenta. Los datos personales de los padrinos no se publican en ningún sitio, y las capturas de esta página no muestran ninguno.",
+  "Fet amb HTML, CSS i JavaScript, sense frameworks ni compilació, amb Firebase (servidors a Europa) per a les dades i els comptes, i mapes amb Leaflet i OpenStreetMap. El codi és en castellà perquè el CITA el pugui mantenir.":
+    "Hecho con HTML, CSS y JavaScript, sin frameworks ni compilación, con Firebase (servidores en Europa) para los datos y las cuentas, y mapas con Leaflet y OpenStreetMap. El código está en castellano para que el CITA lo pueda mantener.",
+  "Si tens un projecte de ciència ciutadana o un banc de llavors i en vols ordenar les dades, parlem-ne.":
+    "Si tienes un proyecto de ciencia ciudadana o un banco de semillas y quieres ordenar sus datos, hablemos.",
 };

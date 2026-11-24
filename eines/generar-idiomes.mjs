@@ -33,7 +33,7 @@ const DOMINI = 'https://labelluco.net';
 const PAGINES = [
   'index.html', 'apps.html', 'serveis.html', 'qui-soc.html', 'contacte.html',
   'terra-bloc.html', 'terra-rutes.html', 'terra-parceles.html', 'terra-analisi.html', 'terra-camp.html',
-  'treballs.html', 'era.html',
+  'treballs.html', 'era.html', 'siembra-teruel.html',
 ];
 // Pàgines només en català (textos legals), que també van al sitemap.
 const CARPETES_SENSE_TRADUIR = ['privacitat', 'condicions'];
