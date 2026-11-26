@@ -31,15 +31,21 @@ function desarIdioma(idioma) {
 //  - adreces antigues amb ?idioma=ca|es|en: a la pàgina d'aquell idioma;
 //  - a les pàgines catalanes (les de l'arrel, que són les que es comparteixen),
 //    qui ja va triar un idioma o té el navegador en castellà o anglès va a la
-//    seva versió. Els robots no: han de veure cada pàgina tal com és.
+//    seva versió.
+// Els robots no van enlloc: han de veure cada pàgina tal com és. Tampoc amb
+// ?idioma=: l'HTML d'aquestes adreces diu que la canònica és la catalana, i si
+// el robot acabava a /en/ o /es/, Google agrupava la traducció amb la catalana
+// («Duplicate, Google chose different canonical than user»).
+const esRobot = /bot|crawl|spider|slurp|Google-InspectionTool|Lighthouse|facebookexternalhit|WhatsApp/i.test(navigator.userAgent);
+
 function idiomaDesti() {
+  if (esRobot) return idiomaPagina;
   const parametre = new URLSearchParams(window.location.search).get('idioma');
   if (idiomes().includes(parametre)) {
     desarIdioma(parametre);
     return parametre;
   }
-  const esRobot = /bot|crawl|spider|slurp|Google-InspectionTool|Lighthouse|facebookexternalhit|WhatsApp/i.test(navigator.userAgent);
-  if (idiomaPagina === 'ca' && !esRobot) return idiomaActual();
+  if (idiomaPagina === 'ca') return idiomaActual();
   return idiomaPagina;
 }
 

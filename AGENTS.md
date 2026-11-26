@@ -26,7 +26,7 @@ privadesa i les condicions d'ús de les apps Terra. Pàgines estàtiques, sense 
   Pàgina traduïda nova: afegeix-la a `PAGINES` de l'script
 - `css/estils.css` (les pàgines l'enllacen amb `?v=AAAA-MM-DD`: quan el canviïs, posa-hi la data nova a totes les pàgines catalanes
   i torna a generar els idiomes, perquè els navegadors no facin servir la versió antiga), `js/app.js` (selector d'idioma amb enllaços, redirecció de les adreces antigues `?idioma=` i del
-  primer accés a les pàgines catalanes segons l'idioma desat o del navegador; carrusel), `img/`
+  primer accés a les pàgines catalanes segons l'idioma desat o del navegador, mai per als robots; carrusel), `img/`
   Cada pàgina porta etiquetes Open Graph (imatge `img/compartir.jpg`)
 - `nucli/` és una CÒPIA del repositori nucli: no s'edita mai aquí; s'actualitza amb `./actualitzar-nucli.sh`.
 
