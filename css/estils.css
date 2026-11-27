@@ -1169,3 +1169,11 @@ p {
   text-align: center;
   color: var(--color-text-mut);
 }
+
+/* Crèdit de les fotos d'un carrusel (quan no són nostres) */
+.captures__credit {
+  margin: var(--espai-s) 0 0;
+  font-size: 0.85rem;
+  text-align: right;
+  color: var(--color-text-mut);
+}

@@ -922,4 +922,24 @@ export const ES = {
     "La electrónica de seis teatros en miniatura de un espectáculo sobre el acoso escolar: Arduino y placas hechas a medida.",
   "Electrònica, Arduino, teatre":
     "Electrónica, Arduino, teatro",
+
+  // El otro lado: fotos (de Proyecto Caravana)
+  "Fotos de l'espectacle":
+    "Fotos del espectáculo",
+  "Foto anterior":
+    "Foto anterior",
+  "Foto següent":
+    "Foto siguiente",
+  "Tria una foto":
+    "Elige una foto",
+  "Fotos: Proyecto Caravana.":
+    "Fotos: Proyecto Caravana.",
+  "Espectadors amb auriculars davant d'un dels teatres en miniatura":
+    "Espectadores con auriculares delante de uno de los teatros en miniatura",
+  "Qui fa d'actor segueix les instruccions mentre l'espectador escolta la narració":
+    "Quien hace de actor sigue las instrucciones mientras el espectador escucha la narración",
+  "L'actor mou les peces sobre l'escenari en miniatura":
+    "El actor mueve las piezas sobre el escenario en miniatura",
+  "Una de les sis escenes, vista pels espectadors":
+    "Una de las seis escenas, vista por los espectadores",
 };
