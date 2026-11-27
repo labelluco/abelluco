@@ -866,4 +866,60 @@ export const EN = {
     "Built with HTML, CSS and JavaScript, with no frameworks or build step, Firebase (servers in Europe) for data and accounts, and maps with Leaflet and OpenStreetMap. The code is in Spanish so that CITA can maintain it.",
   "Si tens un projecte de ciència ciutadana o un banc de llavors i en vols ordenar les dades, parlem-ne.":
     "If you run a citizen science project or a seed bank and want to get its data in order, let's talk.",
+
+  // Treballs: El otro lado (Proyecto Caravana)
+  "El otro lado: electrònica per a sis teatres en miniatura · L'Abelluco":
+    "El otro lado: electronics for six miniature theatres · L'Abelluco",
+  "L'electrònica de la instal·lació d'«El otro lado», de Proyecto Caravana: una caixa amb Arduino a cada teatre en miniatura, amb dos àudios sincronitzats, un per a l'actor i un altre per als espectadors.":
+    "The electronics for the installation of \"El otro lado\" by Proyecto Caravana: an Arduino box in each miniature theatre, with two synchronised audio tracks, one for the actor and one for the audience.",
+  "El otro lado: l'electrònica de sis teatres en miniatura":
+    "El otro lado: the electronics of six miniature theatres",
+  "«El otro lado» és un espectacle de microteatre social de Proyecto Caravana sobre l'assetjament escolar, per a públic juvenil. La instal·lació són sis teatres en miniatura, i a cada un es representa una història diferent.":
+    "\"El otro lado\" is a social micro-theatre show by Proyecto Caravana about school bullying, for young audiences. The installation is made up of six miniature theatres, each staging a different story.",
+  "Vaig dissenyar i construir tota l'electrònica de la instal·lació: una caixa per a cada teatre, amb Arduino i una placa amb els components soldats a mida.":
+    "I designed and built all the electronics for the installation: a box for each theatre, with an Arduino and a custom-soldered board.",
+  "El projecte a la web de Proyecto Caravana":
+    "The project on the Proyecto Caravana website",
+  "Com funciona":
+    "How it works",
+  "Dos públics, dos àudios":
+    "Two audiences, two audio tracks",
+  "A una banda del teatre seu qui fa d'actor, i a l'altra, els espectadors":
+    "The person acting sits on one side of the theatre and the audience on the other",
+  "L'actor escolta una gravació amb les instruccions del que ha de fer":
+    "The actor hears a recording with instructions on what to do",
+  "Els espectadors escolten la narració de la història":
+    "The audience hears the story being narrated",
+  "Els dos àudios van sincronitzats":
+    "Both tracks play in sync",
+  "Una caixa a cada teatre":
+    "A box in each theatre",
+  "Un Arduino Nano que ho coordina tot":
+    "An Arduino Nano that coordinates everything",
+  "Dos reproductors de so amb targeta microSD, un per a cada àudio, amb el seu amplificador":
+    "Two microSD sound players, one per track, each with its amplifier",
+  "Botons de reproduir, pausar i aturar, i llums que indiquen l'estat":
+    "Play, pause and stop buttons, and status lights",
+  "Connectors per enganxar-hi l'equip de so i els interruptors":
+    "Connectors for the sound equipment and switches",
+  "Preparat per créixer":
+    "Ready to grow",
+  "El sistema admet més elements, com llums o una màquina de vapor":
+    "The system can take more elements, such as lights or a steam machine",
+  "En aquesta versió de l'espectacle, només s'hi va fer servir l'àudio":
+    "This version of the show used audio only",
+  "Tecnologia que no es veu":
+    "Technology you don't see",
+  "A l'escena, la tecnologia ha de passar desapercebuda: cada caixa es posa en marxa amb un botó i fa la seva feina sense ordinador, perquè el que compti sigui l'experiència de qui actua i de qui mira.":
+    "On stage, technology should go unnoticed: each box starts with a button and does its job without a computer, so that what matters is the experience of those acting and those watching.",
+  "Si tens un espectacle, una exposició o una instal·lació que necessiti electrònica a mida, parlem-ne.":
+    "If you have a show, exhibition or installation that needs custom electronics, let's talk.",
+  "El otro lado · Proyecto Caravana":
+    "El otro lado · Proyecto Caravana",
+  "Com se sincronitza una escena amb dos públics?":
+    "How do you sync a scene for two audiences?",
+  "L'electrònica de sis teatres en miniatura d'un espectacle sobre l'assetjament escolar: Arduino i plaques fetes a mida.":
+    "The electronics of six miniature theatres in a show about school bullying: Arduino and custom-made boards.",
+  "Electrònica, Arduino, teatre":
+    "Electronics, Arduino, theatre",
 };

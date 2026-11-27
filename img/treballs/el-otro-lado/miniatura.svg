@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Miniatura del treball «El otro lado»: auriculars sobre un teatret -->
+  <rect width="64" height="64" rx="14" fill="#e5eee7"/>
+  <g fill="none" stroke="#396a49" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 34 V30 a14 14 0 0 1 28 0 V34"/>
+    <rect x="14" y="32" width="8" height="12" rx="3" fill="#e8b54a"/>
+    <rect x="42" y="32" width="8" height="12" rx="3" fill="#e8b54a"/>
+    <path d="M12 52 H52"/>
+    <path d="M26 52 V46 H38 V52"/>
+  </g>
+</svg>

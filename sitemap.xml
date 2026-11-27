@@ -236,6 +236,24 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/en/siembra-teruel.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/siembra-teruel.html"/>
   </url>
+  <url><loc>https://labelluco.net/el-otro-lado.html</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/el-otro-lado.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/es/el-otro-lado.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/en/el-otro-lado.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/el-otro-lado.html"/>
+  </url>
+  <url><loc>https://labelluco.net/es/el-otro-lado.html</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/el-otro-lado.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/es/el-otro-lado.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/en/el-otro-lado.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/el-otro-lado.html"/>
+  </url>
+  <url><loc>https://labelluco.net/en/el-otro-lado.html</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/el-otro-lado.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/es/el-otro-lado.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/en/el-otro-lado.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/el-otro-lado.html"/>
+  </url>
   <url><loc>https://labelluco.net/privacitat/terraanalisi.html</loc></url>
   <url><loc>https://labelluco.net/privacitat/terrabloc.html</loc></url>
   <url><loc>https://labelluco.net/privacitat/terracamp.html</loc></url>
