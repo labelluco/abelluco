@@ -182,6 +182,24 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/en/terra-camp.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/terra-camp.html"/>
   </url>
+  <url><loc>https://labelluco.net/terra-visibilitat.html</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/terra-visibilitat.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/es/terra-visibilitat.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/en/terra-visibilitat.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/terra-visibilitat.html"/>
+  </url>
+  <url><loc>https://labelluco.net/es/terra-visibilitat.html</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/terra-visibilitat.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/es/terra-visibilitat.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/en/terra-visibilitat.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/terra-visibilitat.html"/>
+  </url>
+  <url><loc>https://labelluco.net/en/terra-visibilitat.html</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/terra-visibilitat.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/es/terra-visibilitat.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labelluco.net/en/terra-visibilitat.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labelluco.net/terra-visibilitat.html"/>
+  </url>
   <url><loc>https://labelluco.net/treballs.html</loc>
     <xhtml:link rel="alternate" hreflang="ca" href="https://labelluco.net/treballs.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://labelluco.net/es/treballs.html"/>

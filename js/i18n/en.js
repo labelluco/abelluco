@@ -942,4 +942,65 @@ export const EN = {
     "The actor moves the pieces on the miniature stage",
   "Una de les sis escenes, vista pels espectadors":
     "One of the six scenes, as the audience sees it",
+  // Terra Visibilitat (pàgina de l'app i carrusel)
+  "Terra Visibilitat: què es veu des d'un punt · L'Abelluco":
+    "Terra Visibilitat: what you can see from a point · L'Abelluco",
+  "Conca visual d'un punt sobre el relleu: zones visibles i no visibles, amb vista 3D.":
+    "Viewshed from a point on the terrain: visible and hidden areas, with a 3D view.",
+  "Terra Visibilitat: conca visual":
+    "Terra Visibilitat: viewshed analysis",
+  "Terra Visibilitat et diu què es veu des d'un punt qualsevol del mapa: quines zones queden a la vista i quines s'amaguen darrere del relleu, a qualsevol lloc del món.":
+    "Terra Visibilitat tells you what can be seen from any point on the map: which areas are in view and which are hidden behind the terrain, anywhere in the world.",
+  "Per instal·lar una antena o portar internet a una casa de pagès, triar el lloc d'una torre de guaita, estudiar l'impacte visual d'una construcció o saber quines vistes tindràs.":
+    "To install an antenna or bring internet to a rural house, choose the site of a fire lookout tower, assess the visual impact of a building or find out what views you will have.",
+  "Funciona al navegador del mòbil o de l'ordinador, sense instal·lar res.":
+    "Works in your phone or computer browser, with nothing to install.",
+  "Zones visibles des d'un punt, en verd sobre la imatge aèria":
+    "Areas visible from a point, in green over the aerial photo",
+  "Resum del càlcul: altituds, superfície visible i punt visible més llunyà":
+    "Calculation summary: elevations, visible area and farthest visible point",
+  "Vista 3D del relleu amb les zones visibles i l'observador":
+    "3D view of the terrain with the visible areas and the observer",
+  "Versió Pro: radi de càlcul de fins a 30 km":
+    "Pro version: calculation radius of up to 30 km",
+  "Tria el punt d'observació":
+    "Choose the viewpoint",
+  "Tocant el mapa o arrossegant el marcador":
+    "By tapping the map or dragging the marker",
+  "Amb la ubicació del mòbil":
+    "With your phone's location",
+  "Amb l'alçada de l'observador (un pal, una torre) i la de l'objectiu (una antena, una persona)":
+    "With the height of the observer (a mast, a tower) and of the target (an antenna, a person)",
+  "El mapa de zones visibles i no visibles sobre la imatge aèria":
+    "The map of visible and hidden areas over the aerial photo",
+  "L'altitud del punt, la superfície visible i el punt visible més llunyà":
+    "The point's elevation, the visible area and the farthest visible point",
+  "La vista 3D del relleu amb la visibilitat pintada, que pots girar i ampliar":
+    "The 3D view of the terrain with visibility painted on it, which you can rotate and zoom",
+  "Radi de càlcul de 5, 10, 20 o 30 km (gratuït, fins a 2 km)":
+    "Calculation radius of 5, 10, 20 or 30 km (free: up to 2 km)",
+  "Correcció per la curvatura de la Terra i la refracció":
+    "Correction for the Earth's curvature and refraction",
+  "A Espanya, el model del terreny de 5 m de l'IGN i les ortofotos del PNOA":
+    "In Spain, IGN's 5 m terrain model and PNOA aerial photos",
+  "El càlcul amb un radi de fins a 2 km, el mapa de visibilitat i la vista 3D són gratuïts. La versió Pro amplia el radi fins a 30 km i és una compra única, sense subscripció.":
+    "Calculations with a radius of up to 2 km, the visibility map and the 3D view are free. The Pro version extends the radius to 30 km and is a one-time purchase, with no subscription.",
+  "El càlcul es fa sobre el terreny nu, sense arbres ni edificis: on n'hi ha, es veu menys del que indica el mapa. Els resultats són orientatius: no substitueixen un estudi de cobertura radioelèctrica ni un estudi d'impacte visual oficial.":
+    "The calculation uses the bare terrain, without trees or buildings: where there are any, less can be seen than the map shows. Results are for guidance only: they do not replace a radio coverage study or an official visual impact assessment.",
+  "Resta del món: Terrain Tiles (AWS) i Sentinel-2 cloudless (EOX)":
+    "Rest of the world: Terrain Tiles (AWS) and Sentinel-2 cloudless (EOX)",
+  "Terra Visibilitat és una app independent de L'Abelluco: no representa cap administració pública ni hi està vinculada.":
+    "Terra Visibilitat is an independent app by L'Abelluco: it does not represent and is not affiliated with any public administration.",
+  "Terra Visibilitat: què es veu des d'un punt":
+    "Terra Visibilitat: what you can see from a point",
+  "Posa un punt al mapa, amb l'alçada de l'observador i de l'objectiu. Terra Visibilitat calcula quines zones se'n veuen i quines queden amagades darrere del relleu, i t'ho mostra sobre la imatge aèria i en 3D.":
+    "Place a point on the map, with the height of the observer and of the target. Terra Visibilitat works out which areas can be seen from it and which are hidden behind the terrain, and shows you on the aerial photo and in 3D.",
+  "Superfície visible i punt visible més llunyà":
+    "Visible area and farthest visible point",
+  "Vista 3D del relleu amb la visibilitat pintada":
+    "3D view of the terrain with visibility painted on it",
+  "Radi de fins a 30 km amb Terra Visibilitat Pro":
+    "Radius of up to 30 km with Terra Visibilitat Pro",
+  "Obre Terra Visibilitat":
+    "Open Terra Visibilitat",
 };
