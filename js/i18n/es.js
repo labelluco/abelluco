@@ -457,8 +457,8 @@ export const ES = {
     "Catastro: Dirección General del Catastro",
   "Model del terreny i ortofotos del PNOA: Institut Geogràfic Nacional (IGN)":
     "Modelo del terreno y ortofotos del PNOA: Instituto Geográfico Nacional (IGN)",
-  "Terra Bloc és una app independent de L'Abelluco: no representa cap administració pública ni hi està vinculada.":
-    "Terra Bloc es una app independiente de L'Abelluco: no representa a ninguna administración pública ni está vinculada a ella.",
+  "Terra Bloc és una app de L'Abelluco, independent de les administracions públiques: no en representa cap ni hi està vinculada.":
+    "Terra Bloc es una app de L'Abelluco, independiente de las administraciones públicas: no representa a ninguna ni está vinculada a ellas.",
   "Política de privadesa":
     "Política de privacidad",
   "Condicions d'ús":
@@ -513,8 +513,8 @@ export const ES = {
     "Los datos son orientativos y salen de datos públicos. El tiempo estimado no tiene en cuenta el tipo de camino, la meteorología ni la forma física.",
   "Forests públiques i vies pecuàries: Inventari Espanyol del Patrimoni Natural i de la Biodiversitat (MITECO)":
     "Montes públicos y vías pecuarias: Inventario Español del Patrimonio Natural y de la Biodiversidad (MITECO)",
-  "Terra Rutes és una app independent de L'Abelluco: no representa cap administració pública ni hi està vinculada.":
-    "Terra Rutes es una app independiente de L'Abelluco: no representa a ninguna administración pública ni está vinculada a ella.",
+  "Terra Rutes és una app de L'Abelluco, independent de les administracions públiques: no en representa cap ni hi està vinculada.":
+    "Terra Rutes es una app de L'Abelluco, independiente de las administraciones públicas: no representa a ninguna ni está vinculada a ellas.",
   "Terra Parcel·les: les teves parcel·les del Cadastre · L'Abelluco":
     "Terra Parcel·les: tus parcelas del Catastro · L'Abelluco",
   "Les teves parcel·les del cadastre, amb notes, fotos i etiquetes, sempre a mà.":
@@ -563,8 +563,8 @@ export const ES = {
     "Los datos vienen del Catastro y son orientativos: no sirven para trámites oficiales de lindes.",
   "Ortofotos del PNOA i mapa IGN-Base: Institut Geogràfic Nacional (IGN)":
     "Ortofotos del PNOA y mapa IGN-Base: Instituto Geográfico Nacional (IGN)",
-  "Terra Parcel·les és una app independent de L'Abelluco: no representa cap administració pública ni hi està vinculada.":
-    "Terra Parcel·les es una app independiente de L'Abelluco: no representa a ninguna administración pública ni está vinculada a ella.",
+  "Terra Parcel·les és una app de L'Abelluco, independent de les administracions públiques: no en representa cap ni hi està vinculada.":
+    "Terra Parcel·les es una app de L'Abelluco, independiente de las administraciones públicas: no representa a ninguna ni está vinculada a ellas.",
   "Terra Anàlisi: pendent i orientació d'una parcel·la · L'Abelluco":
     "Terra Anàlisi: pendiente y orientación de una parcela · L'Abelluco",
   "Pendent, orientació i relleu d'una parcel·la o zona, amb informe PDF.":
@@ -599,8 +599,8 @@ export const ES = {
     "Analizar zonas, los mapas de altitud y de pendiente, la vista 3D y hasta tres zonas guardadas son gratis. La versión Pro es una compra única, sin suscripción.",
   "Els resultats són orientatius i surten de dades públiques: no serveixen per a tràmits oficials ni substitueixen un aixecament topogràfic.":
     "Los resultados son orientativos y salen de datos públicos: no sirven para trámites oficiales ni sustituyen un levantamiento topográfico.",
-  "Terra Anàlisi és una app independent de L'Abelluco: no representa cap administració pública ni hi està vinculada.":
-    "Terra Anàlisi es una app independiente de L'Abelluco: no representa a ninguna administración pública ni está vinculada a ella.",
+  "Terra Anàlisi és una app de L'Abelluco, independent de les administracions públiques: no en representa cap ni hi està vinculada.":
+    "Terra Anàlisi es una app de L'Abelluco, independiente de las administraciones públicas: no representa a ninguna ni está vinculada a ellas.",
   "Terra Camp: mesura parcel·les amb el GPS · L'Abelluco":
     "Terra Camp: mide parcelas con el GPS · L'Abelluco",
   "Mesura una parcel·la amb el GPS i compara-la amb la del Cadastre.":
@@ -649,8 +649,8 @@ export const ES = {
     "Medir, comparar con el Catastro y la vista 3D son gratis, con una medición guardada. La versión Pro es una compra única, sin suscripción.",
   "La precisió depèn del GPS del mòbil i de l'entorn: la mesura és orientativa i no serveix per a tràmits oficials de lindes, que demanen un tècnic topògraf.":
     "La precisión depende del GPS del móvil y del entorno: la medición es orientativa y no sirve para trámites oficiales de lindes, que requieren un técnico topógrafo.",
-  "Terra Camp és una app independent de L'Abelluco: no representa cap administració pública ni hi està vinculada.":
-    "Terra Camp es una app independiente de L'Abelluco: no representa a ninguna administración pública ni está vinculada a ella.",
+  "Terra Camp és una app de L'Abelluco, independent de les administracions públiques: no en representa cap ni hi està vinculada.":
+    "Terra Camp es una app de L'Abelluco, independiente de las administraciones públicas: no representa a ninguna ni está vinculada a ellas.",
 
   // Títols i encapçalaments per als cercadors
   "Apps per conèixer el terreny":
@@ -989,8 +989,8 @@ export const ES = {
     "El cálculo se hace sobre el terreno desnudo, sin árboles ni edificios: donde los hay, se ve menos de lo que indica el mapa. Los resultados son orientativos: no sustituyen un estudio de cobertura radioeléctrica ni un estudio de impacto visual oficial.",
   "Resta del món: Terrain Tiles (AWS) i Sentinel-2 cloudless (EOX)":
     "Resto del mundo: Terrain Tiles (AWS) y Sentinel-2 cloudless (EOX)",
-  "Terra Visibilitat és una app independent de L'Abelluco: no representa cap administració pública ni hi està vinculada.":
-    "Terra Visibilitat es una app independiente de L'Abelluco: no representa a ninguna administración pública ni está vinculada a ella.",
+  "Terra Visibilitat és una app de L'Abelluco, independent de les administracions públiques: no en representa cap ni hi està vinculada.":
+    "Terra Visibilitat es una app de L'Abelluco, independiente de las administraciones públicas: no representa a ninguna ni está vinculada a ellas.",
   "Terra Visibilitat: què es veu des d'un punt":
     "Terra Visibilitat: qué se ve desde un punto",
   "Posa un punt al mapa, amb l'alçada de l'observador i de l'objectiu. Terra Visibilitat calcula quines zones se'n veuen i quines queden amagades darrere del relleu, i t'ho mostra sobre la imatge aèria i en 3D.":
